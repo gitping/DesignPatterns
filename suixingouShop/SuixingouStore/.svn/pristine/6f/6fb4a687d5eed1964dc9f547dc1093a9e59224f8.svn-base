@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   
+
+    <color name="transparent">#00000000</color>
+    <color name="back">#FFFFFF</color>
+    <color name="loaddataback">#88ffffff</color>
+    <color name="red">#a4002c</color>
+    <color name="red_light">#ff1717</color>
+    <color name="dark_red">#910228</color>
+    <color name="black">#000000</color>
+    <color name="lightblack">#2e2e2e</color>
+        <color name="gray1">#faf9fa</color>
+    <color name="gray2">#e3e4e2</color>
+    <color name="light_blue">#0567be</color>
+    <color name="yellow">#ff7800</color>
+    <color name="dark_yellow">#db6700</color>
+    <color name="gray">#4b4b4b</color>
+    <color name="high_gray">#f5f5f5</color>
+    <color name="dark_gray">#e5e5e5</color>
+    <color name="light_gray">#cccccc</color>
+    <color name="lightBlack">#4e4e4e</color>
+    <color name="white">#FFFFFF</color>
+    <color name="green">#5ba922</color>
+    <color name="grass_green">#73ae00</color>
+    <color name="home_btn">#2d2d2d</color>
+    
+    
+    <color name="main_deepcolor">#1e7605</color>
+      <!-- 灰色 -->
+      <color name="gray_btn">#a4a4a4</color>
+    <!-- iphone -->
+	<color name="white_color">#fff</color>
+	
+	<!-- store zl -->
+	 <color name="fcolor">#31b00f</color>
+	<color name="linecolor">#e2e2e2</color>
+	<color name="moneycolor">#ff3c00</color>
+	<color name="producttext">#333333</color>
+	<color name="cyyh">#7c7c7c</color>
+	<color name="sixe">#eeeeee</color>
+	<color name="myred">#ff0000</color>
+	
+	<color name="btn_pos_green_n">#f032B00F</color>
+	<color name="btn_neg_gray_n">#AFAFAFAF</color>
+	<color name="btn_neg_gray_f">#AFA0A0A0</color>
+	<color name="btn_pos_green_f">#8032B00F</color>
+	
+	<color name="ipbg">#eaffd7</color>
+	
+	<color name="huitop">#bfbfbf</color>
+	<color name="addnewpro">#ccfbbf</color>  
+	<color name="editbotom">#f0f0f0</color>
+	
+	<color name="finacialbottom">#33b010</color>
+	<color name="shopsethui">#8d8d8d</color>
+	<color name="shopset_green">#33b010</color>
+	<color name="shopset_orange">#ff7a08</color>
+	<color name="finacial_bg">#f0efed</color>
+	
+	
+	
+	
+	<!-- zhangheng -->
+	<color name="mainColor">#21b00f</color>
+	
+	
+	    <!-- Suixingou -->
+    <color name="mainColor_gray">#aeafae</color>
+    <color name="mainColor_light_gray">#f0f0f0</color>
+    <color name="mainColor_text1">#333333</color>
+    <color name="mainColor_text2">#7c7c7c</color>
+    <color name="mainColor_click">#2c9210</color>
+    <color name="maincolor_gray">#aeafae</color>
+    <color name="maincolor_order">#eeeeee</color>
+    
+    <!-- 2015/06/25 新版色值 -->
+    <color name="main_white">#ffffff</color>
+    <color name="main_grayeeeeee">#eeeeee</color>
+    <color name="maintitle_gray616161">#616161</color>
+    <color name="maintext_gray3b3b3e">#3b3b3e</color>
+    <color name="maintext_lightgray8c8c8d">#8c8c8d</color>
+    <color name="mainbutton_redf26221">#f26221</color>
+    <color name="mainbutton_redpf26221">#a94618</color>
+    <color name="mainbutton_orangef9a84a">#f9a84a</color>
+    <color name="mainbutton_orangepf9a84a">#f9a82a</color>
+    <color name="mainbutton_yellowf9d149">#f9d149</color>
+    <color name="mainbutton_yellowpdda520">#dda520</color>
+    <color name="maintext_yellow">#faa74b</color>
+    <color name="mainbg_grayd7d7d7">#eeeeee</color>
+    <color name="maintextpress">#e2e2e2</color>
+    <color name="bg_gray7c7c7c">#7c7c7c</color>
+
+</resources>

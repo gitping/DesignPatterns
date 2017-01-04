@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/test_bnt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="fonclick"
+        android:text="*收件扫码  M011" />
+
+    <Button
+        android:id="@+id/test_bnt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:onClick="fonclick"
+        android:text="收件扫码 " />
+    <Button
+        android:id="@+id/test_bnt3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:onClick="fonclick"
+        android:text="书面签收" />
+    <Button
+        android:id="@+id/test_bnt4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:onClick="fonclick"
+        android:text="拒收" />
+
+</LinearLayout>

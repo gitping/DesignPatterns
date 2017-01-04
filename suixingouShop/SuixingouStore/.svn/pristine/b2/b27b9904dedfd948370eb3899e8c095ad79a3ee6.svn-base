@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:background="@color/mainbg_grayd7d7d7"
+    	android:orientation="vertical">
+    
+	    <include layout="@layout/stitlebar"/>
+	    
+	    <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent">
+	        
+	        <LinearLayout 
+	            android:id="@+id/pkopetation_confirm_ll"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentBottom="true"
+	            android:background="@color/mainbg_grayd7d7d7"
+	            android:visibility="gone"
+	            android:orientation="vertical">
+	            
+	            <View 
+	                android:layout_width="match_parent"
+	                android:layout_height="1.5px"
+	                android:layout_marginBottom="10dp"
+	                android:background="#959595"/>
+	            
+	            <LinearLayout 
+	                android:id="@+id/pkoperation_setname_ll"
+	                android:layout_width="match_parent"
+	                android:layout_height="50dp"
+	                android:layout_marginLeft="10dp"
+	                android:layout_marginRight="10dp"
+	                android:layout_marginBottom="10dp"
+	                android:gravity="center_vertical"
+	                android:background="#ffffff"
+	                android:orientation="horizontal">
+	                
+	                <TextView 
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginLeft="10dp"
+	                    android:textSize="14sp"
+	                    android:text="取件人"/>
+	                
+	                <EditText 
+	                    android:id="@+id/pkoperation_setname_et"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="match_parent"
+	                    android:layout_marginLeft="20dp"
+	                    android:background="@null"
+	                    android:hint="请输入取件人姓名"
+	                    android:gravity="center_vertical"
+	                    android:textSize="14sp"/>
+	            </LinearLayout>
+	            
+	            <Button 
+	                android:id="@+id/pkoperation_confirm_bt"
+	                android:layout_width="match_parent"
+	                android:layout_height="50dp"
+	                android:layout_marginLeft="10dp"
+	                android:layout_marginRight="10dp"
+	                android:layout_marginBottom="10dp"
+	                android:gravity="center"
+	                android:background="@drawable/selector_maintakepk_button"
+	                android:textSize="16sp"
+	                android:textColor="#ffffff"
+	                android:text="确定"/>
+	        </LinearLayout>   
+	        
+	        <com.frame.view.pulltorefresh.sxgou.XPullToRefreshListView
+	            android:id="@+id/pkoperation_pklist_lv"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_alignParentTop="true"
+	            android:layout_above="@+id/pkopetation_confirm_ll"
+	            android:divider="@null"
+	            android:dividerHeight="0dp"
+	            android:scrollbars="none"
+	            android:paddingLeft="10dp"
+	            android:paddingRight="10dp"/>
+	            
+	    </RelativeLayout>
+	</LinearLayout>
+
+    <include
+        layout="@layout/nodata_tips_layout"
+        android:visibility="visible" />
+</RelativeLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/redtop"
+        layout="@layout/stitlebar" />
+
+    <LinearLayout
+        android:id="@+id/mredselectlin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/redtop"
+        android:layout_marginLeft="3dip"
+        android:layout_marginRight="3dip"
+        android:background="@drawable/shopsetcaiwu_title_bj"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/fincail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                   	android:layout_weight="1.0"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:paddingBottom="5dip"
+                    android:paddingTop="5dip"
+                    android:text="扶持基金"
+                    android:textColor="#33b010"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/bottom_one"
+                    android:layout_width="fill_parent"
+                    android:layout_height="3dp"
+                    android:background="#33b010" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/detailaccount"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:clickable="true"
+                android:gravity="center"
+                android:paddingBottom="5dip"
+                android:paddingTop="5dip"
+                android:text="账目明细"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/bottom_two"
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                 />
+        </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/mredselectlin"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/fragment_lay"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.0"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/mbindingcard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/financial_button_selector"
+            android:gravity="center"
+            android:onClick="bindCard"
+            android:text="绑定银行卡(用于提现)"
+            android:textColor="@color/back"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <include
+      
+        layout="@layout/sloading_error"
+        android:visibility="visible" />
+
+</RelativeLayout>

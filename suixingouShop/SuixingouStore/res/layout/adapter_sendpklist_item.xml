@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/mainbg_grayd7d7d7"/>
+    
+    <RelativeLayout 
+        android:id="@+id/sendpk_content_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@drawable/commit_expresslist_selector">
+        
+        <TextView 
+            android:id="@+id/sendpk_status_tv"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+          	android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:background="#aeaeae"
+            android:textSize="16sp"
+            android:text="接单失败"/>
+        
+        <LinearLayout 
+            android:id="@+id/sendpk_name_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/sendpk_status_tv"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+            
+            <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="16sp"
+	            android:text="姓名："/>
+            
+            <TextView 
+                android:id="@+id/sendpk_name_tv"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="16sp"
+	            android:text="XXX"/>
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:id="@+id/sendpk_tel_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sendpk_name_ll"
+            android:layout_toLeftOf="@+id/sendpk_status_tv"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+            
+            <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="16sp"
+	            android:text="手机："/>
+            
+            <TextView 
+                android:id="@+id/sendpk_tel_tv"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="16sp"
+	            android:text="xxxxxxxxxxx"/>
+            
+        </LinearLayout>
+        
+        <TextView 
+            android:id="@+id/sendpk_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sendpk_tel_ll"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#999999"
+            android:textSize="14sp"
+            android:text="00-00 00:00"/>
+    </RelativeLayout>
+</LinearLayout>

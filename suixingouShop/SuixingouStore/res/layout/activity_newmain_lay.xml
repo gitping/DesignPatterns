@@ -1,0 +1,155 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/maincolor_order" >
+
+    <RelativeLayout
+        android:id="@+id/id_re_stitlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/FLeftMenuHeidth"      
+        android:background="@color/maintitle_gray616161" >
+        
+	   	<ImageView 
+	       android:contentDescription="@string/zhanggui"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:src="@drawable/main_logo"
+	       android:layout_centerInParent="true"
+	       />
+     </RelativeLayout> 
+     
+     <ScrollView 
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_below="@+id/id_re_stitlebar"
+         >
+    <LinearLayout
+        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/vb"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:weightSum="7"
+        >
+        <ImageView 
+            android:contentDescription="@string/zhanggui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_line_left"
+            android:layout_weight="2"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="还没有账号？"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"
+            android:textColor="#2d2d2d"
+            android:layout_weight="3"
+            />
+        <ImageView 
+            android:contentDescription="@string/zhanggui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_line_right"
+            android:layout_weight="2"
+            />        
+    </LinearLayout>
+    
+    
+    <Button 
+        android:id="@+id/register_enter"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/selector_maintakepk_button"
+        android:text="注册"
+        />
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:weightSum="7"
+        >
+        <ImageView 
+            android:contentDescription="@string/zhanggui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_line_left"
+            android:layout_weight="2"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:text="已有账号？"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"
+            android:textColor="#2d2d2d"
+            android:layout_weight="3"
+            />
+        <ImageView 
+            android:contentDescription="@string/zhanggui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_line_right"
+            android:layout_weight="2"
+            />        
+    </LinearLayout>
+    <Button 
+        android:id="@+id/longin_enter"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/selector_mainlogin_button"
+        android:text="登录"
+        android:textColor="@color/mainbutton_redf26221"
+        />
+</LinearLayout>
+</ScrollView>
+       
+</RelativeLayout>

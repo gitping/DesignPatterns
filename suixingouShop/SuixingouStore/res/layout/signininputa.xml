@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical" >
+    
+	<include layout="@layout/stitlebar" />
+	
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dip"
+        android:layout_marginBottom="10dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:textColor="#2d2d2d"
+            android:text="快递单号"
+            android:textSize="18sp" />
+
+        <EditText 
+            android:id="@+id/mail_no"
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginLeft="20dp"
+        	android:layout_marginRight="18dp"
+        	android:maxLength="50"
+        	android:singleLine="true"
+        	android:background="@null"
+        	android:inputType="number"
+        	android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLIMNOPQRSTUVWXYZ"
+           	android:textColorHint="#cccccc"
+           	android:textColor="#2d2d2d"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/line" />
+	
+	<Button 
+        android:id="@+id/sure"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/selector_maintakepk_button"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"     
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:text="确定"/>
+</LinearLayout>

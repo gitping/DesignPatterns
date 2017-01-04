@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_marginTop="10dp"
+    >
+        
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+     
+
+        
+
+            <TextView
+                android:id="@+id/lxtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="联系方式  "
+                android:textColor="#8d8d8d"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/mexpresscontact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lxtext"
+                android:layout_marginTop="10dp"
+                android:text="13811445658 "
+                android:textColor="#2d2d2d"
+                android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/qujian_box_green_bj"
+            android:gravity="center"
+            android:padding="5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/greentext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/texttake"
+                android:text="6天6h"
+                android:textColor="@color/mainColor"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/greentime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/texttake"
+                android:text="到货时间9-16 8:30"
+                android:textColor="@color/mainColor"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </RelativeLayout>
+       <LinearLayout
+            android:id="@+id/klin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="快递单号  "
+                android:textColor="#8d8d8d"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/mexpressnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="355766343(圆通)"
+                android:textColor="#2d2d2d"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal" >
+			
+			
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                android:text="序号  "
+                android:textColor="#8d8d8d"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="#2d2d2d"
+                android:textSize="16sp" />
+            
+            
+            
+        </LinearLayout>
+<LinearLayout 
+    android:id="@+id/call_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    
+    android:orientation="vertical"
+    >
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        
+        android:scaleType="fitXY"
+        android:src="@drawable/suixin_line_xu" />
+    
+    
+    <LinearLayout 
+        android:id="@+id/bottom_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        >
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            >
+
+    <Button
+        android:id="@+id/sendmessage"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_gravity="left"
+        android:background="@drawable/blue_button_selector"
+        android:gravity="center"
+        android:text="发消息"
+        android:textColor="@color/back"
+        android:textSize="20sp" />
+    </LinearLayout>
+    <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            >
+
+    <Button
+        android:id="@+id/callphone"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_gravity="right"
+        android:background="@drawable/mshape_button_selector"
+        android:gravity="center"
+        android:text="打电话"
+        android:textColor="@color/back"
+        android:textSize="20sp"
+         />
+    </LinearLayout>
+    </LinearLayout>
+    
+</LinearLayout>
+    
+    </LinearLayout>
+
+</LinearLayout>

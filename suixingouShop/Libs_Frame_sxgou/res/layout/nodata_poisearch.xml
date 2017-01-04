@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nodata_poisearch_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"
+    android:background="#00000000" >
+        
+    <LinearLayout 
+        android:id="@+id/nodata_poisearch_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="150dp"
+	    android:gravity="center"
+        android:orientation="horizontal">
+        
+        <ImageView 
+            android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:src="@drawable/icon_poi_search"/>
+        
+	    <TextView 
+	        android:id="@+id/nodata_poisearchxxx_tv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:textColor="#6c6c6c"
+	        android:textSize="16sp"
+	        android:text="“XXX”"/>
+	    
+    </LinearLayout>
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/nodata_poisearch_ll"
+        android:textColor="#6c6c6c"
+        android:textSize="16sp"
+        android:text="没有找到对应地点"/>
+    
+    <TextView 
+        android:id="@+id/nodata_poisearch_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:textColor="#f9a84a"
+        android:text="手工填写地址"/>
+
+</RelativeLayout>

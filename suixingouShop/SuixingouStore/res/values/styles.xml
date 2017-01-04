@@ -1,0 +1,123 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- welcome theme -->
+    <style name="Theme.AppStartLoad" parent="android:Theme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>  
+    </style>
+    
+    <!-- frame -->
+    <style name="fcommon_circular_dark_yellow_yellow_style">
+        <item name="android:textColor">@color/back</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@drawable/fcommon_circular_yellow_btn_selector</item>
+    </style>
+
+    <style name="ftext_color_style">
+        <item name="android:textColor">@drawable/ftext_click_seletor</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="FLeftMeunPoup">
+        <item name="android:windowEnterAnimation">@anim/left_to_right</item>
+        <item name="android:windowExitAnimation">@anim/right_to_left</item>
+    </style>
+    
+    <style name="TopPopupAnimation">
+               <item name="android:windowEnterAnimation">@anim/top_entry</item>
+        <item name="android:windowExitAnimation">@anim/top_exit</item>
+            </style>
+    
+            <style 
+                name="radiobuttonStyle"  
+                parent="@android:style/Widget.CompoundButton.RadioButton"
+                >
+                <item name="android:paddingLeft">40dp</item>
+            </style>
+     
+    <style name="bottomToTopAnimation">
+       	<item name="android:windowEnterAnimation">@anim/totop_frombuttom</item>
+		<item name="android:windowExitAnimation">@anim/tobuttom_fromtop</item>
+    </style>
+    <!-- iphone -->
+     <!-- Dialog的风格布局 -->
+    <style name="StyleBarTitle">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/white_color</item>
+        <item name="android:shadowColor">@color/black</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+    
+    <!-- 菜单button -->
+    <style name="fleftMeunbntStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:drawablePadding">15dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">5dip</item>
+    </style>
+    
+    <!-- store -->
+    <!-- myshop menu -->
+      <style name="Store_myMenuButStyle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:drawablePadding">15dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">5dip</item>
+    </style>
+    
+      <style name="frameDialogStyle">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:shadowColor">@color/black</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+    
+    <!-- activity动画，从左向右进入，从右向左退出 -->
+    <style name="MyShopAnimation">
+      	<item name="android:windowEnterAnimation">@anim/entertoright_fromleft</item>
+      	<item name="android:windowExitAnimation">@anim/exittoleft_fromright</item>
+    </style>
+    
+    <style name="MyShopTheme">
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/MyShopAnimation</item>
+    </style>
+    
+    <!-- activity动画，从右向左进入，从左向右退出 -->
+    <style name="SearchAnimation">
+      	<item name="android:windowEnterAnimation">@anim/entertoleft_fromright</item>
+      	<item name="android:windowExitAnimation">@anim/exittoright_fromleft</item>
+    </style>
+    
+    <style name="SearchTheme">
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/SearchAnimation</item>
+    </style>   
+
+</resources>

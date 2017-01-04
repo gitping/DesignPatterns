@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+
+    <!--
+                 长圆
+     gradient对应颜色渐变。 startcolor、endcolor就不多说了。
+     android:angle 是指从哪个角度开始变。
+
+    -->
+    <corners android:radius="100px" />
+
+    <gradient
+        android:angle="180"
+        android:endColor="#40B9FF"
+        android:startColor="#BFEEFF" />
+
+    <stroke
+        android:width="3px"
+        android:color="#87bae8" />
+
+    <solid android:color="#87bae8" />
+
+</shape>

@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fbfbfb" >
+    
+    <TextView 
+        android:id="@+id/statuspop_item_tv"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_marginTop="25dp"
+    	android:layout_marginBottom="25dp"
+    	android:layout_marginLeft="20dp"
+    	android:layout_alignParentLeft="true"
+    	android:layout_centerVertical="true"
+    	android:singleLine="true"
+    	android:textSize="14sp"
+    	android:textColor="#2d2d2d"
+    	android:text="所有自提点"/>
+    
+    <ImageView 
+        android:id="@+id/statuspop_item_iv"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_marginRight="20dp"
+    	android:layout_alignParentRight="true"
+    	android:layout_centerVertical="true"
+    	android:src="@drawable/icon_address_choose"
+    	android:visibility="invisible"
+    	/>
+	   
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg" >
+
+    <include 
+        android:id="@+id/di1"
+        layout="@layout/stitlebar" />
+
+    <EditText
+        android:id="@+id/chooseneigh"
+        android:hint="@string/cInputAddress"
+        android:textSize="18sp"
+        android:layout_margin="@dimen/smainMargin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/chooseneigh_heght"
+        android:layout_below="@+id/di1"
+        android:singleLine="true"
+        android:background="@drawable/shape_bgno_listview" />
+    <TextView
+        android:id="@+id/chooseneighed"
+        android:onClick="fonClick"
+        android:clickable="true"
+        android:text=""
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_marginLeft="@dimen/smainMargin"
+        android:layout_marginRight="@dimen/smainMargin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/chooseneigh_heght"
+        android:drawableRight="@drawable/chooseneighed_button"
+        android:layout_below="@+id/chooseneigh"
+        android:background="@color/dark_gray" />
+
+    <ListView
+        android:id="@+id/common_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dip"
+        android:layout_below="@id/chooseneighed"
+        android:background="#8f8f8f"
+        android:visibility="gone" />
+    
+    <include layout="@layout/sloading_error"/>
+</RelativeLayout>

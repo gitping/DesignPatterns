@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sendpk_main_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainbg_grayd7d7d7"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/stitlebar"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp">
+            
+            <!-- <TextView 
+                android:id="@+id/sendpk_no_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textSize="15sp"
+                android:text="快递单号"/> -->
+            
+            <ImageButton
+                android:id="@+id/sendpk_no_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/commit_expresslist_selector"
+                android:src="@drawable/icon_createpk_saosao"/>
+            
+            <EditText 
+                android:id="@+id/sendpk_exno_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/sendpk_no_tv"
+                android:layout_toLeftOf="@+id/sendpk_no_iv"
+                android:gravity="center_vertical"
+                android:background="@null"
+                android:textSize="15sp"
+                android:inputType="number"
+	        	android:digits="0123456789poiuytrewqasdfghjklmnbvcxzQWERTYUIOPLKJHGFDSAZXCVBNM"
+	        	android:maxLength="50"
+	        	android:singleLine="true"
+                android:hint="请扫描快递单号"/>
+                      
+        </RelativeLayout>
+        
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1.5px"
+            android:background="@color/mainbg_grayd7d7d7"/>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+            
+            <!-- <TextView 
+                android:id="@+id/sendpk_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textSize="15sp"
+                android:text="寄件人姓名"/> -->
+            
+            <EditText 
+                android:id="@+id/sendpk_name_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/sendpk_name_tv"
+                android:gravity="center_vertical"
+                android:background="@null"
+                android:textSize="15sp"
+                android:singleLine="true"
+                android:maxLength="20"
+                android:hint="寄件人姓名"/>
+        </RelativeLayout>
+        
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1.5px"
+            android:background="@color/mainbg_grayd7d7d7"/>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+            
+            <!-- <TextView 
+                android:id="@+id/sendpk_tel_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textSize="15sp"
+                android:text="寄件人手机号"/> -->
+            
+            <EditText 
+                android:id="@+id/sendpk_tel_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/sendpk_tel_tv"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:gravity="center_vertical"
+                android:background="@null"
+                android:textSize="15sp"
+                android:singleLine="true"
+                android:hint="寄件人手机号"/>
+        </RelativeLayout>
+        
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1.5px"
+            android:background="@color/mainbg_grayd7d7d7"/>
+        
+        <RelativeLayout 
+            android:id="@+id/sendpk_city_rl"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/commit_expresslist_selector"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+            
+            <!-- <TextView 
+                android:id="@+id/sendpk_city_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textSize="15sp"
+                android:text="省市"/> -->
+            <ImageButton
+                android:id="@+id/sendpk_city_ib"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:clickable="false"
+                android:background="@drawable/commit_expresslist_selector"
+                android:src="@drawable/icon_poi4"/>
+            
+            <Button
+                android:id="@+id/sendpk_city_bt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@+id/sendpk_city_ib"
+                android:gravity="center_vertical|left"
+                android:clickable="false"
+                android:background="@drawable/commit_expresslist_selector"
+                android:textSize="15sp"
+                android:textColor="#999999"
+                android:text="点击选择省市"/>
+        </RelativeLayout>
+        
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1.5px"
+            android:background="@color/mainbg_grayd7d7d7"/>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+            
+            <!-- <TextView 
+                android:id="@+id/sendpk_add_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textSize="15sp"
+                android:text="寄件人地址"/> -->
+            
+            <EditText 
+                android:id="@+id/sendpk_add_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/sendpk_add_tv"
+                android:gravity="center_vertical"
+                android:background="@null"
+                android:textSize="15sp"
+                android:singleLine="true"
+                android:hint="寄件人详细地址"/>
+        </RelativeLayout>
+        
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1.5px"
+            android:background="@color/mainbg_grayd7d7d7"/>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+            
+            <!-- <TextView 
+                android:id="@+id/sendpk_goods_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textSize="15sp"
+                android:text="物品"/> -->
+            
+            <EditText 
+                android:id="@+id/sendpk_goodsname_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/sendpk_goods_tv"
+                android:gravity="center_vertical"
+                android:background="@null"
+                android:textSize="15sp"
+                android:singleLine="true"
+                android:hint="物品"/>
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <Button 
+        android:id="@+id/sendpk_post_bt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/selector_maintakepk_button"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:text="预约寄件"/>
+
+</LinearLayout>

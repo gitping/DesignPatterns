@@ -1,0 +1,82 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		  <script src="jquery/jquery-1.9.1.min.js" type="text/javascript">
+        </script>
+        <script src="jquery/jquery-migrate-1.1.1.min.js" type="text/javascript">
+        </script>
+        <script src="jquery/jquery.mobile-1.3.1.min.js" type="text/javascript">
+        </script>
+	</head>
+    <script type="text/javascript">
+    	
+		
+		function setImage(path)
+  		{
+			alert(path + ":add");
+			$("body").prepend("<img src="+path+">");
+  		}
+    	//二维码
+	   function twodimensioncode(twodimensioncode){
+            confirm(twodimensioncode);
+            alert(twodimensioncode);          
+        }
+		
+		//判断是否是图片
+		function checkPic(obj)
+  		{
+  			var picPath = obj.value;
+  			var type = picPath.substring(picPath.lastIndexOf(".") + 1, picPath.length).toLowerCase();
+  			if (type!="jpg"&&type!="bmp"&&type!="gif"&&type!="png")
+  			{
+  				alert("请上传正确的图片格式!");
+  				return false;
+  			}
+  			return true;
+  		}
+  		// 图片预览
+  		function previewImage(divImage, obj, width, height)
+  		{
+			alert(图片预览);
+  			if (checkPic(obj))
+  			{
+  				var Preview = document.getElementById(divImage);
+  				var imgPath;	// 图片路径
+  				imgPath = (window.webkitURL ? webkitURL : URL).createObjectURL(obj.files[0]);
+				alert(imgPath);
+  				Preview.innerHTML = "<img id='imgPreview' src='"+imgPath+"' width='"+width+"' height='"+height+"'/>";
+  			}
+			alert(width);
+  		}
+
+    </script>
+    <body>
+    	
+		<img src="/mnt/sdcard/bnwifi/head27481736.jpeg">
+    	 <br><button type="button" onclick="window.JSIF.saveUserAndTabMain('18721033793','123456')">登录</button><br>
+		
+	    <br><button type="button" onclick="window.JSIF.logout()">logout</button><br>
+	    <br><button type="button" onclick="window.JSIF.changeNavigation(0,1)">导航</button><br>
+	    <br><button type="button" onclick="window.JSIF.twodimensioncode()">二维码</button><br>
+	    <br><button type="button" onclick="window.JSIF.disNavigation(false)">隐藏导航条</button><br>
+	    <br><button type="button" onclick="window.JSIF.disNavigation(true)">显示导航条</button><br>
+	    <br><button type="button" onclick="window.JSIF.changeErrorPage()">显示错误页面</button><br>
+	    <br><button type="button" onclick="window.JSIF.privateMessage(true)">显示私信提示</button><br>
+	    <br><button type="button" onclick="window.JSIF.privateMessage(false)">隐藏私信提示</button><br>
+	    <br><button type="button" onclick="window.JSIF.getImage('http://hy.bnwifi.com/wifidog/api2/upload.php',true,10)">取图片(剪切)</button><br>
+	    <br><button type="button" onclick="window.JSIF.getImage('http://hy.bnwifi.com/wifidog/api2/upload.php',false,10)">取图片(不剪切)</button><br>
+	    <br><button type="button" onclick="window.JSIF.browsePic(1,'http://hy.bnwifi.com/wifidog/api2/upload/bbs/2013-06-27-1372303820.jpeg::http://images-fast.digu365.com/cd3e34ed53c547b1b1613cfc509be3eb0002.jpeg')">浏览图片</button><br>
+		
+		<img src="/mnt/sdcard/bnwifi/head.png">
+		<img src="/storage/sdcard0/bnwifi/head.png">
+		<li><img name='bbsImg' src='/mnt/sdcard/bnwifi/head.png' width='20' height='20'/></li>
+		
+	    <input type="file" id="picPath" name="doc"
+			onChange="previewImage('Preview',this,120,120);" />
+		<div id="Preview" style="filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale); width: 1px; height: 1px;">
+		</div>
+		
+		
+			
+    </body>
+</html>

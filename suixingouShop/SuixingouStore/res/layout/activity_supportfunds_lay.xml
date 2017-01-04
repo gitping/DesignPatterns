@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <include layout="@layout/stitlebar" />
+
+     <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="vertical"
+        android:scrollbars="none" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="1 什么是扶持基金?"
+            android:textColor="#2d2d2d"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/shopsethui"
+            android:text="扶持基金是圆通集团为扶持社区商户开设随心购网店而设立的资金扶持项目，每个与圆通合作的商户都会得到最高10000元的扶持奖励。"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="2 扶持基金会马上到账吗，如何获得？"
+            android:textColor="#2d2d2d"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/shopsethui"
+            android:text="扶持基金不会立即转到您的帐户内，您可以通过推荐消费者使用您店铺的邀请码注册随心购获得基金，还可以从消费者使用的红包订单中获得返现。获得红包的途径可以点击本页右上角。"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="3 扶持基金发放的周期是？"
+            android:textColor="#2d2d2d"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/shopsethui"
+            android:text="扶持基金的发放周期为商户完成注册随心购开始计算，为期30天。"
+            android:textSize="16sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="4 超过了扶持基金的发放周期还能继续申请吗？"
+            android:textColor="#2d2d2d"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/shopsethui"
+            android:text="超过了扶持基金的发放周期，可以向当地的分公司进行申请延长周期继续申请。"
+            android:textSize="16sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="5 从扶持基金得到的款项，如何结算？"
+            android:textColor="#2d2d2d"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/shopsethui"
+            android:text="首先需要从页面下方入口进入，绑定银行卡，圆通集团的财务每周把上周所获得的扶持金额转入您所绑定的银行帐户内。"
+            android:textSize="16sp" />
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

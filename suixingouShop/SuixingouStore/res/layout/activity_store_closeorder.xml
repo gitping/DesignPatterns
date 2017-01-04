@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/finacial_bg"
+   >
+
+    <include 
+        android:id="@+id/topbar_close"
+        layout="@layout/stitlebar" />
+    
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="vertical"
+        android:layout_below="@+id/topbar_close"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#fff"
+        android:scrollbars="none" >
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:singleLine="true"
+        android:text="放弃原因"
+        android:textSize="20sp" />
+    <ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/shopset_line"
+        />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/closeorder_but01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="已和客户协商达成一致,取消订单"
+            android:textColor="@color/shopsethui"
+            android:textSize="16sp"
+            android:checked="true"
+             />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/suixin_line_xu"
+         />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/closeorder_but02"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="超出服务范围"
+            android:textColor="@color/shopsethui"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/suixin_line_xu"
+         />
+    
+    <LinearLayout 
+        android:id="@+id/ll_stockout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/closeorder_but03"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:text="缺货"
+            android:textColor="@color/shopsethui"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/suixin_line_xu"
+         />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/closeorder_but04"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:text="其它"
+            android:textColor="@color/shopsethui"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#e2e2e2"
+        android:padding="1dp" >
+
+        <EditText
+            android:id="@+id/store_closeorder_yjfk"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#fff"
+            android:maxLength="50"
+            android:hint="  其它原因,打几个字,正好活动您的手指"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/store_closeorder_overorder"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/FLeftMenuHeidth"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/abandon_button_selector"
+        android:gravity="center"
+        android:text="放弃订单"
+        android:textColor="#ff7c3c"
+        android:textSize="18sp" />
+</LinearLayout>
+</ScrollView>
+
+    		    <include layout="@layout/sloading_error"/>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, FastContactSearchDemoActivity!</string>
+    <string name="app_name">Libs_Frame_View</string>
+    
+    <!-- Calendar -->
+    <string name="day_name_format">EEE</string>
+  	<string name="invalid_date">选择时间必须在 %1$s 到 %2$s 之间.</string>
+  	<string name="month_name_format">MMMM yyyy</string>
+
+</resources>

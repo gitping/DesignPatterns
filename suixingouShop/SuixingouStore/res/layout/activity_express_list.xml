@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" 
+    	android:background="#d7d7d7">
+        
+	    <include layout="@layout/stitlebar"/>
+	    
+	    <LinearLayout 
+	        android:id="@+id/express_filter_ll"
+	        android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="horizontal">
+	        
+	        <com.frame.view.button.ScreeningButton
+	            android:id="@+id/express_status_sb"
+	            android:layout_width="match_parent"
+	    		android:layout_height="wrap_content" 
+	    		android:layout_weight="1"/>
+	        
+	        <com.frame.view.button.ScreeningButton
+	            android:id="@+id/express_time_sb"
+	            android:layout_width="match_parent"
+	    		android:layout_height="wrap_content" 
+	    		android:layout_weight="1"/>
+	    </LinearLayout>
+	    
+	    <RelativeLayout 
+	        android:id="@+id/express_contant_ll"
+	        android:layout_width="match_parent"
+		    android:layout_height="match_parent">
+	    
+		    <com.yto.suixingoustore.util.view.listview.XListView 
+		         android:id="@+id/express_list_lv"
+		         android:layout_width="match_parent"
+		         android:layout_height="match_parent"
+		         android:layout_marginLeft="10dp"
+		         android:layout_marginRight="10dp"
+		         android:divider="@null"
+		         android:dividerHeight="0dp"
+		         android:scrollbars="none"
+		         android:listSelector="#00000000"/> 
+		         
+		    <LinearLayout
+	             android:id="@+id/express_canvers_ll"
+	             android:layout_width="match_parent"
+	             android:layout_height="match_parent"
+	             android:layout_marginTop="2dp"
+	             android:background="#99000000"
+	             android:focusable="true"
+	             android:orientation="horizontal"
+	             android:visibility="gone" />
+	    
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include
+        layout="@layout/nodata_tips_layout"
+        android:visibility="visible" />
+    
+</RelativeLayout>

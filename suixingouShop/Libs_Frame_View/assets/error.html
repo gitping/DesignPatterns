@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="target-densitydpi=device-dpi, width=480">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <title>Client</title>
+        <style>
+            /* Reset browser css
+            ------------------------------------------------------------ */
+            html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                outline: 0;
+                font-size: 100%;
+                vertical-align: baseline;
+                background: transparent;
+            }
+            ol, ul { list-style: none; }
+            :link, :visited { text-decoration: none; }
+            blockquote, q { quotes: none; }
+            blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+            ins { text-decoration: none; }
+            del { text-decoration: line-through; }
+            table { border-collapse: collapse; border-spacing: 0; }
+            img { max-width: 100%;width: auto;height: auto; }
+            a { text-decoration: none; }
+            :focus { outline: 0; }
+
+            /* Make html5 tags in IE display as block level */
+            article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+            /* Clearfix
+            ------------------------------------------------------------ */
+            .clearfix:before,.clearfix:after { content: "";display: table;}
+            .clearfix:after { clear: both;}
+            .clearfix { zoom: 1;}
+
+            /* Scroll bar
+            ------------------------------------------------------------ */
+            ::-webkit-scrollbar {
+                width: 0px;
+            }
+
+
+
+            /* ui */
+                /* tab */
+                .container.withtabcontainer .toptabcontainer {
+                  width: 480px;
+                  position: fixed;
+                  top: 0;
+                  left: 50%;
+                  margin-left: -240px;
+                }
+                .container.withtabcontainer {
+                  padding-top: 60px;
+                }
+                .toptabcontainer {
+                    background: #e84322;
+                    color: #fff;
+                    height: 60px;
+                    line-height: 60px;
+                    text-align: center;
+                    /*overflow: hidden;*/
+                    font-size: 30px;
+                    width: 100%;
+                    position: relative;
+                    z-index: 999;
+                    cursor: default;
+                }
+
+                .hidden {
+                    display: none;
+                }
+                body {
+                    background: #fff;
+                }
+                body,input,textarea,.button {
+                    font-size: 22px;
+                    color: #666;
+                    font-family: 'microsoft yahei', sans-serif;
+                }
+                input:focus,textarea:focus {
+                    z-index: 990 !important;
+                }
+                #main {
+                    position: relative;
+                    width: 480px;
+                    margin: 0 auto;
+                }
+                #containers {
+                    overflow-x: hidden;
+                }
+                .container {
+                    width: 480px;
+                    overflow: hidden;
+                }
+                .content {
+                    padding: 6px;
+                    line-height: 1.7em;
+                    position: relative;
+                }
+                img {
+                    display: block;
+                    max-width: 100%;
+                    height: auto;
+                }
+                * {
+                    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);  
+                }
+                .container.error img {
+                    width: 272px;
+                    display: block;
+                    margin: 0 auto;
+                }
+
+                /* back */
+                .toptabcontainer .back {
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    padding-left: 25px;
+                    padding-right: 25px;
+                    top: 0;
+                    height: 60px;
+                    line-height: 60px;
+                    width: 20px;
+                    color: #eee !important;
+                    cursor: pointer;
+                    background: url(back.png) no-repeat 25px 16px;
+                    background-size: 20px;
+                    text-indent: -999em;
+                    z-index: 9999;
+                }
+                .toptabcontainer .back:active {
+                    background-color: rgba(0,0,0,0.3) !important;
+                    -moz-transition: all 0 ease 0s;
+                    -o-transition: all 0 ease 0s;
+                    -webkit-transition: all 0 ease 0s;
+                    transition: all 0 ease 0s;       
+                }
+                .toptabcontainer .back a {
+                    display: block;
+                    width: 70px;
+                    height: 60px;
+                    margin-left: -25px;
+                }               
+        </style>
+    </head>
+    <body>
+        <div id="main">
+            <div id="containers">
+                <div class="container error">
+                    <div class="toptabcontainer">
+                      <div class="back"><a id="back_path" href="#"></a></div>
+                      <span>访问出现问题</span>
+                    </div>
+                    <div class="content">
+                        <img src="error.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            function setBackPath (path) {
+                document.getElementById("back_path").href = path;
+            }
+        </script>
+    </body>
+</html>

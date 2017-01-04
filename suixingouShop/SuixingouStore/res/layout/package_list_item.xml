@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/mainbg_grayd7d7d7">
+    
+    <!-- <LinearLayout 
+	        android:id="@+id/expressitem_date_ll"
+	        android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:gravity="center"
+	    	android:padding="10dp"
+	    	android:background="#00000000">
+	    
+		    <Button 
+		        android:id="@+id/expressitem_date_bt"
+		        android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:gravity="center"
+		    	android:textColor="#ffffff"
+		    	android:textSize="13sp"
+		    	android:text="日期"
+		    	android:background="@drawable/home_time_bg"/>
+		    
+	</LinearLayout> -->
+	<RelativeLayout 
+	    android:id="@+id/packageitem_contant_rl"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/commit_expresslist_selector"
+	    android:layout_marginTop="10dp">
+	    
+	    <ImageView
+	        android:id="@+id/packageitem_statuspic_iv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:src="@drawable/pic_status_reject"
+	        android:visibility="gone"/>
+	
+	    <LinearLayout 	        
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"	        
+	        android:gravity="center_vertical"
+	        android:background="#00000000"     
+	        android:orientation="horizontal">
+			    
+	        <ImageView 
+	            android:id="@+id/packageitem_company_iv"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="2.5"
+	            android:padding="5dp"
+	            android:src="@drawable/exmoren"/>
+		        
+	        <LinearLayout 
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:paddingTop="10dp"
+	            android:paddingBottom="10dp"
+	            android:orientation="vertical">
+	        
+		        <LinearLayout 
+		            android:layout_width="match_parent"
+		        	android:layout_height="wrap_content"
+		        	android:gravity="center"
+		        	android:orientation="horizontal">
+		            
+		            <TextView 
+			            android:id="@+id/packageitem_position_tv"
+			            android:layout_width="wrap_content"
+			         	android:layout_height="wrap_content"
+			         	android:layout_gravity="center_vertical"
+			         	android:textColor="#525252"
+			         	android:textSize="16sp"
+			         	android:text="第x件"/>
+		            
+		            <TextView 
+			            android:layout_width="wrap_content"
+			         	android:layout_height="wrap_content"
+			         	android:layout_gravity="bottom"
+			         	android:layout_marginLeft="5dp"
+			         	android:textColor="#525252"
+			         	android:textSize="16sp"
+			         	android:text="包裹编号："/>
+		            
+		            <TextView 
+		                android:id="@+id/packageitem_num_tv"
+			            android:layout_width="wrap_content"
+			         	android:layout_height="wrap_content"
+			         	android:layout_gravity="bottom"
+			         	android:layout_marginLeft="2dp"
+			         	android:textColor="@color/mainbutton_redf26221"
+			         	android:textSize="16sp"
+			         	android:text="0"/>
+		        </LinearLayout>
+		        
+		        <LinearLayout 
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="8dp"
+		            android:gravity="center_vertical"
+		            android:orientation="horizontal">
+		        	
+		            <TextView 
+			            android:layout_width="wrap_content"
+			        	android:layout_height="wrap_content"
+			        	android:textColor="#525252"
+			        	android:textSize="14sp"
+			        	android:text="快递单号："/>
+		            
+			        <TextView 
+			            android:id="@+id/packageitem_pkno_tv"
+			            android:layout_width="wrap_content"
+			        	android:layout_height="wrap_content"
+			        	android:textColor="#525252"
+			        	android:textSize="14sp"
+			        	android:text="1111111111"/>
+		        
+		        </LinearLayout>
+		        
+		        <LinearLayout 
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="8dp"
+		            android:gravity="center_vertical"
+		            android:orientation="horizontal">
+		        	
+		            <TextView 
+			            android:layout_width="wrap_content"
+			        	android:layout_height="wrap_content"
+			        	android:textColor="#525252"
+			        	android:textSize="14sp"
+			        	android:text="包裹收入时间："/>
+		            
+			        <TextView 
+			            android:id="@+id/packageitem_date_tv"
+			            android:layout_width="wrap_content"
+			        	android:layout_height="wrap_content"
+			        	android:textColor="#525252"
+			        	android:textSize="14sp"
+			        	android:text=""/>
+		        
+		        </LinearLayout>
+		        
+		        <RelativeLayout 
+		            android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="8dp">
+		        
+			        <LinearLayout 
+			            android:id="@+id/packageitem_type1_ll"
+			            android:layout_width="wrap_content"
+			        	android:layout_height="wrap_content"
+			        	android:gravity="center_vertical"
+			        	android:orientation="horizontal">
+			            
+			            <TextView 
+				            android:layout_width="wrap_content"
+				         	android:layout_height="wrap_content"
+				         	android:textColor="#525252"
+				         	android:textSize="14sp"
+				         	android:text="收件人:"/>
+			            
+			            <LinearLayout 
+			                android:id="@+id/packageitem_ordertel_ll"
+			                android:layout_width="180dp"
+			                android:layout_height="40dp"
+			                android:layout_marginLeft="5dp"
+			                android:gravity="center"
+			                android:padding="3dp"
+			                android:background="@drawable/selector_mainsaosao_button">
+			                    
+			                <ImageView 
+				                android:layout_width="wrap_content"
+				                android:layout_height="wrap_content"
+				                android:contentDescription="@null"
+				                android:src="@drawable/icon_pklist_tel"/>
+			                
+				            <TextView 
+				                android:id="@+id/packageitem_tel_tv"
+					            android:layout_width="wrap_content"
+					         	android:layout_height="wrap_content"
+					         	android:layout_marginLeft="5dp"
+					         	android:textColor="@color/main_white"
+					         	android:textSize="13sp"
+					         	android:text="12345678901"/>
+				            
+			            </LinearLayout>
+			        </LinearLayout>
+			        
+			        <LinearLayout 
+			            android:id="@+id/packageitem_type2_ll"
+			            android:layout_width="wrap_content"
+			        	android:layout_height="wrap_content"
+			        	android:gravity="center_vertical"
+			        	android:orientation="horizontal">
+			            
+			            <Button
+			                android:id="@+id/packageitem_tel2_bt"
+			                android:layout_width="wrap_content"
+			                android:layout_height="40dp"
+			                android:gravity="center"
+			                android:paddingLeft="5dp"
+			                android:paddingRight="5dp"
+			                android:background="@drawable/selector_mainsaosao_button"
+			                android:drawableLeft="@drawable/icon_pklist_tel"
+			                android:textSize="13sp"
+			                android:textColor="@color/white"
+			                android:text="18657895874"/>
+			            
+			            <Button
+			                android:id="@+id/packageitem_returnloss_bt"
+			                android:layout_width="wrap_content"
+			                android:layout_height="40dp"
+			                android:layout_marginLeft="10dp"
+			                android:gravity="center"
+			                android:paddingLeft="5dp"
+			                android:paddingRight="5dp"
+			                android:background="@drawable/selector_maintakepk_button"
+			                android:drawableLeft="@drawable/icon_problempk_saosao"
+			                android:textSize="13sp"
+			                android:textColor="@color/white"
+			                android:text="退件扫码"/>
+			        </LinearLayout>
+		        </RelativeLayout>
+		    </LinearLayout>
+		    
+	        <ImageButton
+	            android:id="@+id/packageitem_more_ib"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="2.5"
+	            android:paddingTop="5dp"
+	            android:paddingRight="5dp"
+	            android:paddingBottom="5dp"
+	            android:background="@null"
+	            android:src="@drawable/icon_operationlist_more"/>
+	    </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

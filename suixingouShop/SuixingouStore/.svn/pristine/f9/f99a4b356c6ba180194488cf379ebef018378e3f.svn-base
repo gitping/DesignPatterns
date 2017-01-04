@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<include layout="@layout/stitlebar"/>
+	
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+	    
+        <com.baidu.mapapi.map.MapView
+	        android:id="@+id/address_map_mv"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:clickable="true" >
+        </com.baidu.mapapi.map.MapView>
+        
+        <LinearLayout
+            android:id="@+id/address_search_ll"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/shape_gray_stroke"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/icon_address_choice"/>
+             
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp"
+                android:text="搜索地址"/>
+        </LinearLayout>
+        
+	    <RelativeLayout
+	        android:id="@+id/address_name_rl"
+	        android:layout_width="match_parent"
+	        android:layout_height="60dp"
+	        android:layout_alignParentBottom="true"
+	        android:visibility="visible"
+	        android:background="@drawable/shape_gray_stroke">
+	        
+	        <LinearLayout 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:orientation="vertical">
+	            
+	            <TextView 
+	                android:id="@+id/address_name_tv1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textSize="18sp"
+	                android:text=""/>
+	            
+	            <TextView 
+	                android:id="@+id/address_name_tv2"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textSize="15sp"
+	                android:singleLine="true"
+	                android:ellipsize="marquee"
+	                android:text=""/>
+	            
+	        </LinearLayout>
+	        
+	        <Button 
+	            android:id="@+id/address_name_bt"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginRight="10dp"
+	            android:layout_centerVertical="true"
+	            android:layout_alignParentRight="true"
+	            android:background="@drawable/selector_mainsaosao_button"
+	            android:paddingTop="10dp"
+	            android:paddingBottom="10dp"
+	            android:paddingLeft="20dp"
+	            android:paddingRight="20dp"
+	            android:textColor="@color/white"
+	            android:textSize="18sp"
+	            android:text="确定"/>
+	    </RelativeLayout>
+	    
+	    <RelativeLayout 
+	        android:id="@+id/address_location_rl"
+	        android:layout_width="match_parent"
+	        android:layout_height="60dp"
+	        android:layout_alignParentBottom="true"
+	        android:visibility="invisible"
+	        android:background="@drawable/shape_gray_stroke">
+	        
+	        <TextView 
+	            android:id="@+id/address_location_tv"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerInParent="true"
+	            android:textSize="22sp"
+	            android:text="定位中......"/>
+	    </RelativeLayout>
+	</RelativeLayout>
+</LinearLayout>

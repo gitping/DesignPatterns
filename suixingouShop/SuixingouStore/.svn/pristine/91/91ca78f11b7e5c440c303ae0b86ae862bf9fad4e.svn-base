@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dip"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:padding="10dip" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/button_delette"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/delete_seletor"
+/>
+            
+                <LinearLayout 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     android:layout_centerVertical="true"
+                   android:layout_toRightOf="@+id/button_delette"
+                   android:orientation="vertical"
+                   android:layout_marginLeft="8dp"
+                    >
+        <TextView
+            android:id="@+id/iproductname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="百事可乐灌装"
+            android:textColor="@color/black"
+           android:maxEms="7"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/iproductv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="250ml灌装"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:textSize="12sp" />
+        </LinearLayout>
+                <TextView
+                    android:id="@+id/ieditprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center_vertical|left"
+                    android:textColor="@color/mainColor"
+                    android:focusableInTouchMode="true"
+                    android:maxLength="7"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:paddingLeft="8dp"
+                    android:background="@drawable/bianji_inputbox_yuan_all"
+                    android:textSize="13sp" />
+
+    
+               
+        </RelativeLayout>
+
+
+</LinearLayout>

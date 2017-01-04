@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/mainbg_grayd7d7d7"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    
+ <include
+           
+            layout="@layout/stitlebar" />
+ 
+ <LinearLayout 
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal"
+     >
+     <TextView 
+     
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginLeft="20dp"
+     android:textSize="13sp"
+     android:text="你的手机号为："
+     android:textColor="#2d2d2d"
+     android:layout_marginTop="30dp"
+     />
+     <TextView 
+     android:id="@+id/tel_num"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginLeft="5dp"
+     android:textColor="@color/maintext_gray3b3b3e"
+     android:textSize="13sp"
+     android:text="15265456959"
+     android:layout_marginTop="30dp"
+     />
+     
+ </LinearLayout>
+ 
+ <TextView 
+     
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginLeft="20dp"
+     android:textSize="13sp"
+     android:text="请输入收到的短信验证码"
+     android:textColor="#2d2d2d"
+     
+     />
+ <!-- login_inputbox_bj -->
+   <EditText 
+    android:id="@+id/fill_in_id_code"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:gravity="center_vertical"
+   android:layout_marginTop="20dp"
+    android:paddingLeft="10dp"
+    android:background="@color/white"
+    android:hint="请输入验证码"
+    android:textColorHint="#cccccc"
+    android:inputType="number"
+    />
+   <TextView 
+           android:id="@+id/show_error"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="12sp"
+           android:background="#e81929"
+           android:gravity="center"
+           android:layout_gravity="center_horizontal"
+           android:padding="5dp"
+           android:visibility="invisible"
+           android:drawableLeft="@drawable/icon_warn"
+           android:text="输的字符有误"
+           android:textColor="#ffffff"
+           />
+   <RelativeLayout 
+       android:layout_width="160dp"
+       android:layout_height="50dp"
+       android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal"
+       >
+       
+       <LinearLayout 
+       android:id="@+id/resend_id_code"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="horizontal"
+       android:background="#c9c9c9"
+       android:clickable="false"
+       android:gravity="center"
+       >
+       <TextView 
+           android:id="@+id/secend_count"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="@color/mainbutton_redf26221"
+           android:text="59秒"
+           />
+       <TextView 
+           android:id="@+id/no_change"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="#767676"
+           android:layout_marginLeft="5dp"
+           android:text="重新发送验证码"
+           />
+   </LinearLayout>
+   </RelativeLayout>
+   
+  
+
+</LinearLayout>

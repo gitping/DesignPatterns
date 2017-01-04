@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fwelcomeabg"
+
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="bottom|center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp" >
+
+        <TextView
+            android:id="@+id/fwel_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/mainbutton_redf26221" />
+
+        <TextView
+            android:id="@+id/loading_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:text="应用正在下载"
+            android:textColor="@color/mainbutton_redf26221"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0%"
+            android:textColor="@color/mainbutton_redf26221"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/wel_Lin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dip"
+            android:gravity="center" >
+
+            <ProgressBar
+                android:id="@+id/wel_pro"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:indeterminateDrawable="@drawable/common_custom_progress_rotate"
+                android:max="10000"              
+                android:visibility="gone"/>"
+
+            <TextView
+                android:id="@+id/wel_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:text="数据加载中..."
+                android:textColor="@color/mainbutton_redf26221"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/wel_per_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/wel_per"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dip"
+                    android:text="0"
+                    android:textColor="#2d2d2d" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="%"
+                    android:textColor="@color/mainbutton_redf26221" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/wel_noNet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/neterror"
+        android:scaleType="fitXY"
+        android:visibility="gone" />
+
+</RelativeLayout>

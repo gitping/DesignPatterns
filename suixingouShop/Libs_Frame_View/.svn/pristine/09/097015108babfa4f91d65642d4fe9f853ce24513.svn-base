@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ProgressBar 
+            android:id="@+id/sxgfooter_pb"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:indeterminateDuration="800"
+            style="@style/PullToRefreshProgressBar"/>
+        
+        <TextView 
+            android:id="@+id/sxgfooter_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:textSize="14sp"
+            android:text="加载中..."/>
+	</LinearLayout>   
+</RelativeLayout>

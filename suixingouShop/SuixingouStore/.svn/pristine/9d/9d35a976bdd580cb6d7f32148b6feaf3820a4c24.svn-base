@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:paddingTop="3dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:paddingBottom="20dp"
+         >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/whatorder"
+                android:layout_width="0dip"
+                android:layout_weight="1.0"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:text="商品订单"
+                android:textColor="#8d8d8d"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/sm_callCustom"
+                android:layout_width="0dip"
+                android:layout_weight="1.0"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/dingdan_button_phone_all"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="30dp"
+                android:text="给买家拨打电话"
+                android:textColor="#33b910"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_statusdes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取消原因: "
+                android:textColor="#8d8d8d"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/statusdes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/home_btn"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="10dip" 
+            android:scaleType="fitXY"
+            android:src="@drawable/shopset_line" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="地址: "
+                android:textSize="18sp"
+                android:textColor="@color/shopsethui"
+                />
+
+            <TextView
+                android:id="@+id/storemain_djd_address"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="徐汇区桂林路389号1楼501室"
+                android:textColor="@color/home_btn"
+                android:textSize="18sp" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="期望送达时间: "
+                android:textSize="18sp"
+                android:textColor="@color/shopsethui"
+                />
+
+        <TextView
+            android:id="@+id/storemain_djd_sdtime"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="今天18:00  还剩120分钟"
+            android:textColor="@color/home_btn"
+            android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="订单编号: "
+                android:textSize="18sp"
+                android:textColor="@color/shopsethui"
+                />
+
+        <TextView
+            android:id="@+id/storemain_order_ordercode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100000001"
+            android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_invoice"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发票抬头 "
+                android:textSize="18sp"
+                android:textColor="#ff7c3c"
+                />
+
+        <TextView
+            android:id="@+id/storemain_order_invoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:gravity="center_vertical"
+            android:text="上海圆通新龙电子商务有限公司"
+            android:background="@drawable/dingdan_box_invoice_bj"
+            android:textSize="18sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="10dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/shopset_line" />
+
+        <LinearLayout
+            android:id="@+id/contains"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/ordermtitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="商品清单"
+                android:textColor="#8d8d8d"
+                android:textSize="18sp" />
+
+            <ListView
+                android:id="@+id/productDetailsListview"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:divider="@null"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="10dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/shopset_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="订单总额"
+                    android:textColor="#8d8d8d"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/sm_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text=" 50.00"
+                    android:textColor="#33b010"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/emailgooda"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="货物清单"
+                android:textColor="#8d8d8d"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/detailgoods"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="婴儿床、通车、饼干"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="总重量"
+                    android:textColor="@color/shopsethui"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/allweight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="5千克"
+                    android:textColor="#33b010"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="10dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/shopset_line" />
+
+        <LinearLayout
+            android:id="@+id/ll_remark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="备注: "
+                android:textColor="#8d8d8d"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/sm_remark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/home_btn"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/sm_closeorder"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:background="@drawable/abandon_button_selector"
+                android:gravity="center"
+                android:paddingBottom="10dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:paddingTop="10dip"
+                android:text="放弃订单"
+                android:textColor="#ff7c3c"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/sm_takeorder"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:background="@drawable/takeorder_button_selector"
+                android:gravity="center"
+                android:paddingBottom="10dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:paddingTop="10dip"
+                android:text="接单"
+                android:textColor="#33b010"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+     <!--   <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/list_line" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/shopset_line" />  -->
+    </LinearLayout>
+
+</LinearLayout>

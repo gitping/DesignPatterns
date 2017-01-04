@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="#ffffff" >
+	
+	<LinearLayout
+	    android:id="@+id/screeningbutton_ll"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+		android:paddingTop="10dp"
+		android:paddingLeft="10dp"
+		android:paddingRight="10dp"
+	    android:gravity="center"
+	    android:orientation="horizontal" >
+	
+	    <TextView
+	        android:id="@+id/screeningbutton_tv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="5dp"
+	        android:singleLine="true"
+	        android:textColor="#525252"
+	        android:textSize="15sp" />
+	
+	    <ImageView
+	        android:id="@+id/screeningbutton_ivarrow_iv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:contentDescription="@null"
+	        android:layout_marginLeft="5dp" />
+	</LinearLayout>
+	
+	<ImageView
+	    android:id="@+id/screeningbutton_ivline"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/screeningbutton_ll"
+	    android:contentDescription="@null"
+	    android:background="@drawable/home_tab_line_sel"
+	    android:visibility="invisible" />
+	
+	<View
+	    android:id="@+id/screeningbutton_view"
+	    android:layout_width="match_parent"
+	    android:layout_height="1.5px"
+	    android:layout_alignBottom="@+id/screeningbutton_ivline"
+	    android:background="#959595" />
+</RelativeLayout>

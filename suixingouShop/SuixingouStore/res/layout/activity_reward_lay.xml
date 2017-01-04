@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include android:id="@+id/retop" layout="@layout/stitlebar"/>
+    
+    <RelativeLayout
+        android:id="@+id/relatop" 
+        android:layout_below="@id/retop"
+        android:layout_margin="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView 
+            android:id="@+id/inwhattext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="待结算"
+            android:textSize="16sp"
+            android:layout_alignParentLeft="true"
+            />
+        <TextView
+            android:id="@+id/whatspan" 
+            android:layout_toRightOf="@id/inwhattext"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2014.05.05"
+            android:textSize="16sp"
+            android:textColor="@color/shopsethui"
+            />
+        <TextView
+            android:id="@+id/intotalmoney" 
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/shopset_orange"
+            android:textSize="16sp"
+            android:text="￥ 10.00元"
+            />
+        <TextView
+            android:layout_toLeftOf="@id/intotalmoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/shopset_orange"
+            android:textSize="16sp"
+            android:text="总额: "
+            />
+        
+    </RelativeLayout>
+    
+    <ImageView 
+        android:id="@+id/fuckline"
+        android:layout_below="@id/relatop"
+        android:layout_width="fill_parent"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shopset_line"
+        />
+    
+    <ListView 
+        android:id="@+id/rewardlistview"
+        android:layout_below="@id/fuckline"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:divider="@null"
+        android:visibility="visible"
+        android:background="#fff"
+        />
+    
+     <include
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        layout="@layout/sloading_error"
+        android:visibility="visible" />
+    
+
+</RelativeLayout>

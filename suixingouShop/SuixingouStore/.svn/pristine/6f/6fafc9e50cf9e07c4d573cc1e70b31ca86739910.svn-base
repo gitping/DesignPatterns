@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainbg_grayd7d7d7"
+    android:orientation="vertical" >
+    <include layout="@layout/stitlebar" />
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:scrollbars="none">
+        
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="vertical">
+	        
+		    <TextView 
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="#f0f0ed"
+		        android:textSize="16sp"
+		        android:padding="5dp"
+		        android:gravity="center_horizontal"
+		        android:textColor="#666666"
+		        android:text="热门快递公司"
+		        />
+		    <com.frame.view.gridview.NoScrollGridView
+		        android:id="@+id/gridview"
+		        android:background="#f0f0ed"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:verticalSpacing="1.5dp"
+		        android:numColumns="4"
+		        android:horizontalSpacing="1.5dp"
+		        android:listSelector="#00000000"
+		        android:gravity="center_horizontal"
+		        /> 
+		       <TextView 
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:textSize="16sp"
+		        android:padding="5dp"
+		        android:textColor="#666666"
+		        android:background="#f0f0ed"
+		        android:gravity="center_horizontal"
+		        android:text="全部快递公司"
+		        /> 
+		    <com.frame.view.gridview.NoScrollGridView
+		        android:id="@+id/collect_listview"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:background="#f0f0ed"
+		        android:verticalSpacing="1.5dp"
+		        android:numColumns="4"
+		        android:horizontalSpacing="1.5dp"
+		        android:listSelector="#00000000"
+		        android:gravity="center_horizontal"
+		        />     
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

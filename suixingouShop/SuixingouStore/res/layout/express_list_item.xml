@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#00000000">
+    
+    <LinearLayout 
+	        android:id="@+id/expressitem_date_ll"
+	        android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:gravity="center"
+	    	android:padding="10dp"
+	    	android:background="#00000000">
+	    
+		    <Button 
+		        android:id="@+id/expressitem_date_bt"
+		        android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:gravity="center"
+		    	android:textColor="#ffffff"
+		    	android:textSize="13sp"
+		    	android:text="日期"
+		    	android:background="@drawable/home_time_bg"/>
+		    
+	</LinearLayout>
+		
+    <RelativeLayout 
+        android:id="@+id/expressitem_contant_rl"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:padding="10dp"
+    	android:background="@drawable/commit_expresslist_selector">
+        
+        <ImageButton 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:src="@drawable/fmain_item_right"/>
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+        
+	        <LinearLayout 
+	            android:id="@+id/expressitem_ordercom_ll"
+	            android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:orientation="horizontal">
+	            
+	            <TextView 
+		            android:id="@+id/expressitem_company_tv"
+		            android:layout_width="wrap_content"
+		         	android:layout_height="wrap_content"
+		         	android:layout_gravity="center_vertical"
+		         	android:textColor="#525252"
+		         	android:textSize="18sp"
+		         	android:text="顺丰包裹"/>
+	            
+	            <TextView 
+	                android:id="@+id/expressitem_status_tv"
+		            android:layout_width="wrap_content"
+		         	android:layout_height="wrap_content"
+		         	android:layout_gravity="bottom"
+		         	android:layout_marginLeft="5dp"
+		         	android:textColor="#525252"
+		         	android:textSize="12sp"
+		         	android:text="自提点在站"/>
+	        </LinearLayout>
+	        
+	        <TextView 
+	            android:id="@+id/expressitem_ordernum_tv"
+	            android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:layout_marginTop="8dp"
+	        	android:textColor="#525252"
+	        	android:textSize="16sp"
+	        	android:text="1111111111"/>
+	                
+	        <LinearLayout 
+	            android:id="@+id/expressitem_ordertel_ll"
+	            android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:gravity="center_vertical"
+	        	android:orientation="horizontal">
+	            
+	            <TextView 
+		            android:layout_width="wrap_content"
+		         	android:layout_height="wrap_content"
+		         	android:textColor="#525252"
+		         	android:textSize="16sp"
+		         	android:text="客户手机号:"/>
+	            
+	            <TextView 
+	                android:id="@+id/expressitem_tel_tv"
+		            android:layout_width="wrap_content"
+		         	android:layout_height="wrap_content"
+		         	android:layout_marginLeft="5dp"
+		         	android:textColor="#525252"
+		         	android:textSize="16sp"
+		         	android:text="12345678901"/>
+	            
+	            <ImageView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="5dp"
+	                android:contentDescription="@null"
+	                android:src="@drawable/dingdan_icon_phone"/>
+	        </LinearLayout>
+	    </LinearLayout>
+    </RelativeLayout>	
+</LinearLayout>

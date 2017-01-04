@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pop_lin3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sms_choice_nomal"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+        >
+         <TextView
+        android:id="@+id/pop3_text1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:text="份" />
+
+    <TextView
+        android:id="@+id/pop3_text2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+                android:gravity="center"
+        android:layout_weight="1"
+        android:text="瓶" />
+
+    <TextView
+        android:id="@+id/pop3_text3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+                android:gravity="center"
+        android:layout_weight="1"
+        android:text="袋" />
+
+    <TextView
+        android:id="@+id/pop3_text4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+                android:gravity="center"
+        android:layout_weight="1"
+        android:text="罐" />
+                    <TextView
+        android:id="@+id/pop3_text5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+                android:gravity="center"
+        android:layout_weight="1"
+        android:text="个" />
+
+
+    </LinearLayout>
+   
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+        >
+    <TextView
+        android:id="@+id/pop3_text6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+                android:gravity="center"
+        android:layout_weight="1"
+        android:text="支" />
+
+    <TextView
+        android:id="@+id/pop3_text7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+                android:gravity="center"
+        android:layout_weight="1"
+        android:text="盒" />
+
+    <TextView
+        android:id="@+id/pop3_text8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+                android:gravity="center"
+        android:layout_weight="1"
+        android:text="包" />
+        <TextView
+        android:id="@+id/pop3_text9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+                android:gravity="center"
+        android:layout_weight="1"
+        android:text="坛" />
+
+    <TextView
+        android:id="@+id/pop3_text10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+                android:gravity="center"
+        android:layout_weight="1"
+        android:text="件" />
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

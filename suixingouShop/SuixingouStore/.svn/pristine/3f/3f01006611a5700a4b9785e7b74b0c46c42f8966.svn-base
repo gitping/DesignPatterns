@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/stitlebar"/>
+
+    <Button 
+        android:id="@+id/sms_pickup_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:background="@drawable/sms_choice_selector"
+        android:padding="15dp"
+        android:textSize="18sp"
+        android:text="取件通知短信模板编辑"/>
+    
+    <Button 
+        android:id="@+id/sms_reminder_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:background="@drawable/sms_choice_selector"
+        android:padding="15dp"
+        android:textSize="18sp"
+        android:text="包裹催收短信模板编辑"/>
+</LinearLayout>

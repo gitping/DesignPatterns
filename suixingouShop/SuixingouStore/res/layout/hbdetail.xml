@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/stitlebar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/daiorhave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:text="已結算 "
+            android:textColor="@color/home_btn"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/wait_settle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:text=" 2014.05.03"
+            android:textColor="@color/shopsethui"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/totle_settle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:gravity="right"
+            android:text="总额：10.00元"
+            android:textColor="@color/shopset_orange"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1.4dp"
+        android:background="@color/black" >
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/hb_detail_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:scrollbars="none"
+        android:cacheColorHint="#00000000"
+        android:listSelector="#00000000" >
+    </ListView>
+
+    <include layout="@layout/sloading_error" />
+
+</LinearLayout>

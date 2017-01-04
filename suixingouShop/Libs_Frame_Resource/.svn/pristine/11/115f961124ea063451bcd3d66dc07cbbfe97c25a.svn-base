@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="exception_title">提示</string>
+    <string name="exception_msg">随心购发生异常,即将重新起动.</string>
+    <string name="exception_confirm">确定</string>
+    <string name="exception_cancel">关闭</string>
+    
+
+</resources>

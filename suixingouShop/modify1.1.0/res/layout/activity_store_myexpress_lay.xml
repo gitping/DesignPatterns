@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/relid"
+        layout="@layout/stitlebar" />
+
+    <LinearLayout
+        android:id="@+id/storemain_linmenu"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/relid"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#31b00f"
+        android:orientation="horizontal"
+        android:padding="1dp" >
+
+        <Button
+            android:id="@+id/store_myexpress_djd"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="待接单" />
+
+        <Button
+            android:id="@+id/store_myexpress_dqj"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:textColor="@color/mainColor"
+            android:gravity="center"
+            android:text="待取件" />
+
+        <Button
+            android:id="@+id/store_myexpress_ywc"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:textColor="@color/mainColor"
+            android:gravity="center"
+            android:text="已完成" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_searchprice"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/storemain_linmenu"
+        android:layout_marginTop="10dp"
+        android:background="@color/sixe"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/store_lin_searchprice"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/searchprice" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查看全国统一价"
+                android:textSize="15sp" 
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/store_lin_examinecontraband"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/examinecon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="违禁品查看"
+                android:textSize="15sp" 
+                 />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--
+        <ListView
+        android:id="@+id/store_myexpress_listview" 
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lin_searchprice"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:scrollbars="none"
+        android:dividerHeight="30dp"
+        />
+    -->
+
+    <LinearLayout
+        android:id="@+id/storemain_linbottom"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#e2e2e2"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/storemain_lin_kddd"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/store_expressa" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="快递订单"
+                android:textColor="@color/fcolor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/storemain_lin_spdd"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/store_sporderb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="商品订单"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.yto.suixingoustore.util.view.listview.XListView
+        android:id="@+id/store_myexpress_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/storemain_linbottom"
+        android:layout_below="@id/lin_searchprice"
+        android:layout_marginTop="10dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dip" >
+    </com.yto.suixingoustore.util.view.listview.XListView>
+
+    <include layout="@layout/sloading_error" />
+
+</RelativeLayout>

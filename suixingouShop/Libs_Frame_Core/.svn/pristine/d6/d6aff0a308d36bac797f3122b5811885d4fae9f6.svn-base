@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- black -->
+    <color name="black1">#000000</color>
+    <color name="black2">#272727</color>
+    <color name="black3">#3C3C3C</color>
+    <color name="black4">#4F4F4F</color>
+    <color name="black5">#5B5B5B</color>
+    <color name="black6">#6C6C6C</color>
+    <color name="black7">#7B7B7B</color>
+    <color name="black8">#8E8E8E</color>
+    <color name="black9">#9D9D9D</color>
+    <color name="black10">#ADADAD</color>
+    <color name="black12">#D0D0D0</color>
+    <color name="black13">#E0E0E0</color>
+    <color name="black14">#F0F0F0</color>
+    <color name="black15">#FCFCFC</color>
+    <color name="black16">#FFFFFF</color>
+    <!-- green -->
+
+    <!-- tem -->
+    <color name="transparent">#00000000</color>
+     <color name="gray1">#faf9fa</color>
+    <color name="gray2">#e3e4e2</color>
+    <color name="back">#FFFFFF</color>
+    <color name="loaddataback">#88ffffff</color>
+    <color name="red">#a4002c</color>
+    <color name="red_light">#ff1717</color>
+    <color name="dark_red">#910228</color>
+    <color name="black">#000000</color>
+    <color name="lightblack">#2e2e2e</color>
+    <color name="light_blue">#0567be</color>
+    <color name="yellow">#ff7800</color>
+    <color name="dark_yellow">#db6700</color>
+    <color name="gray">#4b4b4b</color>
+    <color name="high_gray">#f5f5f5</color>
+    <color name="dark_gray">#e5e5e5</color>
+    <color name="light_gray">#cccccc</color>
+    <color name="lightBlack">#4e4e4e</color>
+    <color name="white">#FFFFFF</color>
+    <color name="green">#5ba922</color>
+    <color name="grass_green">#73ae00</color>
+
+    <!-- Q -->
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_view">#b0000000</color>
+    <!-- Suixingou -->
+    <color name="mainColor">#21b00f</color>
+    <color name="mainColor_gray">#aeafae</color>
+    <color name="mainColor_light_gray">#f0f0f0</color>
+    <color name="mainColor_text1">#333333</color>
+    <color name="mainColor_text2">#7c7c7c</color>
+    <color name="mainColor_click">#2c9210</color>
+    <color name="maincolor_order">#eeeeee</color>
+    <color name="green_light">#eaffd7</color>
+    <color name="green1">#288111</color>
+    <color name="textcolor">#2d2d2d</color>
+    <color name="main_green">#31b10f</color>
+    <color name="main_green_text">#31b00f</color>
+    
+    
+        <!-- 灰色 -->
+    <!-- iphone -->
+	<color name="white_color">#fff</color>
+    <color name="btn_pos_green_n">#f032B00F</color>
+    <color name="btn_neg_gray_n">#AFAFAFAF</color>
+    <color name="btn_pos_green_f">#8032B00F</color>
+    <color name="btn_neg_gray_f">#AFA0A0A0</color>
+
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainbg_grayd7d7d7"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/stitlebar"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/main_white"
+        android:orientation="vertical">
+        
+        <EditText
+            android:id="@+id/pwsetting_old_et"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:digits="_0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLIMNOPQRSTUVWXYZ"
+            android:gravity="center_vertical"
+            android:hint="请输入当前密码"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:paddingLeft="10dp"
+            android:textSize="16sp"
+            android:textColorHint="#cccccc" />
+        
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1.5px"
+            android:background="@color/mainbg_grayd7d7d7"/>
+        
+        <EditText
+            android:id="@+id/pwsetting_new1_et"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:digits="_0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLIMNOPQRSTUVWXYZ"
+            android:gravity="center_vertical"
+            android:hint="请输入新密码"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:paddingLeft="10dp"
+            android:textSize="16sp"
+            android:textColorHint="#cccccc" />
+        
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1.5px"
+            android:background="@color/mainbg_grayd7d7d7"/>
+        
+        <EditText
+            android:id="@+id/pwsetting_new2_et"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:digits="_0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLIMNOPQRSTUVWXYZ"
+            android:gravity="center_vertical"
+            android:hint="请再次输入新密码"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:paddingLeft="10dp"
+            android:textSize="16sp"
+            android:textColorHint="#cccccc" />
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/pwsetting_confirm_bt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/FLeftMenuHeidth"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_maintakepk_button"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/back"
+        android:textSize="18sp" />
+</LinearLayout>

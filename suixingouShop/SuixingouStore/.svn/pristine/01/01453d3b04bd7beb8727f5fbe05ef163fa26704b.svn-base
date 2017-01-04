@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainbg_grayd7d7d7"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/stitlebar"/>
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:padding="10dp"
+        	android:orientation="vertical">
+            
+            <RelativeLayout 
+                android:id="@+id/problempk_overtime_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="@drawable/commit_expresslist_selector">
+                
+                <LinearLayout 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+                    
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text="超过两天没人取的包裹"/>
+                    
+                    <TextView 
+                        android:id="@+id/problempk_overtime_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="共--件"/>
+                </LinearLayout>
+            </RelativeLayout>
+            
+            <RelativeLayout 
+                android:id="@+id/problempk_tocourier_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/commit_expresslist_selector">
+                
+                <LinearLayout 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+                    
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text="需退还快递员的包裹"/>
+                    
+                    <TextView 
+                        android:id="@+id/problempk_tocourier_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="共--件"/>
+                </LinearLayout>
+            </RelativeLayout>
+            
+            <RelativeLayout 
+                android:id="@+id/problempk_loss_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/commit_expresslist_selector">
+                
+                <LinearLayout 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+                    
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text="遗失的包裹"/>
+                    
+                    <TextView 
+                        android:id="@+id/problempk_loss_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="共--件"/>
+                </LinearLayout>
+            </RelativeLayout>
+            
+            <RelativeLayout 
+                android:id="@+id/problempk_incourier_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/commit_expresslist_selector">
+                
+                <LinearLayout 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+                    
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text="已退还快递员的包裹"/>
+                    
+                    <TextView 
+                        android:id="@+id/problempk_incourier_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="共--件"/>
+                </LinearLayout>
+            </RelativeLayout>
+            
+            <Button 
+                android:id="@+id/problempk_return_bt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:background="@drawable/selector_maintakepk_button"
+                android:drawableLeft="@drawable/icon_problempk_saosao"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:text="包裹退还快递员扫描"/>
+            
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:singleLine="false"
+                android:textSize="12sp"
+                android:text="注：包裹退还快递员时候一定要用上面按钮扫一下码，否则产生纠纷由自提点赔偿"/>
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

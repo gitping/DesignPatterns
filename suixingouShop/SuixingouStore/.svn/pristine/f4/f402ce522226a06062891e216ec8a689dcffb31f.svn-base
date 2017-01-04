@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="#f0f0ed">
+    
+    <include
+        android:id="@+id/topss"
+        layout="@layout/stitlebar" />
+    
+ <!--   <ListView 
+        android:id="@+id/owncollect_listview"
+        android:layout_below="@id/topss"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:scrollbars="none"
+        /> -->
+        <LinearLayout 
+            android:id="@+id/ll_hide"
+            android:layout_below="@id/topss"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:orientation="vertical"
+            android:background="#fff"
+            >
+            <LinearLayout 
+                android:id="@+id/topcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible"
+                >
+        <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:id="@+id/texttake"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:text="取件密码"
+            android:textColor="#8d8d8d"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/takecode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/texttake"
+            android:layout_marginTop="10dp"
+            android:text="0906-2345"
+            android:textColor="#2d2d2d"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/qujian_box_green_bj"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/greentext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/texttake"
+                android:text="已到货"
+                android:textColor="@color/mainColor"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/greentime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/texttake"
+                android:text="9-16 8:30"
+                android:textColor="@color/mainColor"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/suixin_line_xu" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="快递单号  "
+            android:textColor="#8d8d8d"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/mexpressnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="355766343 "
+            android:textColor="#2d2d2d"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联系方式  "
+            android:textColor="#8d8d8d"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/mexpresscontact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13811445658 "
+            android:textColor="#2d2d2d"
+            android:textSize="16sp" />
+    </LinearLayout>
+    </LinearLayout>
+    
+            <TextView 
+                android:id="@+id/nomessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="没有您的信息"
+                android:drawableTop="@drawable/qujian_icon_expression"
+                android:textSize="18sp"
+                android:textColor="#8d8d8d"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone"
+                />
+
+    
+    <Button
+        android:id="@+id/mtake" 
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/financial_button_selector"
+        android:gravity="center"
+        android:text="取啦"
+        android:textColor="@color/back"
+        android:textSize="20sp"
+        android:visibility="visible"
+        />
+    <Button
+        android:id="@+id/callsustom" 
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/collect_gray_selector"
+        android:gravity="center"
+        android:text="如有疑问,请联系客服"
+        android:textColor="#ff9663"
+        android:textSize="20sp"
+        android:visibility="gone"
+        />
+    </LinearLayout>
+    
+        
+        
+           <include
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        layout="@layout/sloading_error"
+        android:visibility="visible" />
+    
+    
+    
+
+</RelativeLayout>

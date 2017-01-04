@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+            android:id="@+id/test_rel"
+    android:layout_marginLeft="8dip"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:padding="10dip" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+                <CheckBox
+                    android:id="@+id/checkedTextView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:button="@null"
+                    android:background="@drawable/seletor_import"
+                    
+/>
+            
+                <LinearLayout 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     android:layout_centerVertical="true"
+                   android:layout_toRightOf="@+id/checkedTextView1"
+                   android:orientation="vertical"
+                   android:layout_marginLeft="8dp"
+                    >
+        <TextView
+            android:id="@+id/iproductname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="百事可乐灌装"
+            android:textColor="@color/black"
+           android:maxEms="7"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/iproductv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="250ml灌装"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:textSize="12sp" />
+        </LinearLayout>
+        
+                <RelativeLayout 
+                    android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_centerVertical="true"
+                     android:layout_alignParentRight="true"
+                    android:paddingLeft="5dp"
+                    >
+                    <Button 
+                        android:id="@+id/price_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bianji_inputbox_yuan_all"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                        />
+                    
+                     <EditText
+                    android:id="@+id/ieditprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="left|center_vertical"
+                    android:cursorVisible="true"
+                    android:hint="添加价格"
+                    android:inputType="numberDecimal"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:maxLength="7"
+                    android:textSize="12sp"
+                    android:textColor="@color/mainColor"
+                    android:layout_centerVertical="true"
+                    android:layout_alignLeft="@+id/price_button"
+                    android:layout_marginLeft="5dp"
+                    android:imeOptions="actionDone"
+
+                     />
+                </RelativeLayout>
+               
+
+    
+               
+        </RelativeLayout>
+
+
+</LinearLayout>

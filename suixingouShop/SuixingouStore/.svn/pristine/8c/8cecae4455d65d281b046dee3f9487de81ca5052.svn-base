@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainbg_grayd7d7d7"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/stitlebar"/>
+    
+	<RelativeLayout 
+	    android:id="@+id/myshop_expresslist"
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+	    android:background="@drawable/commit_expresslist_selector">
+	    
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="10dp"
+	        android:drawableLeft="@drawable/icon_myshop_allpk"
+	        android:drawablePadding="10dp"
+	        android:gravity="center_vertical"
+	        android:textSize="16sp"
+	        android:textColor="#000000"
+	        android:text="查看所有包裹"/>
+	    
+	    <ImageView 
+	        android:id="@+id/myshop_alllist_iv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginRight="10dp"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentRight="true"
+	        android:src="@drawable/icon_myshop_arrow"/>
+	    
+	    <TextView 
+	        android:id="@+id/myshop_listcount_tv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_toLeftOf="@+id/myshop_alllist_iv"
+	        android:layout_marginRight="10dp"
+	        android:textSize="16sp"
+	        android:textColor="@color/mainbutton_redf26221"
+	        android:text=""/>
+	    
+	</RelativeLayout>
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+	    android:background="#ffffff"
+	    android:orientation="vertical">
+	    
+	    <RelativeLayout 
+	        android:id="@+id/myshop_update"
+	        android:layout_width="match_parent"
+	    	android:layout_height="50dp"
+	    	android:background="@drawable/commit_expresslist_selector"
+	    	android:visibility="gone">
+	        
+	        <TextView 
+	            android:id="@+id/myshop_update_tv"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerVertical="true"
+		        android:layout_marginLeft="10dp"
+		        android:drawableLeft="@drawable/icon_myshop_update"
+		        android:drawablePadding="10dp"
+		        android:gravity="center_vertical"
+		        android:textSize="16sp"
+		        android:textColor="#000000"
+		        android:text="有新版本，点击升级"/>
+	        
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_toRightOf="@+id/myshop_update_tv"
+		        android:layout_marginLeft="10dp"
+		        android:gravity="bottom"
+		        android:textColor="@color/mainbutton_redf26221"
+		        android:textSize="16sp"
+		        android:text="new"/>
+	        
+	        <ImageView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginRight="10dp"
+		        android:layout_centerVertical="true"
+		        android:layout_alignParentRight="true"
+		        android:src="@drawable/icon_myshop_arrow"/>
+	        
+	        <View 
+	            android:layout_width="match_parent"
+		        android:layout_height="1.5px"
+		        android:layout_alignParentBottom="true"
+		        android:background="@color/mainbg_grayd7d7d7"/>
+	    </RelativeLayout>
+	    
+	    <RelativeLayout 
+	        android:id="@+id/myshop_shopsetting"
+	        android:layout_width="match_parent"
+	    	android:layout_height="50dp"
+	    	android:background="@drawable/commit_expresslist_selector">
+	        
+	        <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerVertical="true"
+		        android:layout_marginLeft="10dp"
+		        android:drawableLeft="@drawable/icon_myshop_settings"
+		        android:drawablePadding="10dp"
+		        android:gravity="center_vertical"
+		        android:textSize="16sp"
+		        android:textColor="#000000"
+		        android:text="店铺设置"/>
+	        
+	        <ImageView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginRight="10dp"
+		        android:layout_centerVertical="true"
+		        android:layout_alignParentRight="true"
+		        android:src="@drawable/icon_myshop_arrow"/>
+	        
+	        <View 
+	            android:layout_width="match_parent"
+		        android:layout_height="1.5px"
+		        android:layout_alignParentBottom="true"
+		        android:background="@color/mainbg_grayd7d7d7"/>
+	    </RelativeLayout>
+	    
+	    <RelativeLayout 
+	        android:id="@+id/myshop_pwsetting"
+	        android:layout_width="match_parent"
+	    	android:layout_height="50dp"
+	    	android:background="@drawable/commit_expresslist_selector">
+	        
+	        <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerVertical="true"
+		        android:layout_marginLeft="10dp"
+		        android:drawableLeft="@drawable/icon_myshop_pwsettings"
+		        android:drawablePadding="10dp"
+		        android:gravity="center_vertical"
+		        android:textSize="16sp"
+		        android:textColor="#000000"
+		        android:text="修改密码"/>
+	        
+	        <ImageView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginRight="10dp"
+		        android:layout_centerVertical="true"
+		        android:layout_alignParentRight="true"
+		        android:src="@drawable/icon_myshop_arrow"/>
+	    </RelativeLayout>
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+	    android:background="#ffffff"
+	    android:orientation="vertical">
+	    
+	    <RelativeLayout 
+	        android:id="@+id/myshop_feedback"
+	        android:layout_width="match_parent"
+	    	android:layout_height="50dp"
+	    	android:background="@drawable/commit_expresslist_selector">
+	        
+	        <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerVertical="true"
+		        android:layout_marginLeft="10dp"
+		        android:drawableLeft="@drawable/icon_myshop_feedback"
+		        android:drawablePadding="10dp"
+		        android:gravity="center_vertical"
+		        android:textSize="16sp"
+		        android:textColor="#000000"
+		        android:text="意见反馈"/>
+	        
+	        <ImageView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginRight="10dp"
+		        android:layout_centerVertical="true"
+		        android:layout_alignParentRight="true"
+		        android:src="@drawable/icon_myshop_arrow"/>
+	        
+	        <View 
+	            android:layout_width="match_parent"
+		        android:layout_height="1.5px"
+		        android:layout_alignParentBottom="true"
+		        android:background="@color/mainbg_grayd7d7d7"/>
+	    </RelativeLayout>
+	    
+	    <RelativeLayout 
+	        android:id="@+id/myshop_about"
+	        android:layout_width="match_parent"
+	    	android:layout_height="50dp"
+	    	android:background="@drawable/commit_expresslist_selector">
+	        
+	        <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerVertical="true"
+		        android:layout_marginLeft="10dp"
+		        android:drawableLeft="@drawable/icon_myshop_about"
+		        android:drawablePadding="10dp"
+		        android:gravity="center_vertical"
+		        android:textSize="16sp"
+		        android:textColor="#000000"
+		        android:text="关于"/>
+	        
+	        <ImageView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginRight="10dp"
+		        android:layout_centerVertical="true"
+		        android:layout_alignParentRight="true"
+		        android:src="@drawable/icon_myshop_arrow"/>
+	    </RelativeLayout>
+	</LinearLayout>
+    
+	<Button
+        android:id="@+id/myshop_loginout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/selector_maintakepk_button"
+        android:gravity="center"
+        android:text="退出登录"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:visibility="visible" />
+	
+</LinearLayout>

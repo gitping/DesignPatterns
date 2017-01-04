@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/finacial_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/toptitle"
+        layout="@layout/stitlebar" />
+
+    <LinearLayout
+        android:id="@+id/storemain_linmenu"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/toptitle"
+        android:background="@drawable/shopsetcaiwu_title_bj"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0" >
+
+            <Button
+                android:id="@+id/storemain_but_djd"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center"
+                android:text="待接单"
+                android:textColor="@color/mainColor"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/bottom_line1"
+                android:layout_width="fill_parent"
+                android:layout_height="4dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@color/mainColor" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0" >
+
+            <Button
+                android:id="@+id/storemain_but_yjd"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center"
+                android:text="已接单"
+                android:textColor="@color/home_btn"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/bottom_line2"
+                android:layout_width="fill_parent"
+                android:layout_height="4dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@color/mainColor"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0" >
+
+            <Button
+                android:id="@+id/storemain_but_over"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center"
+                android:text="已结束"
+                android:textColor="@color/home_btn"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/bottom_line3"
+                android:layout_width="fill_parent"
+                android:layout_height="4dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@color/mainColor"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    
+
+    <com.yto.suixingoustore.util.view.listview.XListView
+        android:id="@+id/storemain_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/storemain_linmenu"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/finacial_bg"
+        android:scrollbars="none"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="30dip" >
+    </com.yto.suixingoustore.util.view.listview.XListView>
+
+    <include layout="@layout/nodata_tips_layout"/>
+
+</RelativeLayout>

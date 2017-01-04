@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black" >
+
+    <SurfaceView
+        android:id="@+id/preview_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="visible" />
+
+    <com.zxing.activity.ViewfinderView
+        android:id="@+id/viewfinder_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/qr_scan_bg"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <include
+
+            android:id="@+id/topbar_close"
+            layout="@layout/stitlebar" />
+
+        <TextView
+            android:layout_weight="1"
+
+            style="@style/Text.TitleShadow"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:gravity="center"
+            android:shadowColor="@android:color/black"
+            android:singleLine="true"
+            android:text="请扫描包裹上的快递单号"
+            android:textColor="#ffffffff" />
+
+        <ImageView
+            android:layout_weight="5"
+            android:id="@+id/bg"
+            android:layout_width="wrap_content"
+            android:layout_height="0dip"
+            android:layout_gravity="center"
+            android:contentDescription="@string/_null"
+            android:src="@drawable/qrcodeexpressorder_frame" />
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/qrcode_title"
+            style="@style/Text.TitleShadow"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:shadowColor="@android:color/black"
+            android:singleLine="true"
+            android:text="将二维码/条形码放入扫描框内"
+            android:textColor="#ffffffff" />
+
+        <Button
+            android:id="@+id/qrcode_express_no"
+            android:layout_marginBottom="25dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/expressorder_gray_button_selector"
+            android:paddingBottom="10dip"
+            android:paddingLeft="40dip"
+            android:paddingRight="40dip"
+            android:paddingTop="10dip"
+            android:text="没有摄像头,手动输入"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</FrameLayout>

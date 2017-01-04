@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="220dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center" >
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:scrollbars="vertical" >
+
+        <TextView
+            android:id="@+id/d_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+             android:text="请选择暂停原因"
+             android:textColor="@color/mainColor"
+             android:paddingBottom="18dp"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/d_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+          		android:layout_margin="10dp"
+                android:textColor="@android:color/black"
+                android:visibility="gone"
+                android:textSize="15sp" />
+            
+    
+            <RadioGroup 
+                android:id="@+id/radiogroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                >
+                <RadioButton 
+                    android:id="@+id/radio1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="卖光了"
+                    android:textColor="@color/mainColor"
+                    android:textSize="20sp"
+                    style="@style/radiobuttonStyle"
+                    android:gravity="center"
+                    
+                    />
+                              <RadioButton 
+                    android:id="@+id/radio2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="就回来"
+                    android:textColor="@color/mainColor"
+                    style="@style/radiobuttonStyle"
+                    android:textSize="20sp"
+                     android:gravity="center_vertical"
+                    />
+                                            <RadioButton 
+                    android:id="@+id/radio3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="补货中"
+                    android:textColor="@color/mainColor"
+                    style="@style/radiobuttonStyle"
+                     android:textSize="20sp"
+                     android:gravity="center_vertical"
+                    />
+            </RadioGroup>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#D1D1D1" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cancel_btn_select"
+                 android:textColor="@color/mainColor"
+                android:text="取消" />
+
+                    <Button
+                android:id="@+id/btn_center"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/cancel_btn_select"
+                android:visibility="gone"
+                android:text="中间" />
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="#D1D1D1" />
+
+            <Button
+                android:id="@+id/btn_confirm"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                 android:textColor="@color/mainColor"
+                android:background="@drawable/confirm_btn_select"
+                android:text="确定" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

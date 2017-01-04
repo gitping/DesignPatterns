@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray1"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/relid"
+        layout="@layout/stitlebar" />
+    <!-- 可以加上scrolview -->
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+     <!-- 商品分类 -->
+
+            <LinearLayout
+                android:id="@+id/linear_category"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/fshape_bgno_listview"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="8dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/product_category" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/unit21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/mainColor"
+                        android:padding="5dp"
+                        android:text="饮料"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/unit22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/gray2"
+                        android:padding="5dp"
+                        android:text="零食"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/unit23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/gray2"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="粮油/副食"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/unit24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/gray2"
+                        android:padding="5dp"
+                        android:text="烟酒"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/unit25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/gray2"
+                        android:padding="5dp"
+                        android:text="日用品"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/unit26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/gray2"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="生鲜"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/unit27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/gray2"
+                        android:padding="5dp"
+                        android:text="餐饮"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/unit28"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/gray2"
+                        android:padding="5dp"
+                        android:text="其他"
+                        android:textColor="@color/white"
+                        android:visibility="invisible" />
+                </LinearLayout>
+            </LinearLayout>
+            
+            <!-- zl-0610-条码扫描 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="8dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="商品条码" />
+
+                <Button
+                    android:id="@+id/productcode"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/shape_bgno_listview"
+                    android:hint="点击扫描录入商品条码"
+                    android:paddingBottom="7dip"
+                    android:paddingTop="7dip"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- 商品名称 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="8dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/product_name" />
+
+                <EditText
+                    android:id="@+id/produce_name_edit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left|center_vertical"
+                    android:hint="@string/name_hint"
+                    android:maxEms="16"
+                    android:maxLength="16"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- 商品规格 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/fshape_bgno_listview"
+                android:orientation="vertical"
+                android:padding="8dp" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/product_standard" />
+
+                    <EditText
+                        android:id="@+id/produce_standard_edit"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center"
+                        android:hint="@string/standard_hint"
+                        android:inputType="numberDecimal"
+                        android:singleLine="true"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/ml_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/gray2"
+                        android:padding="5dp"
+                        android:text="毫升"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/g_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/gray2"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="克"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/l_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/gray2"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="升"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/kg_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/gray2"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="千克"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/j_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/gray2"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="28dp"
+                        android:paddingRight="28dp"
+                        android:paddingTop="5dp"
+                        android:singleLine="true"
+                        android:text="斤"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/gj_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/gray2"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+                        android:singleLine="true"
+                        android:text="公斤"
+                        android:textColor="@color/white" />
+                    
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 商品单位 -->
+
+            <LinearLayout
+                android:id="@+id/linear_unit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/fshape_bgno_listview"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="8dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/product_unit" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/unit1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/gray2"
+                        android:padding="5dp"
+                        android:text="瓶"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/unit2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/gray2"
+                        android:padding="5dp"
+                        android:text="袋"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/unit3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/gray2"
+                        android:padding="5dp"
+                        android:text="罐"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/unit4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/gray2"
+                        android:padding="5dp"
+                        android:text="个"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/unit5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/gray2"
+                        android:padding="5dp"
+                        android:text="支"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/unit6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/gray2"
+                        android:padding="5dp"
+                        android:text="盒"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/unit7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/gray2"
+                        android:padding="5dp"
+                        android:text="包"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/unit8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/gray2"
+                        android:padding="5dp"
+                        android:text="坛"
+                        android:textColor="@color/white"
+                         />
+                    
+                
+                </LinearLayout>
+            </LinearLayout>
+
+       
+            <!-- 填写价格 -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/fshape_bgno_listview"
+                android:padding="8dp" >
+
+                <TextView
+                    android:id="@+id/price_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/product_price" />
+
+                <EditText
+                    android:id="@+id/produce_price_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/price_name"
+                    android:gravity="left|center_vertical"
+                    android:hint="@string/price_hint"
+                    android:inputType="numberDecimal"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="40dp"
+                    android:paddingTop="10dp"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="60dp"
+                    android:background="@color/mainColor"
+                    android:padding="5dp"
+                    android:text="￥(元)"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/type_in_commit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/green_button_selector"
+                android:gravity="center"
+                android:paddingBottom="7dp"
+                android:paddingLeft="70dp"
+                android:paddingRight="70dp"
+                android:paddingTop="7dp"
+                android:text="@string/commit"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

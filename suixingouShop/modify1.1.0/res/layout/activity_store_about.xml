@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+     >
+     <include layout="@layout/stitlebar"/>
+     
+     <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="vertical"
+        android:scrollbars="none" >
+     
+     <LinearLayout 
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         >
+     
+     <ImageView 
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center_horizontal"
+         android:layout_marginTop="30dp"
+         android:src="@drawable/about_icon"
+         />
+     <TextView 
+         android:id="@+id/text_version"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textColor="@color/black"
+         android:textSize="14sp"
+         android:layout_gravity="center_horizontal"
+         />
+  <!--   <TextView 
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="20dp"
+         android:layout_marginLeft="10dp"
+         android:layout_marginRight="10dp"
+         android:textColor="@color/black"
+         android:textSize="14sp"
+         android:text="随心购是由上海圆通新龙电子商务有限公司一款随心购是由上海圆通新龙电子商务有限公司一款随心购是由上海圆通新龙电子商务有限公司一款随心购是由上海圆通新龙电子商务有限公司一款"
+         /> --> 
+     <LinearLayout 
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="10dp"
+         android:layout_marginRight="10dp"
+         android:layout_marginTop="20dp"
+         android:background="#e2e2e2"
+         android:orientation="vertical"
+         android:padding="0.5dp"
+         >
+         <RelativeLayout 
+             android:id="@+id/real_about"
+             android:clickable="true"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:background="#fff"
+             android:paddingTop="5dip"
+             android:paddingBottom="5dip"
+             android:gravity="center_vertical"
+             >
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户协议"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp"
+                />
+             <ImageView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentRight="true"
+                 android:src="@drawable/arrow_right"
+                 android:layout_marginRight="10dp"
+                 android:layout_centerInParent="true"
+                 />
+         </RelativeLayout>
+         <RelativeLayout 
+             android:id="@+id/real_phone"
+             android:clickable="true"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:background="#fff"
+             android:layout_marginTop="0.5dp"
+             android:paddingTop="5dip"
+             android:paddingBottom="5dip"
+             android:gravity="center_vertical"
+             >
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="QQ交流群： 289501305"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp"
+                />
+             <ImageView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentRight="true"
+                 android:src="@drawable/arrow_right"
+                 android:layout_marginRight="10dp"
+                 android:layout_centerInParent="true"
+                 />
+         </RelativeLayout>
+         
+         
+         
+     </LinearLayout>
+     
+     
+     <Button
+                android:id="@+id/updateVersionBut"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/FLeftMenuHeidth"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="30dip"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/green_button_selector"
+                android:gravity="center"
+                android:onClick="updateVersion"
+                android:text="版本更新"
+                android:textColor="@color/back"
+                android:textSize="18sp" />
+     
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

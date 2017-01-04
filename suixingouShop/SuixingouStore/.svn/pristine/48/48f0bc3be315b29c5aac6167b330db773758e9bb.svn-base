@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c7c7c7"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:textColor="@color/red"
+        android:text="设置ip"/>
+    
+    <EditText 
+        android:id="@+id/testwelcome_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="#ffffff"
+        android:textSize="18sp"
+        android:hint="输入ip"/>
+    
+    <Button 
+        android:id="@+id/testwelcome_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/selector_maintakepk_button"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:text="确定"/>
+    
+</LinearLayout>

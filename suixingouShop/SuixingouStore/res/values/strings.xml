@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <!-- frame -->
+    <string name="flogin">登录</string>
+    <string name="fregist">注册</string>
+    <string name="fusername">帐号：</string>
+    <string name="fenter_username">请输入您的手机号</string>
+    <!-- ExpressPKGOperating -->
+    <string name="pkgrejected"><u>客户拒收</u></string>
+    <!-- QrcodeSignInActivity -->
+    <string name="qrcodemanual"><u>手动输入</u></string>
+    <!-- ChooseNeighborhoods -->
+    <string name="cInputAddress">请输入要切换的地址</string>
+    <!-- Store -->
+    <!-- iphone -->
+    <string name="app_name">妈妈驿站</string>
+    <string name="aboutversion">随心购v1.0.0</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="cancel">取消</string>
+    <string name="dialog_title">请选择日期</string>
+    <string name="testtext">测试数据</string>
+    <!-- 价格查询 -->
+    <string name="weight">KG</string>
+    <!-- mainactivity -->
+    <string name="zhanggui">随心购掌柜</string>
+    <string name="businesing">营业中</string>
+    <string name="businesed">打烊啦</string>
+    <string name="click_businesing">点我开始营业</string>
+    <string name="click_businesed">点我暂停营业</string>
+    <string name="earn_textdesc">目前已经赚了：50.00元</string>
+    <!-- guide -->
+    <string name="storesetting">店铺设置</string>
+    <string name="storesetting_account">店铺名称:</string>
+    <string name="storesetting_pas">店铺地址:</string>
+    <string name="storesetting_zyyw">主营业务:</string>
+    <string name="store_guideset_ls">零食</string>
+    <string name="store_guideset_yl">饮料</string>
+    <string name="store_guideset_ryp">日用品</string>
+    <string name="store_guideset_sx">生鲜</string>
+    <string name="store_guideset_yj">烟酒</string>
+    <string name="store_guideset_tw">粮油/副食</string>
+    <string name="store_guideset_qt">餐饮</string>
+    <string name="store_guideset_gzr">工作日</string>
+    <string name="store_guideset_zm">周末</string>
+    <string name="timestart">07:00</string>
+    <string name="timesend">21:00</string>
+    <string name="opensuccess">恭喜您！店铺已成功开通</string>
+    <string name="makemoney">赚钱只差一步啦！</string>
+    <string name="importext">接下来只需要把售卖商品导入到系统中，客户就可以通过手机购买了</string>
+    <string name="twoway">导入商品的两种方式：</string>
+    <string name="onew">1.用电脑访问：m.sxgou.cn</string>
+    <string name="twow">2.随心购菜单中选择商品导入功能</string>
+    <string name="intoknow">知道了，先进去看看</string>
+    <string name="myfwsj">服务时间:</string>
+    <string name="mypflg">———</string>
+    <string name="mytgxp">提供小票:</string>
+    <string name="mykdzd">快递站点:</string>
+    <string name="myfgsbm">分公司编码:</string>
+    <string name="myhintfgsbm">填写就近的圆通分公司编码</string>
+    <string name="mylxr">联系人:</string>
+    <string name="mylxdh">联系电话:</string>
+    <string name="myhintphone">请填写联系手机号</string>
+    <string name="mypsfw">派送范围:</string>
+    <string name="myhintpsfw">默认为2</string>
+    <string name="mypsfwgl">公里以内</string>
+    <string name="mypssm">配送说明:</string>
+    <string name="mymoney">￥</string>
+    <string name="myqs">起送</string>
+    <string name="mysd">送达</string>
+    <string name="myminute">分钟</string>
+    <string name="myopen">开通店铺服务</string>
+    <string name="myhintshop">请填写您的店铺名称</string>
+    <string name="myhintlxr">请填写联系人</string>
+    <string name="myhintaddre">请填写您的店铺地址</string>
+    <string name="myremark">备注:</string>
+    <string name="myhintremark">备注信息</string>
+    <string name="mykm">公里</string>
+    <string name="shouye">首页</string>
+    <string name="takeorders">\t\t接单\t\t</string>
+    <!-- menu -->
+    <string name="menu_s0">查看订单</string>
+    <string name="menu_s1">我的店铺</string>
+    <string name="menu_s2">店铺设置</string>
+    <string name="menu_s3">后台账号</string>
+    <string name="menu_s4">版本更新</string>
+    <string name="menu_s5">关于</string>
+    <string name="menu_s6">安全退出</string>
+    <string name="menu_s7">商品导入</string>
+    <string name="menu_s9">红包信息</string>
+    <string name="userpro">用户协议</string>
+    <string name="backacountinfo">绑定银行卡账号是为了圆通公司给您结款时所用，所以请务必填写正确的账号，并确认其真实有效。绑定后不能修改或变更。如需帮助请加官方QQ：2111350368</string>
+    <!-- productImport -->
+    <string name="isummit">价格确认无误,提交即可售卖</string>
+    <string name="imenu_s8">待上架</string>
+    <!-- hongbao -->
+    <string name="totalred">红包总计:</string>
+    <string name="_null"/>
+    <string name="placeholder">买家在安装登录时一定要在左边图片所示的位置填入“我的邀请码:%1$d”</string>
+    <!-- zhangheng -->
+    <!-- FLoginActivity -->
+    <string name="fltitleName">随心购掌柜</string>
+    <string name="flreminder">很荣幸为你服务,我是你的小区助手</string>
+    <string name="flVerificationCode">获取验证码</string>
+    <string name="flagree">同意用户协议并注册</string>
+    <string name="flreaded">已阅读并遵守</string>
+    <string name="flprotocol">用户协议</string>
+    <!-- xlistview -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal"/>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <!-- 商品录入 -->
+    <string name="test_typein">记录入234个，几百了全国95%的店铺，宋老板，买家一致认为</string>
+    <string name="typein_remark">您很霸气，是个大老板</string>
+    <string name="product_name">物品名称</string>
+    <string name="product_standard">商品规格</string>
+    <string name="product_unit">商品单位</string>
+    <string name="product_category">商品分类</string>
+    <string name="product_price">商品价格(元)</string>
+    <string name="name_hint">如可口可乐                    </string>
+    <string name="standard_hint">如250ml</string>
+    <string name="price_hint">如2.5元</string>
+    <string name="unit_hint">如瓶</string>
+    <string name="commit">提交</string>
+    <string name="grounding">上架</string>
+    <string name="weijinp">航空违法禁寄物品：\n
+1.各类烈性毒药和传染性物品，如农药、铊、氰化物、砒霜、催泪弹等；\n
+2.麻醉药物和精神物品，如：鸦片（含罂粟壳、花、苞、叶等）、吗啡、可卡因、海洛英、大麻等；\n
+3.国家法令禁止流通或寄运的物品，如：各种武器、仿真武器（仿真玩具枪、刀具等）、弹药、雷管及爆炸物品等；\n
+4.含有反动、淫秽、有伤风化或法轮功等的报刊书籍、图片、宣传品、音像制品，计算机磁盘及光盘等。\n
+航空违规禁寄物品：\n
+指威胁航空飞行安全的物品，指在航空运输中，可能明显地危害人身健康、安全或对财产造成损害的物品或物质。主要有以下几类：\n
+1. 爆炸品：如烟花爆竹、起爆引信等；\n
+2.气体：如压缩气体、干冰、灭火器、蓄气筒、充气球体、救生器、易爆开的汽车安全气囊、气雾剂、气体打火机、瓦斯气瓶、灯泡等；\n
+3.易燃液体：如油漆、汽油、酒精类、机油、樟脑油、发动机起动液、松节油、天拿水、胶水、香水、喷雾杀虫剂、空气清新剂等；\n
+4.易燃固体：自燃物质，遇水释放易燃气体的物质，如活性碳、钛粉、椰肉干、蓖麻制品、橡胶碎屑、安全火柴(盒擦的或片擦的)、干燥的白磷、干燥的黄磷、镁粉、固体胶等；\n
+5.毒性和放射性物品：如农药、锂电池（锂电池的收寄标准请参照邮件“关于锂电池是否界定为航空禁寄品的通知”）等；\n
+6. 腐蚀品：如蓄电池、碱性的电池液等；\n
+7.磁性物体，未加消磁防护包装的磁铁、磁钢等含强磁的制品。如验钞机、音箱、磁铁等含磁性的物体；\n
+8.妨碍公共卫生的，如尸骨（包括已焚的尸骨）、未经硝制的兽皮、未经药制的兽骨等；\n
+9.氧化剂、有机过氧化物、放射性物质，具有腐蚀性的物品。如：化学药品、化学实验用品（高锰酸钾、硫酸等）；\n
+10.粉末状物品(不论何种颜色)、液体（不论使用何种包装）、膏状物（如牙膏等）、外包装有危险标志的货品；\n
+11.各类生化制品和传染性物品。如炭疽、危险性病菌、医药用废弃物等。\n
+ 汽运违法违规禁寄品：\n
+1.各类烈性毒药和传染性物品，如铊、氰化物、砒霜、催泪弹等；\n
+2.麻醉药物和精神药品，如毒品、鸦片（包括罂粟壳、花、苞、叶等）、吗啡、可卡因、海洛因、大麻等；\n
+3.国家法令禁止流通或寄运的物品，如文物、武器、弹药、刀具、仿真武器、古董等；\n
+4.含有反动、淫秽或有伤风化内容的报刊、书籍、图片、宣传品、音像制品、计算机磁盘及光碟等；</string>
+    <string name="smsedit_pickup">您有快递在%1$s自提点地址%2$s电话%3$s</string>
+    <string name="smsedit_reminder">您的快递在%1$s自提点已经放了很久了,地址%2$s 电话%3$s 快来收吧。</string>
+</resources>

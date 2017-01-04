@@ -1,0 +1,26 @@
+############################################################
+#
+# This file may contain default values for the twitter system properties.
+# These values are only used when the system properties are not specified
+# on the command line or set programatically.
+# For now, only the various sever settings can be configured here.
+############################################################
+
+#demo server
+SERVER_IPADDR = 192.168.1.1
+SERVER_PORT = 8080
+SERVER_NAME = /frame
+
+#offical server
+#SERVER_IPADDR = www.frame.com
+#SERVER_PORT = 80
+#SERVER_NAME = /frame
+
+#The url for checking version.
+URL_VER_CHECK = /m_loginAction!mcLogin.action
+
+#The url for logining.
+URL_LOGIN = /m_loginAction!mcLogin.action
+
+#The url for userlist.
+URL_USER = /m_vestAction!mobileVestDetail.action

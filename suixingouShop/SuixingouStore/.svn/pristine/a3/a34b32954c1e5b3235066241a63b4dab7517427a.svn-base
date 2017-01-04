@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainbg_grayd7d7d7"
+    android:orientation="vertical" >
+
+    <include layout="@layout/stitlebar" />
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="请在下面输入你要找回的账号"/>
+
+    <EditText
+        android:id="@+id/fill_in_tel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:hint="请输入手机号码"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:paddingLeft="10dp"
+        android:textColor="#2d2d2d"
+        android:textColorHint="#cccccc" />
+    
+ 	<Button 
+ 	    android:id="@+id/fill_in_confirm"
+ 	    android:layout_width="match_parent"
+ 	    android:layout_height="50dp"
+ 	    android:layout_margin="20dp"
+ 	    android:gravity="center"
+ 	    android:textSize="18sp"
+ 	    android:textColor="#ffffff"
+ 	    android:text="下一步"
+ 	    android:background="@drawable/selector_maintakepk_button"/>"
+
+</LinearLayout>

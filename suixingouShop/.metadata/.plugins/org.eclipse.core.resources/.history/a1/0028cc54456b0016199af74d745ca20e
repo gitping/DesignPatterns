@@ -1,0 +1,247 @@
+package com.yto.suixingouuser.activity.helper.model;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import com.frame.lib.utils.SPUtils;
+import com.frame.sxgou.model.AppVersionResJo;
+import com.suixingou.sdkcommons.packet.resp.AppVersionResp;
+import com.yto.suixingouuser.model.UserInfo;
+import com.yto.suixingouuser.model.VersionBean;
+import com.yto.suixingouuser.uti.baidul.UtilBaidu;
+import com.yto.suixingouuser.util.android.UtilAndroid;
+import com.yto.zhang.util.modle.ExpressBean;
+import com.yto.zhang.util.modle.ShopExpressOrderResJo;
+
+/**
+ * @author Administrator
+ * 
+ */
+public class FConstants {
+	
+	public static int LIST_POSITION=0;
+	
+	public static float phoneDensity = 0;
+	public static final String GETORDERPRICE="M52";
+	
+	public static String Tel="";
+	/**frame*/
+	/**更新变量*/
+	public static VersionBean welcomA_vb = new VersionBean();
+	public static AppVersionResp appVerRes = new AppVersionResp();
+	public static BaiduAddress getBaiduAddress(){
+		return UtilBaidu.getBaiduAddress();
+	}
+	
+	
+	public static ExpressBean  bean;
+	
+	public final static String phoneNumkey = "phoneNumKey";
+	public final static String userPassKey = "userPassKey";
+	public static boolean isLogin = false;
+	/** 保存用户的登录信息 */
+	public static UserInfo userInfo = new UserInfo();
+	/** Json解析错误 */
+	public final static int JSONERROR = -1;
+	/** 网络请求失败 */
+	public final static int FAILUREERROR = -2;
+	/** 实体数据不对 */
+	public final static int BEANERROR = -3;
+	/**数据处理的方式不对*/
+	public final static int PARSEERROR = -5;
+	/** 请求成功 */
+	public final static int SUCCESS = 200;
+	/** 数据位0但是有num字段 */
+	public final static List<ShopExpressOrderResJo> NODATA = new ArrayList<ShopExpressOrderResJo>();
+	/**状态不等200*/
+	public final static int FAIL = -4;
+	/** 请求密钥 */
+	public static final String APP_KEY = "";
+	public static String version = "";
+	public static String getVersion() {
+		if(version == null || version.length() <= 0){
+			FConstants.version = UtilAndroid.getVersionCode() +"";
+		}
+		return version;
+	}
+
+	public static void setVersion(String version) {
+		SPUtils.saveStringValue("version", version);
+		FConstants.version = version;
+	}
+//	/** 请求密钥 */
+//	public static String UUID = "0000";
+
+//	public static String cipher = "9408";
+//	
+//	
+//	public static String getUUID() {
+//		if(UUID == null || UUID.equals("0000")){
+//			FConstants.UUID = SPUtils.getStringValue("UUID");
+//		}
+//		if(UUID == null || UUID.length() == 0){
+//			FConstants.UUID = "0000";
+//		}
+//		return UUID;
+//	}
+//
+//	public static void setUUID(String uUID) {
+//		SPUtils.saveStringValue("UUID", uUID);
+//		UUID = uUID;
+//	}
+//
+//
+//
+//	public static String getCipher() {
+//		if(cipher == null){
+//			FConstants.cipher = SPUtils.getStringValue("cipher");
+//		}
+//		if(cipher == null || cipher.length() == 0){
+//			FConstants.cipher = "9408";
+//		}
+//		return cipher;
+//	}
+//
+//	public static void setCipher(String cipher) {
+//		SPUtils.saveStringValue("cipher", cipher);
+//		FConstants.cipher = cipher;
+//	}	
+	/********************************************************************************/
+
+	public final static String LogIn = "M003";
+	public final static String Register = "M901";
+	public final static String FindPW = "M903";
+	
+	public final static String VertionCode = "M908";
+	public final static String VertionCodeCheck = "M002";
+	public final static String VertionCodeFindPW = "M001";
+	
+	/** zl测试*/
+	public final static int MYTEST=-101;
+	
+	public static final Map<String,Double> map=new HashMap<String, Double>();
+	
+	public static final int waitcount=0;
+	
+	public static final String shopRank = "http://www.sxgou.cn/zhanggui.html"; 
+	
+	/**消息推送间隔 */
+	public final static int MESSAGEPUSH = 60000;
+	
+	/**
+	 * 每页返回的值
+	 */
+	public final static int ONEPAGECOUNT=10;
+	
+	public static String MAC=null;
+//	public static final String APP_KEY = MD5Utils.MD5("taozapp2013");
+	
+//	public static GPSBaiduEntity gpsBE = new GPSBaiduEntity();
+	
+	/**消息地址*/
+	public final static String MSGURL = "";
+
+	//public final static String BASEURL ="http://int.sxgou.cn/remote/remote-service.action";//生产环境
+//	public final static String BASEURL ="http://192.168.5.26:11000/interface_1/remote/remote-service.action";//预发布地址
+//	public final static String BASEURL ="http://192.168.5.87:11000/interface_2/remote/remote-service.action";//靖忠地址
+	//public final static String BASEURL ="http://192.168.5.26:11000/interface_2/remote/remote-service.action";//测试地址
+	//public final static String BASEURL ="http://58.32.246.119:80/remote/remote-service.action";
+	//public final static String BASEURL ="http://192.168.5.199:11000/interface_2/remote/remote-service.action";、
+	/****************************************************************************************
+	 * 新的URL
+	 * 2015/6/23 ShenHua
+	 */
+	//测试环境
+	//public static String BASEURL ="http://192.168.5.118:9998/Interfaces/";
+	//public final static String BASEURL ="http://192.168.5.175:8080/Interfaces/";
+	public static String BASEURL ="http://ivancui.vicp.net:9999/Interfaces/";
+	//public final static String BASEURL ="http://192.168.5.118:9998/Interfaces/";
+	//公网IP
+	//public final static String BASEURL ="http://58.32.246.120:80/";
+	//正式地址
+	//public final static String BASEURL ="http://int.sxgou.cn/";
+	/****************************************************************************************
+	 * CMD（让服务器能判断客户端用的是哪个实体类）
+	 * 2015/6/23 ShenHua
+	 */
+	public final static byte CCHECKUPDATE = 0;					//检查版本更新
+	public final static byte CLOGIN = 13;						//登陆
+	public final static byte CGETICODE = 10;					//获取验证码
+	public final static byte CCHECKCODE = 10;					//校验验证码
+	public final static byte CREGISTER = 14;					//注册
+	public final static byte CSHOPTYPE = 0;						//获取店铺类型
+	public final static byte CSHOPSETTING = 15;					//店铺设置
+	public final static byte CRETRIEVEPW = 12;					//找回密码
+	public final static byte CMODIFYPW = 12;					//修改密码
+	public final static byte CGETSHOPDETAIL = 0;				//获取店铺信息
+	public final static byte CGETTOTLEPK = 0;					//获取店铺首页收件状况
+	public final static byte CSEARCHBYNO = 4;					//根据面单号、订单类型，查找包裹
+	public final static byte CGETEXPRESSLIST = 4;				//根据订单状态、订单类型、时间区间获取包裹列表
+	public final static byte CSAOSAOSECOND = 2;					//扫一扫收件或查件
+	public final static byte CGETOVERTIMELIST = 0;				//获取预约取件超时包裹列表
+	public final static byte CEXPRESSSTATUS = 0;				//获取所有订单状态
+	public final static byte CCOMPANYNAME = 0;					//根据YtoCode获取网点名称
+	public final static byte CGETPROVINCE = 0;					//获取所有省
+	public final static byte CGETCITY = 0;						//根据省获取下属市
+	public final static byte CGETDISTRICT = 0;					//根据市获取下属区县
+	public final static byte CCHANGESTATUS = 2;					//改变包裹状态
+	public final static byte CCHANGESTATUSMUIT = 3;				//处理取件请求
+	public final static byte CGETTRAIL = 0;						//获取包裹轨迹
+	public final static byte CTAKEPKLIST = 0;					//根据取货码取件
+	public final static byte CTAKEPKCODE = 0;					//重发提货码
+	public final static byte CFINDPK = 0;						//根据手机号/面单号 查找包裹
+	public final static byte CCREATEPK = 2;						//创建包裹
+	public final static byte CGETTELBYNO = 0;					//根据面单号从金刚系统中获取手机号码
+	public final static byte CSENDPOST = 24;					//预约寄件
+	public final static byte CSENDLIST = 0;						//获取寄件列表
+	public final static byte CSENDCANCLE = 24;					//取消寄件
+	public final static byte CSENDCANCLEREASON = 0;				//获取所有取消邮件原因
+	public final static byte CFEEDBACK = 11;					//意见反馈
+	public final static byte CGETTOTALCOUNT = 0;				//统计店铺包裹个数
+	
+	/****************************************************************************************
+	 * 新的methodcode
+	 * 2015/6/23 ShenHua
+	 */
+	public final static String MCHECKUPDATE = "0103";			//检查版本更新
+	public final static String MLOGIN = "0202";					//登陆
+	public final static String MGETICODE = "0205";				//获取验证码
+	public final static String MCHECKCODE = "0206";				//校验验证码
+	public final static String MREGISTER = "0201";				//注册
+	public final static String MSHOPTYPE = "0302";				//获取店铺类型
+	public final static String MSHOPSETTING = "0301";			//店铺设置
+	public final static String MRETRIEVEPW = "0203";			//找回密码
+	public final static String MMODIFYPW = "0204";				//修改密码
+	public final static String MGETSHOPDETAIL = "0304";			//获取店铺信息
+	public final static String MGETTOTLEPK = "0401";			//获取店铺首页收件状况
+	public final static String MSEARCHBYNO = "0404";			//根据面单号、订单类型，查找包裹
+	public final static String MGETEXPRESSLIST = "0402";		//根据订单状态、订单类型、时间区间获取包裹列表
+	public final static String MSAOSAOSECOND = "0417";			//扫一扫收件或查件
+	public final static String MGETOVERTIMELIST = "0412";		//获取预约取件超时包裹列表
+	public final static String MEXPRESSSTATUS = "0105";			//获取所有订单状态
+	public final static String MCOMPANYNAME = "0303";			//根据YtoCode获取网点名称
+	public final static String MGETPROVINCE = "0106";			//获取所有省
+	public final static String MGETCITY = "0107";				//根据省获取下属市
+	public final static String MGETDISTRICT = "0108";			//根据市获取下属区县
+	public final static String MCHANGESTATUS = "0403";			//改变包裹状态
+	public final static String MCHANGESTATUSMUIT = "0408";		//处理取件请求
+	public final static String MGETTRAIL = "0413";				//获取包裹轨迹
+	public final static String MTAKEPKLIST = "0407";			//根据取货码取件
+	public final static String MTAKEPKCODE = "0409";			//重发提货码
+	public final static String MFINDPK = "0410";				//根据手机号/面单号 查找包裹
+	public final static String MCREATEPK = "0405";				//创建包裹
+	public final static String MGETTELBYNO = "0406";			//根据面单号从金刚系统中获取手机号码
+	public final static String MSENDPOST = "0414";				//预约寄件
+	public final static String MSENDLIST = "0415";				//获取寄件列表
+	public final static String MSENDCANCLE = "0416";			//取消寄件
+	public final static String MSENDCANCLEREASON = "0109";		//获取所有取消邮件原因
+	public final static String MFEEDBACK = "0104";				//意见反馈
+	public final static String MGETTOTALCOUNT = "0411";			//统计店铺包裹个数
+	
+	public static void clear(){
+		
+	}
+	
+}

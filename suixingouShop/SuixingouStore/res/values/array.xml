@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation"
+    >
+ 	<string-array name="singhoice">
+ 	    <item>卖光了</item>
+ 	    <item>就回来</item>
+ 	    <item>补货中</item>
+ 	</string-array>  
+
+
+</resources>

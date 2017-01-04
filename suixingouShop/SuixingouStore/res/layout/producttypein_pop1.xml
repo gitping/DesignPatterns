@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pop_lin1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sms_choice_nomal"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/pop_text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/suixin_icon_choose"
+        android:gravity="left|center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="5dp"
+        android:text="  饮料  "
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/pop_text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/suixin_icon_choose"
+        android:gravity="left|center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="5dp"
+        android:text="  零食  "
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/pop_text3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/suixin_icon_choose"
+        android:gravity="left|center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="5dp"
+        android:text="  粮油副食  "
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/pop_text4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/suixin_icon_choose"
+        android:gravity="left|center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="5dp"
+        android:text="  烟酒  "
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/pop_text5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/suixin_icon_choose"
+        android:gravity="left|center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="5dp"
+        android:text="  日用品  "
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/pop_text6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/suixin_icon_choose"
+        android:gravity="left|center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="5dp"
+        android:text="  生鲜  "
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/pop_text7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/suixin_icon_choose"
+        android:gravity="left|center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="5dp"
+        android:text="  餐饮  "
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/pop_text8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/suixin_icon_choose"
+        android:gravity="left|center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="5dp"
+        android:text="  果蔬  "
+        android:textSize="15sp" />
+
+</LinearLayout>

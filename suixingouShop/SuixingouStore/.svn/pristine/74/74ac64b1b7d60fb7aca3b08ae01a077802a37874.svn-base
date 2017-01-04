@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/mainbg_grayd7d7d7" >
+    
+    <include layout="@layout/stitlebar"/>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+               
+        <LinearLayout 
+            android:id="@+id/pksignin_confirm_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/mainbg_grayd7d7d7"
+            android:orientation="vertical">
+            
+            <View 
+	            android:layout_width="match_parent"
+	            android:layout_height="1.5px"
+	            android:layout_marginBottom="10dp"
+	            android:background="#959595"/>
+            
+		    <Button 
+		        android:id="@+id/pksignin_confirm_bt"
+		        android:layout_width="match_parent"
+		        android:layout_height="50dp"
+		        android:layout_margin="10dp"
+		        android:gravity="center"
+		        android:background="@drawable/selector_maintakepk_button"
+		        android:textSize="16sp"
+		        android:textColor="#ffffff"
+		        android:text="返回首页"/>
+	    </LinearLayout>
+	    
+	    <ListView 
+	        android:id="@+id/pksignin_pklist_lv"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_above="@+id/pksignin_confirm_ll"
+	        android:divider="@null"
+	        android:dividerHeight="0dp"
+	        android:scrollbars="none"
+	        android:paddingLeft="10dp"
+	        android:paddingRight="10dp"/>
+    </RelativeLayout>
+
+</LinearLayout>

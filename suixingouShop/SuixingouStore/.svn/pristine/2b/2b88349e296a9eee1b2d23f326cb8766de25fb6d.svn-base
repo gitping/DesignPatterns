@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:layout_marginBottom="105dip"
+    android:layout_marginLeft="25dip"
+    android:layout_marginRight="25dip"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/appcollect_rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:id="@+id/texttake"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="18dp"
+            android:text="取件密码"
+            android:textColor="#8d8d8d"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/takecode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/texttake"
+            android:layout_marginTop="10dp"
+            android:text="0906-2345"
+            android:textColor="#2d2d2d"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/appcollect_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/qujian_box_green_bj"
+            android:layout_marginTop="8dip"
+            android:layout_marginRight="8dip"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/greentext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/texttake"
+                android:text="已到货"
+                android:textColor="@color/mainColor"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/greentime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/texttake"
+                android:text="9-16 8:30"
+                android:textColor="@color/mainColor"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/appcollect_circlered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/appcollect_line"
+            android:layout_marginRight="-8dip"
+            android:src="@drawable/appcollect_circle_red" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/suixin_line_xu" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="快递单号  "
+            android:textColor="#8d8d8d"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/mexpressnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="355766343 "
+            android:textColor="#2d2d2d"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联系方式  "
+            android:textColor="#8d8d8d"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/mexpresscontact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13811445658 "
+            android:textColor="#2d2d2d"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/arrivegoods"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="到货时间  "
+            android:textColor="#8d8d8d"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/mexpresstime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9.28  15:30 "
+            android:textColor="#2d2d2d"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lininfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dip"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/qujian_icon_remind" />
+
+        <TextView
+            android:id="@+id/textinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="务必请用户在app上当面确认收件,否则您将面临包裹赔偿风险"
+            android:textColor="#8d8d8d"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

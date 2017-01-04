@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#fff">
+    <include android:id="@+id/mtopmenu" layout="@layout/stitlebar"/>
+    
+  <!--  <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        > -->  
+
+        <LinearLayout
+             android:id="@+id/linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="2dip"
+                android:layout_below="@id/mtopmenu"
+        android:layout_marginTop="3dp"
+        android:background="@color/gray2"
+        >
+       <EditText 
+           android:id="@+id/im_search_edit"
+           android:layout_width="wrap_content"
+           android:layout_height="fill_parent"
+           android:singleLine="true"
+           android:layout_weight="1"
+           android:layout_marginLeft="15dp"
+           android:layout_marginRight="15dp"
+           android:layout_marginBottom="5dp"
+           android:layout_marginTop="5dp"
+           android:hint="搜索商品"
+           android:gravity="center"
+           android:paddingTop="10dp"
+           android:paddingBottom="10dp"
+           android:paddingLeft="15dp"
+           android:paddingRight="15dp"
+           android:textSize="15dp"
+           android:imeOptions="actionDone"
+           android:drawableLeft="@drawable/search_icon"
+           android:background="@drawable/sms_choice_nomal"
+           /> 
+
+    </LinearLayout>
+        
+
+    
+ 
+    <Button 
+            android:id="@+id/pricesummit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:paddingTop="8dip"
+            android:paddingBottom="8dip"
+            android:paddingLeft="68dp"
+            android:paddingRight="68dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/green_button_selector"
+            />
+    
+    <LinearLayout 
+        android:id="@+id/lin_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        android:layout_above="@+id/pricesummit"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        ></LinearLayout>
+    <ListView 
+        android:id="@+id/shelveListView"
+        android:layout_below="@id/linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_above="@+id/lin_bottom"
+        />
+</RelativeLayout>

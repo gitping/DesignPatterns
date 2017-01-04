@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#bf000000" >
+    
+    <View 
+        android:id="@+id/popreturn_main_v"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"/>
+    
+    <LinearLayout 
+        android:layout_width="250dp"
+	    android:layout_height="wrap_content"
+	    android:layout_centerInParent="true"
+	    android:gravity="center_horizontal"
+	    android:layout_marginTop="50dp"
+	    android:layout_marginBottom="50dp"
+	    android:padding="20dp"
+	    android:background="#ffffff"
+	    android:clickable="true"
+	    android:orientation="vertical">
+        
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="18sp"
+	        android:text="确认包裹所属快递公司"/>
+	    
+	    <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="200dp"
+	        android:layout_marginTop="20dp">
+	        
+	        <Button 
+		        android:id="@+id/popreturn_confirm_bt"
+		        android:layout_width="match_parent"
+		        android:layout_height="40dp"
+		        android:layout_alignParentBottom="true"
+		        android:layout_marginTop="20dp"
+		        android:gravity="center"
+		        android:textColor="#ffffff"
+		        android:textSize="16sp"
+		        android:text="确定"
+		        android:background="@drawable/selector_maintakepk_button"/>
+	        
+		    <ListView
+		        android:id="@+id/popreturn_comlist_lv"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_above="@+id/popreturn_confirm_bt"
+		        android:divider="@null"
+		        android:dividerHeight="0dp"
+		        android:scrollbars="vertical"
+		        android:scrollbarFadeDuration="0"
+		        android:fadeScrollbars="false"
+		        android:scrollingCache="false"/>
+		        	    
+	    </RelativeLayout>
+	</LinearLayout>
+
+</RelativeLayout>

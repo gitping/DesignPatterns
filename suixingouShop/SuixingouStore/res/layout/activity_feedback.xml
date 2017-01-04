@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainbg_grayd7d7d7"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/stitlebar"/>
+        
+    <EditText
+        android:id="@+id/feedback_title_et"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/main_white"
+        android:gravity="center_vertical"
+        android:hint="标题"
+        android:paddingLeft="10dp"
+        android:maxLength="20"
+        android:textSize="16sp"
+        android:textColorHint="#cccccc" />
+    
+    <EditText
+        android:id="@+id/feedback_content_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/main_white"
+        android:inputType="textMultiLine"
+        android:hint="反馈内容......"
+        android:paddingLeft="10dp"
+        android:minLines="8"
+        android:gravity="left|top"
+        android:maxLength="200"
+        android:textSize="16sp"
+        android:textColorHint="#cccccc" />
+    
+    <EditText
+        android:id="@+id/feedback_tel_et"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/main_white"
+        android:gravity="center_vertical"
+        android:hint="你的手机号"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:paddingLeft="10dp"
+        android:textSize="16sp"
+        android:textColorHint="#cccccc" />
+    
+    <Button
+        android:id="@+id/feedback_confirm_bt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/FLeftMenuHeidth"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_maintakepk_button"
+        android:gravity="center"
+        android:text="提交"
+        android:textColor="@color/back"
+        android:textSize="18sp" />
+</LinearLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pop_lin2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sms_choice_nomal"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        >
+          <TextView
+        android:id="@+id/pop2_text1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="毫升" />
+
+    <TextView
+        android:id="@+id/pop2_text2"
+          android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="升" />
+
+    <TextView
+        android:id="@+id/pop2_text3"
+         android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:layout_weight="1"
+        android:paddingTop="10dp"
+        android:gravity="center"
+        android:text="克" />
+
+    <TextView
+        android:id="@+id/pop2_text4"
+          android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="千克" />
+    </LinearLayout>
+  
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        >
+           <TextView
+        android:id="@+id/pop2_text5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+         android:layout_weight="1"
+         android:gravity="center"
+        android:text="斤" />
+
+    <TextView
+        android:id="@+id/pop2_text6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+         android:layout_weight="1"
+        android:paddingTop="10dp"
+        android:gravity="center"
+        android:text="公斤" />
+       <TextView
+         android:id="@+id/pop2_text7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+         android:layout_weight="1"
+        android:paddingTop="10dp"
+        android:gravity="center"
+        android:text="毫克" />
+
+    <TextView
+        android:id="@+id/pop2_text8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+         android:layout_weight="1"
+        android:paddingTop="10dp"
+        android:gravity="center"
+        android:text="盒" />
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        >
+           <TextView
+        android:id="@+id/pop2_text9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+         android:layout_weight="1"
+         android:gravity="center"
+        android:text="包" />
+
+    <TextView
+        android:id="@+id/pop2_text10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+         android:layout_weight="1"
+        android:paddingTop="10dp"
+        android:gravity="center"
+        android:text="箱" />
+       <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+         android:layout_weight="1"
+         android:gravity="center"
+         android:enabled="false"
+        android:text="" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+         android:layout_weight="1"
+         android:gravity="center"
+                  android:enabled="false"
+        android:text="" />
+    </LinearLayout>
+ 
+
+</LinearLayout>

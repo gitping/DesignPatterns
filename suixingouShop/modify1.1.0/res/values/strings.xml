@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- frame -->
+    <string name="flogin">登录</string>
+    <string name="fregist">注册</string>
+    <string name="fusername">帐号：</string>
+    <string name="fenter_username">请输入您的手机号</string>
+    
+    
+    <!-- Store -->
+    <!-- iphone -->
+    <string name="app_name">随心购商家版</string>
+    <string name="aboutversion">随心购v1.0.0</string>
+    <string name="yes">是</string>
+	<string name="no">否</string>
+	<string name="cancel">取消</string>
+	<string name="dialog_title">请选择日期</string>
+	    <string name="testtext">测试数据</string>
+	          <!-- 价格查询 -->
+      <string name="weight">KG</string>
+	
+	<!-- guide -->
+	<string name="storesetting">店铺设置</string>
+	<string name="storesetting_account">店铺名称:</string>
+	<string name="storesetting_pas">店铺地址:</string>
+	<string name="storesetting_zyyw">主营业务:</string>
+	<string name="store_guideset_ls">零食</string>
+	<string name="store_guideset_yl">饮料</string>
+	<string name="store_guideset_ryp">日用品</string>
+	<string name="store_guideset_sx">生鲜</string>
+	<string name="store_guideset_yj">烟酒</string>
+	<string name="store_guideset_tw">粮油/副食</string>
+	<string name="store_guideset_qt">餐饮</string>
+	<string name="store_guideset_gzr">工作日</string>
+	<string name="store_guideset_zm">周末</string>
+	<string name="timestart">07:00</string>
+	<string name="timesend">21:00</string>
+	
+	<string name="opensuccess">恭喜您！店铺已成功开通</string>
+	<string name="makemoney">赚钱只差一步啦！</string>
+	<string name="importext">接下来只需要把售卖商品导入到系统中，客户就可以通过手机购买了</string>
+	<string name="twoway">导入商品的两种方式：</string>
+	<string name="onew">1.用电脑访问：m.sxgou.cn</string>
+	<string name="twow">2.随心购菜单中选择商品导入功能</string>
+	<string name="intoknow">知道了，先进去看看</string>
+	
+	<string name="myfwsj">服务时间:</string>
+	<string name="mypflg">———</string>
+	<string name="mytgxp">提供小票:</string>
+	<string name="mykdzd">快递站点:</string>
+	<string name="myfgsbm">分公司编码:</string>
+	<string name="myhintfgsbm">填写就近的圆通分公司编码</string>
+	<string name="mylxr">联系人:</string>
+	<string name="mylxdh">联系电话:</string>
+	<string name="myhintphone">请填写联系手机号</string>
+	<string name="mypsfw">派送范围:</string>
+	<string name="myhintpsfw">默认为2</string>
+	<string name="mypsfwgl">公里以内</string>
+	<string name="mypssm">配送说明:</string>
+	<string name="mymoney">￥</string>
+	<string name="myqs">起送</string>
+	<string name="mysd">送达</string>
+	<string name="myminute">分钟</string>
+	<string name="myopen">开通店铺服务</string>
+	<string name="myhintshop">请填写您的店铺名称</string>
+	<string name="myhintlxr">请填写联系人</string>
+	<string name="myhintaddre">请填写您的店铺地址</string>
+	<string name="myremark">备注:</string>
+	<string name="myhintremark">备注信息</string>
+	<string name="mykm">公里</string>
+	
+	
+	<string name="shouye">首页</string>
+	<string name="takeorders">\t\t接单\t\t</string>
+	
+	<!-- menu -->
+	<string name="menu_s0">查看订单</string>
+	<string name="menu_s1">我的店铺</string>
+	<string name="menu_s2">店铺设置</string>
+	<string name="menu_s3">后台账号</string>
+	<string name="menu_s4">版本更新</string>
+	<string name="menu_s5">关于</string>
+	<string name="menu_s6">安全退出</string>
+	<string name="menu_s7">商品导入</string>
+	<string name="menu_s9">红包信息</string>
+	
+	<string name="userpro">用户协议</string>
+	
+	<string name="backacountinfo">绑定银行卡账号是为了圆通公司给您结款时所用，所以请务必填写正确的账号，并确认其真实有效。绑定后不能修改或变更。如需帮助请加官方QQ：2111350368</string>
+	
+	<!-- productImport -->
+	<string name="isummit">价格确认无误,提交即可售卖</string>
+	<string name="imenu_s8">查看待上架</string>
+	<!-- hongbao -->
+	<string name="totalred">红包总计:</string>
+	
+	 <string name="_null"></string>
+	 
+	 <string name="placeholder">买家在安装登录时一定要在左边图片所示的位置填入“我的邀请码:%1$d”</string>
+	
+	
+	
+	<!-- zhangheng -->
+	 <!-- FLoginActivity -->
+    <string name="fltitleName">随心购</string>
+    <string name="flreminder">很荣幸为你服务,我是你的小区助手</string>
+    <string name="flVerificationCode">获取验证码</string>
+    <string name="flagree">同意用户协议并注册</string>
+    <string name="flreaded">已阅读并遵守</string>
+    <string name="flprotocol">随心购用户使用协议</string>
+    
+    <!-- xlistview -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+	
+	
+    <!-- 商品录入 -->
+    <string name="test_typein">记录入234个，几百了全国95%的店铺，宋老板，买家一致认为</string>
+    <string name="typein_remark">您很霸气，是个大老板</string>
+	<string name="product_name">物品名称</string>
+	<string name="product_standard">商品规格</string>
+	<string name="product_unit">商品单位</string>
+    <string name="product_category">商品分类</string>
+     <string name="product_price">商品价格</string>
+     <string name="name_hint">如可口可乐</string>
+     <string name="standard_hint">如250ml</string>
+     <string name="price_hint">如2.5元</string>
+      <string name="commit">提交</string>
+    <string name="fuserpro">
+        随心购智能手机应用平台服务条款\n
+
+ 一、服务条款的确认和接纳 \n
+ 随心购智能手机应用平台涉及的产品、相关软件的所有权和运作权归上海圆通新龙电子商务有限公司所有，用户一旦注册并勾选同意本服务条款，即表示用户与上海圆通新龙电子商务有限公司已达成协议，自愿接受本服务条款的所有内容和相关使用流程。\n
+
+ 二、用户账户的安全性 \n
+ 1、随心购智能手机应用将分成商家版和普通用户版，任何随心购智能手机应用的使用者一旦注册成功，便可成为随心购智能手机应用平台的用户，将得到一个使用于随心购智能手机应用的账号，且有权利使用自己的账号随时登陆随心购智能手机应用平台并享受该应用的各项服务。\n
+2、用户不得以任何形式擅自转让或授权他人使用自己的随心购智能手机应用平台账号。\n
+ 三、用户声明与保证 \n
+ 1、用户承诺其为具有完全民事行为能力的民事主体，具有达成交易履行其义务的能力。\n
+ 2、用户有义务在注册时提供自己的真实资料，并保证包括但不限于联系电话等内容的有效性及安全性，保证随心购智能手机应用平台工作人员可以通过上述联系方式与用户取得联系。同时，用户也有义务在相关资料实际变更时及时更新有关注册资料。\n
+ 3、用户同意上海圆通新龙电子商务有限公司通过随心购智能手机应用平台向其发送信息，包含但不限于：\n
+ (1) 订单相关状态信息；\n
+ (2) 快递包裹配送信息通知；\n
+(3) 广告、便民商家信息、团购等商家信息；\n
+ (4) 其他用户向其发送的信息等。\n
+4、用户通过随心购智能手机应用平台发布的内容不得违反国家相关法律制度，包含但不限于如下原则：\n
+(1) 反对宪法所确定的基本原则的；\n
+(2) 危害国家安全，泄露国家秘密，颠覆国家政权，破坏国家统一的；\n
+(3) 损害国家荣誉和利益的；\n
+(4) 煽动民族仇恨、民族歧视，破坏民族团结的；\n
+(5) 破坏国家宗教政策，宣扬邪教和封建迷信的；\n
+(6) 散布谣言，扰乱社会秩序，破坏社会稳定的；\n
+(7) 散布淫秽、色情、赌博、暴力、凶杀、恐怖或者教唆犯罪的；\n
+(8) 侮辱或者诽谤他人，侵害他人合法权益的；\n
+(9) 含有法律、行政法规禁止的其他内容的。\n
+
+ 四、 随心购智能手机应用平台提供的服务内容 \n
+1、用户通过随心购智能手机应用平台可获得如下主要服务：\n
+2） 查看小区周围的便民商家信息，及商家商品信息；\n
+3）通过随心购在线进行商品交易及订单管理;\n
+4)  在线预约圆通快递寄件服务及查看该寄件中相应包裹的快递走件信息;\n
+3）在线提交反馈意见给随心购工作人员；\n
+ 2、随心购智能手机应用平台用户同意平台有权随时审核并且删除用户发布的涉嫌违法，或违反社会主义精神文明，或者被随心购智能手机应用平台认为不妥当的广告或者应用程序等信息。\n
+
+ 五、 服务的终止 \n
+ 在下列情况下，随心购智能手机应用平台有权终止向用户提供服务：\n
+ 1、在用户违反本服务协议相关规定时，随心购智能手机应用平台有权终止向该用户提供服务。如该用户再一次直接或间接或以他人名义注册为用户的，一经发现，随心购智能手机应用平台有权直接单方面终止向该用户提供服务；\n
+2、用户通过随心购手机应用恶意下订单，给商家带来困扰，随心购智能手机应用平台有权随时终止向该用户提供服务；\n
+3、一旦随心购智能手机应用平台发现用户提供的数据或信息中含有虚假内容的，随心购智能手机应用平台有权随时终止向该用户提供服务；\n
+4、商家发布的信息与事实不符，造成用户困扰或损失，随心购智能手机应用平台有权随时终止向该商家提供服务；\n
+5、本服务条款终止或更新时，用户明示不愿接受新的服务条款的；\n
+6、其它随心购智能手机应用平台认为需终止服务的情况。\n
+ 服务终止后，随心购智能手机应用平台没有义务为用户保留原账号中或与之相关的任何信息，或转发任何未曾阅读或发送的信息给用户或第三方。\n
+ 六、 服务的变更、中断 \n
+ 1、鉴于网络服务的特殊性，用户需同意随心购智能手机应用平台会变更、中断部分或全部的网络服务，并删除（不再保存）用户在使用服务中提交的任何资料，而无需通知用户，也无需对任何用户或任何第三方承担任何责任。\n
+ 2、随心购智能手机应用平台需要定期或不定期地对提供网络服务的平台或相关的设备进行检修或者维护，如因此类情况而造成网络服务在合理时间内的中断，随心购智能手机应用平台无需为此承担任何责任。\n
+ 七、 服务条款修改 \n
+ 1、随心购智能手机应用平台有权随时修改本服务条款的任何内容，一旦本服务条款的任何内容发生变动，随心购智能手机应用平台将会通过适当方式向用户提示修改内容。\n
+ 2、如果不同意随心购智能手机应用平台对本服务条款所做的修改，用户有权停止使用服务。\n
+ 3、如果用户继续使用服务，则视为用户接受随心购智能手机应用平台对本服务条款所做的修改。\n
+
+ 八、 免责与赔偿声明 \n
+ 1、若随心购智能手机应用平台已经明示其服务提供方式发生变更并提醒用户应当注意事项，用户未按要求操作所产生的一切后果由用户自行承担。\n
+ 2、用户明确同意其使用随心购智能手机应用平台服务所存在的风险将完全由其自己承担；因其使用随心购智能手机应用平台服务而产生的一切后果也由其自己承担。\n
+ 3、用户同意保障和维护随心购智能手机应用平台及其他用户的利益，由于用户发布内容违法、不真实、不正当、侵犯第三方合法权益，或用户违反本协议项下的任何条款而给上海圆通新龙电子商务有限公司、所在小区物业公司或其他第三人造成损失的，用户同意承担由此造成的全部赔偿责任。\n
+
+ 九、 隐私声明 \n
+1、适用范围：\n
+(1)在用户注册随心购智能手机应用平台账户时，根据要求提供的个人注册信息；\n
+(2)在用户使用随心购智能手机应用平台服务时，随心购智能手机应用平台自动接收并记录的信息或数据。\n
+
+2、信息使用：\n
+
+(1) 随心购智能手机应用平台不会向任何人出售或出借用户的个人信息，除非事先得到用户的许可。\n
+
+(2) 随心购智能手机应用平台亦不允许任何第三方以任何手段收集、编辑、出售或者无偿传播用户的个人信息。任何用户如从事上述活动，一经发现，随心购智能手机应用平台有权立即终止与该用户的服务协议，查封其账号。\n
+
+(3)为服务用户的目的，随心购智能手机应用平台可能通过使用用户的个人信息，向用户提供服务，包括但不限于向用户发出产品和服务信息，或者与随心购智能手机应用平台合作伙伴共享信息以便他们向用户发送有关其产品和服务的信息。\n
+
+3、信息披露--用户的个人信息将在下述情况下部分或全部被披露：\n
+
+(1)经用户同意，向第三方披露；\n
+
+(2)根据法律的有关规定，或者行政或司法机构的要求，向第三方或者行政、司法机构披露；\n
+(3)如果用户出现违反中国有关法律或者网站政策的情况，需要向第三方披露；\n
+
+(4)为提供用户所要求的产品和服务，而必须和第三方分享用户的个人信息；\n
+
+(5)其它随心购智能手机应用平台根据法律或者网站政策认为合适的披露；\n
+
+以上条款的解释权归上海圆通新龙电子商务有限公司所最终所有
+</string>
+
+    
+    <string name="weijinp">航空违法禁寄物品：\n
+1.各类烈性毒药和传染性物品，如农药、铊、氰化物、砒霜、催泪弹等；\n
+2.麻醉药物和精神物品，如：鸦片（含罂粟壳、花、苞、叶等）、吗啡、可卡因、海洛英、大麻等；\n
+3.国家法令禁止流通或寄运的物品，如：各种武器、仿真武器（仿真玩具枪、刀具等）、弹药、雷管及爆炸物品等；\n
+4.含有反动、淫秽、有伤风化或法轮功等的报刊书籍、图片、宣传品、音像制品，计算机磁盘及光盘等。\n
+航空违规禁寄物品：\n
+指威胁航空飞行安全的物品，指在航空运输中，可能明显地危害人身健康、安全或对财产造成损害的物品或物质。主要有以下几类：\n
+1. 爆炸品：如烟花爆竹、起爆引信等；\n
+2.气体：如压缩气体、干冰、灭火器、蓄气筒、充气球体、救生器、易爆开的汽车安全气囊、气雾剂、气体打火机、瓦斯气瓶、灯泡等；\n
+3.易燃液体：如油漆、汽油、酒精类、机油、樟脑油、发动机起动液、松节油、天拿水、胶水、香水、喷雾杀虫剂、空气清新剂等；\n
+4.易燃固体：自燃物质，遇水释放易燃气体的物质，如活性碳、钛粉、椰肉干、蓖麻制品、橡胶碎屑、安全火柴(盒擦的或片擦的)、干燥的白磷、干燥的黄磷、镁粉、固体胶等；\n
+5.毒性和放射性物品：如农药、锂电池（锂电池的收寄标准请参照邮件“关于锂电池是否界定为航空禁寄品的通知”）等；\n
+6. 腐蚀品：如蓄电池、碱性的电池液等；\n
+7.磁性物体，未加消磁防护包装的磁铁、磁钢等含强磁的制品。如验钞机、音箱、磁铁等含磁性的物体；\n
+8.妨碍公共卫生的，如尸骨（包括已焚的尸骨）、未经硝制的兽皮、未经药制的兽骨等；\n
+9.氧化剂、有机过氧化物、放射性物质，具有腐蚀性的物品。如：化学药品、化学实验用品（高锰酸钾、硫酸等）；\n
+10.粉末状物品(不论何种颜色)、液体（不论使用何种包装）、膏状物（如牙膏等）、外包装有危险标志的货品；\n
+11.各类生化制品和传染性物品。如炭疽、危险性病菌、医药用废弃物等。\n
+ 汽运违法违规禁寄品：\n
+1.各类烈性毒药和传染性物品，如铊、氰化物、砒霜、催泪弹等；\n
+2.麻醉药物和精神药品，如毒品、鸦片（包括罂粟壳、花、苞、叶等）、吗啡、可卡因、海洛因、大麻等；\n
+3.国家法令禁止流通或寄运的物品，如文物、武器、弹药、刀具、仿真武器、古董等；\n
+4.含有反动、淫秽或有伤风化内容的报刊、书籍、图片、宣传品、音像制品、计算机磁盘及光碟等；</string>
+    
+    
+
+</resources>

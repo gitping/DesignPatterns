@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical" >
+    
+	<include layout="@layout/stitlebar"/>
+	
+	<LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="30dp"
+	    android:orientation="horizontal"
+	    android:gravity="center_vertical"
+	    android:layout_gravity="center_horizontal">
+	    
+	    <ImageView 
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:src="@drawable/icon_ok"/>
+	    
+		<TextView 
+		    android:id="@+id/opsuccess_title_tv"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:gravity="center_horizontal"	
+		    android:layout_marginLeft="10dp"	    
+		    android:textSize="20sp"
+		    android:textColor="#31b00f"
+		    android:text="书面签收成功"/>
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+	    android:layout_marginTop="30dp"
+	    android:paddingLeft="10dp"
+	    android:paddingRight="10dp"
+	    android:paddingTop="20dp"
+	    android:paddingBottom="20dp"
+	    android:background="#ffffff"
+	    android:orientation="vertical">
+		
+	    <RelativeLayout 
+	        android:layout_width="match_parent"
+	    	android:layout_height="wrap_content">
+	    	
+	        <LinearLayout 
+	            android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:layout_alignParentLeft="true"
+	    		android:layout_centerVertical="true"
+	    		android:orientation="vertical">
+	            
+	            <TextView 
+	                android:layout_width="wrap_content"
+	    			android:layout_height="wrap_content"
+	    			android:textSize="16sp"
+	    			android:textColor="#959595"
+	    			android:text="联系方式"/>
+	            
+	            <TextView 
+	                android:id="@+id/opsuccess_tel_tv"
+	                android:layout_width="wrap_content"
+	    			android:layout_height="wrap_content"
+	    			android:textSize="16sp"
+	    			android:textColor="#2d2d2d"
+	    			android:text=""/>
+	        </LinearLayout>
+	        
+	        <LinearLayout 
+	            android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:layout_alignParentRight="true"
+	    		android:layout_centerVertical="true"
+	    		android:background="@drawable/button_str_selector"
+	    		android:gravity="center_horizontal"
+	    		android:padding="5dp"
+	    		android:orientation="vertical">
+	            
+	            <TextView 
+	                android:id="@+id/opsuccess_qtitle_tv"
+	                android:layout_width="wrap_content"
+	    			android:layout_height="wrap_content"
+	    			android:textSize="16sp"
+	    			android:textColor="#33b010"
+	    			android:text="密码取件"/>
+	                    
+	            <LinearLayout 
+	                android:id="@+id/opsuccess_time_ll"
+	                android:layout_width="wrap_content"
+	    			android:layout_height="wrap_content"
+	    			android:orientation="horizontal">
+	                
+	                <TextView                     
+		                android:layout_width="wrap_content"
+		    			android:layout_height="wrap_content"
+		    			android:textSize="12sp"
+		    			android:textColor="#33b010"
+		    			android:text="取件时间"/>
+	                
+	                <TextView 
+	                    android:id="@+id/opsuccess_time_tv"
+		                android:layout_width="wrap_content"
+		    			android:layout_height="wrap_content"
+		    			android:textSize="12sp"
+		    			android:textColor="#33b010"
+		    			android:text=""/>
+	            </LinearLayout>
+	        </LinearLayout>
+	        
+	    </RelativeLayout>
+	    
+	    <ImageView 
+	        android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="10dp"
+		    android:src="@drawable/suixin_line_xu"/>
+	    
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="10dp"
+		    android:orientation="horizontal">
+	        
+	        <TextView 
+	            android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:textSize="16sp"
+		    	android:textColor="#959595"
+		    	android:text="快递单号"/>
+	        
+	        <TextView 
+	            android:id="@+id/opsuccess_mail_tv"
+	            android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:layout_marginLeft="5dp"
+		    	android:textSize="16sp"
+		    	android:textColor="#2d2d2d"
+		    	android:text=""/>
+	        
+	        <TextView 
+	            android:id="@+id/opsuccess_ems_tv"
+	            android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:layout_marginLeft="5dp"
+		    	android:textSize="16sp"
+		    	android:textColor="#2d2d2d"
+		    	android:text="()"/>
+	    </LinearLayout>	
+	    
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="10dp"
+		    android:orientation="horizontal">
+	        
+	        <TextView 
+	            android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:textSize="16sp"
+		    	android:textColor="#959595"
+		    	android:text="序    号"/>
+	        
+	        <TextView 
+	            android:id="@+id/opsuccess_no_tv"
+	            android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:layout_marginLeft="5dp"
+		    	android:textSize="16sp"
+		    	android:textColor="#2d2d2d"
+		    	android:text=""/>
+	    </LinearLayout>	    
+	</LinearLayout>
+</LinearLayout>

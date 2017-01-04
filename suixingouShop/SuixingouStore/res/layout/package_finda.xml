@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainbg_grayd7d7d7"
+    android:orientation="vertical" >
+    
+    <include
+        layout="@layout/stitlebar" />
+    
+ 	<LinearLayout 
+        android:id="@+id/seclin"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/mainbg_grayd7d7d7">
+        
+ 	    <RelativeLayout 
+ 	        android:layout_width="match_parent"
+		    android:layout_height="50dp"
+		    android:layout_marginTop="10dp"
+		    android:background="@color/white">
+ 	        
+ 	        <ImageButton
+                android:id="@+id/collect_saosao"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/commit_expresslist_selector"
+                android:src="@drawable/icon_createpk_saosao"/>
+ 	        
+ 	        <EditText 
+		        android:id="@+id/collect_password"
+		        android:padding="5dp"
+		        android:layout_width="match_parent"
+		        android:layout_height="50dp"
+		        android:layout_toLeftOf="@+id/collect_saosao"
+		        android:inputType="number"
+		        android:digits="0123456789poiuytrewqasdfghjklmnbvcxzQWERTYUIOPLKJHGFDSAZXCVBNM"
+		        android:maxLength="50"
+		        android:singleLine="true"
+		        android:hint="请输入对应的手机号/快递单号"
+		        android:textSize="16sp"
+		        android:textCursorDrawable="@null"
+		        android:textColorHint="#cccccc"
+           		android:textColor="#2d2d2d"
+		        android:background="@null"/>
+ 	    </RelativeLayout>
+	    
+	    <Button
+	        android:id="@+id/btn_take"
+	        android:layout_marginTop="30dp"
+	        android:layout_marginBottom="20dp"
+	        android:layout_width="match_parent"
+	        android:layout_height="50dp"
+	        android:layout_gravity="center_horizontal"
+	        android:background="@drawable/selector_maintakepk_button"
+	        android:gravity="center"
+	        android:text="查找"
+	        android:textColor="@color/white"
+	        android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>

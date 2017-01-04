@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <!-- frame -->
+    <string name="flogin">登录</string>
+    <string name="fregist">注册</string>
+    <string name="fusername">帐号：</string>
+    <string name="fenter_username">请输入您的手机号</string>
+</resources>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/create_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/stitlebar"/>
+    
+    <ScrollView 
+        android:id="@+id/create_content_sv"
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:scrollbars="none">
+        
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="#ffffff"
+	        android:orientation="vertical">
+	        
+	        <View 
+	    	    android:layout_width="match_parent"
+	    	    android:layout_height="10dp"
+	    	    android:background="@color/mainbg_grayd7d7d7"/>
+	        
+	    	<RelativeLayout 
+	    	    android:layout_width="match_parent"
+	    	    android:layout_height="wrap_content"
+	    	    android:padding="15dp">
+	    	    
+	    	    <TextView 
+	    	        android:id="@+id/create_exname_tv"
+	    	        android:layout_width="wrap_content"
+	    	        android:layout_height="wrap_content"
+	    	        android:layout_alignParentLeft="true"
+	    	        android:layout_centerVertical="true"
+	    	        android:textSize="15sp"
+	    	        android:text="快递公司选择"/>
+	    	    
+	    	    <ImageView 
+	    	        android:id="@+id/create_exname_iv"
+	    	        android:layout_width="50dp"
+	    	        android:layout_height="50dp"
+	    	        android:layout_toRightOf="@+id/create_exname_tv"
+	    	        android:layout_centerVertical="true"
+	    	        android:layout_marginLeft="15dp"
+	    	        android:src="@drawable/exyto"/>
+	    	    
+	    	</RelativeLayout> 
+	    	
+	    	<View 
+	    	    android:layout_width="match_parent"
+	    	    android:layout_height="1.5px"
+	    	    android:background="@color/mainbg_grayd7d7d7"/>
+	    	
+	    	<RelativeLayout 
+	    	    android:layout_width="match_parent"
+	    	    android:layout_height="wrap_content"
+	    	    android:paddingLeft="15dp">
+	    	    
+	    	    <ImageButton 
+	    	        android:id="@+id/create_saosao_ib"
+	    	        android:layout_width="wrap_content"
+	    	        android:layout_height="wrap_content"
+	    	        android:layout_alignParentRight="true"
+	    	        android:layout_centerVertical="true"
+	    	        android:padding="15dp"
+	    	        android:background="@drawable/commit_expresslist_selector"
+	    	        android:src="@drawable/icon_createpk_saosao"/>
+	    	    
+	    	    <LinearLayout 
+	    	        android:layout_width="match_parent"
+	    	        android:layout_height="wrap_content"
+	    	        android:layout_centerVertical="true"
+	    	        android:layout_toLeftOf="@+id/create_saosao_ib"
+	    	        android:orientation="horizontal">
+	    	        
+		    	    <TextView 
+		    	        android:layout_width="wrap_content"
+		    	        android:layout_height="wrap_content"
+		    	        android:textSize="15sp"
+		    	        android:text="快递单号："/>
+		    	    
+		    	    <EditText 
+		    	        android:id="@+id/create_pkno_et"
+		    	        android:layout_width="match_parent"
+		    	        android:layout_height="wrap_content"
+		    	        android:background="@null"
+		    	        android:inputType="number"
+		        		android:digits="0123456789poiuytrewqasdfghjklmnbvcxzQWERTYUIOPLKJHGFDSAZXCVBNM"
+		        		android:maxLength="50"
+		        		android:singleLine="true"
+		    	        android:padding="5dp"
+		    	        android:textSize="15sp"
+		    	        android:hint="请输入包裹单号"/>
+		    	      	    
+	    	    </LinearLayout>
+	    	</RelativeLayout> 
+	    	
+	    	<View 
+	    	    android:layout_width="match_parent"
+	    	    android:layout_height="1.5px"
+	    	    android:background="@color/mainbg_grayd7d7d7"/>
+	    	
+	    	<RelativeLayout 
+	    	    android:layout_width="match_parent"
+	    	    android:layout_height="wrap_content"
+	    	    android:paddingLeft="15dp">
+	    	    
+	    	    <ImageButton
+	    	        android:id="@+id/create_tel_ib"
+	    	        android:layout_width="wrap_content"
+	    	        android:layout_height="wrap_content"
+	    	        android:layout_alignParentRight="true"
+	    	        android:layout_centerVertical="true"
+	    	        android:background="@drawable/commit_expresslist_selector"
+	    	        android:padding="15dp"
+	    	        android:src="@drawable/icon_createpk_tel"/>
+	    	    
+	    	    <LinearLayout 
+	    	        android:layout_width="match_parent"
+	    	        android:layout_height="wrap_content"
+	    	        android:layout_centerVertical="true"
+	    	        android:layout_toLeftOf="@+id/create_tel_ib"
+	    	        android:orientation="horizontal">
+	    	        
+		    	    <TextView 
+		    	        android:layout_width="wrap_content"
+		    	        android:layout_height="wrap_content"
+		    	        android:textSize="15sp"
+		    	        android:text="手机号码："/>
+		    	    
+		    	    <EditText 
+		    	        android:id="@+id/create_tel_et"
+		    	        android:layout_width="match_parent"
+		    	        android:layout_height="wrap_content"
+		    	        android:inputType="phone"
+		    	        android:maxLength="11"
+		    	        android:background="@null"
+		    	        android:padding="5dp"
+		    	        android:textSize="15sp"
+		    	        android:hint="请输入收件人手机号"/>
+		    	      	    
+	    	    </LinearLayout>
+	    	</RelativeLayout> 
+	    	
+	    	<View 
+	    	    android:layout_width="match_parent"
+	    	    android:layout_height="1.5px"
+	    	    android:background="@color/mainbg_grayd7d7d7"/>
+	    	
+	    	<Button 
+	    	    android:id="@+id/create_confirm_bt"
+	    	    android:layout_width="match_parent"
+	    	    android:layout_height="50dp"
+	    	    android:background="@drawable/selector_maintakepk_button"
+	    	    android:layout_marginTop="50dp"
+	    	    android:layout_marginLeft="10dp"
+	    	    android:layout_marginRight="10dp"
+	    	    android:layout_marginBottom="5dp"
+	    	    android:gravity="center"
+	    	    android:textColor="#ffffff"
+	    	    android:textSize="18sp"
+	    	    android:text="确定"/>
+	    	
+	    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

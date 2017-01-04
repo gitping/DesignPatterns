@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainbg_grayd7d7d7"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/stitlebar"/>
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+        android:background="@drawable/sms_choice_nomal">
+        
+        <EditText 
+            android:id="@+id/smsset_content_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:inputType="textMultiLine"
+   			android:gravity="left|top"
+   			android:layout_alignParentLeft="true"
+   			android:layout_alignParentTop="true"
+   			android:maxLength="500"
+            android:minLines="4"/>
+        
+        <TextView 
+            android:id="@+id/smsset_content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/smsset_content_et"
+            android:textColor="@color/gray_6a6a6a"
+            android:text="0/55"/>
+        	
+    </RelativeLayout>
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/gray_6a6a6a"
+        android:text="*短信中请务必附带自提点地址、电话"/>
+    
+    <Button
+        android:id="@+id/smsset_confirm_bt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/FLeftMenuHeidth"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/selector_maintakepk_button"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/back"
+        android:textSize="18sp" />
+</LinearLayout>

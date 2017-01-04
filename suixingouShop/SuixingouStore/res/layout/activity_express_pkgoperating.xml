@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#eeeeee">
+    
+    <include android:id="@+id/mtopmenu" layout="@layout/stitlebar"/>
+    
+    <TextView 
+        android:id="@+id/pkg_rejected_tv"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_marginBottom="10dp"
+    	android:layout_alignParentBottom="true"
+    	android:layout_centerHorizontal="true"
+    	android:textSize="16sp"
+    	android:textColor="#2d2d2d"
+    	android:text="@string/pkgrejected"
+    	android:visibility="invisible" />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:layout_below="@+id/mtopmenu"
+    	android:layout_above="@+id/pkg_rejected_tv"
+    	android:background="#eeeeee"
+    	android:orientation="vertical">
+    	
+        <LinearLayout 
+            android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:background="#ffffff"
+	    	android:orientation="vertical"
+	    	android:padding="20dp"
+	    	android:layout_below="@+id/mtopmenu">
+    	
+	        <RelativeLayout 
+		        android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:background="#ffffff"
+		    	android:orientation="horizontal">
+	        
+	            <LinearLayout 
+			        android:layout_width="wrap_content"
+			    	android:layout_height="wrap_content"
+			  		android:layout_alignParentLeft="true"
+			  		android:layout_centerVertical="true"
+			    	android:background="#ffffff"
+			    	android:orientation="vertical">
+		    	
+		        	<TextView 
+		        	    android:id="@+id/pkg_company_tv"
+		        	    android:layout_width="wrap_content"
+			    		android:layout_height="wrap_content"
+			    		android:textSize="16sp"
+			    		android:textColor="#959595"
+			    		android:text="包裹"/>
+		        	
+		        	<TextView 
+		        	    android:id="@+id/pkg_no_tv"
+		        	    android:layout_width="wrap_content"
+			    		android:layout_height="wrap_content"
+			    		android:layout_marginTop="5dp"
+			    		android:textSize="16sp"
+			    		android:textColor="#2d2d2d"
+			    		android:text=""/>
+	        	</LinearLayout>  
+	        	
+	            <LinearLayout 
+			        android:layout_width="wrap_content"
+			    	android:layout_height="wrap_content"
+			    	android:layout_alignParentRight="true"
+			    	android:layout_centerVertical="true"
+			    	android:background="@drawable/button_str_selector"
+			    	android:padding="5dp"
+			    	android:gravity="center"
+			    	android:orientation="vertical">
+		    	
+		        	<TextView 
+		        	    android:id="@+id/pkg_status_tv"
+		        	    android:layout_width="wrap_content"
+			    		android:layout_height="wrap_content"
+			    		android:textColor="#33b010"
+			    		android:textSize="16sp"
+			    		android:text="自提点在站"/>
+		        	
+		        	<TextView 
+		        	    android:id="@+id/pkg_statustime_tv"
+		        	    android:layout_width="wrap_content"
+			    		android:layout_height="wrap_content"
+			    		android:layout_marginTop="5dp"
+			    		android:textColor="#33b010"
+			    		android:textSize="16sp"
+			    		android:text=""/>
+	        	</LinearLayout>      	
+	    	</RelativeLayout>
+	    	
+	        <ImageView 
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="10dp"
+	            android:src="@drawable/suixin_line_xu"/>
+	    	
+	    	<LinearLayout 
+		        android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:layout_marginTop="10dp"
+		    	android:orientation="horizontal">
+	        
+	        	<TextView 
+	        	    android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:textSize="16sp"
+		    		android:textColor="#959595"
+		    		android:text="手机号码 "/>
+	        	
+	        	<TextView 
+	        	    android:id="@+id/pkg_phoneno_tv"
+	        	    android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:layout_marginLeft="5dp"
+		    		android:textSize="16sp"
+		    		android:textColor="#2d2d2d"
+		    		android:text=""/>
+	    	</LinearLayout> 
+	    	
+	    	<ImageView 
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="10dp"
+	            android:src="@drawable/suixin_line_xu"/>
+	    	
+	    	<LinearLayout 
+		        android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:layout_marginTop="10dp"
+		    	android:orientation="horizontal">
+	        
+	        	<TextView 
+	        	    android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:textSize="16sp"
+		    		android:textColor="#959595"
+		    		android:text="包裹序号 "/>
+	        	
+	        	<TextView 
+	        	    android:id="@+id/pkg_number_tv"
+	        	    android:layout_width="wrap_content"
+		    		android:layout_height="wrap_content"
+		    		android:layout_marginLeft="5dp"
+		    		android:textSize="16sp"
+		    		android:textColor="#2d2d2d"
+		    		android:text=""/>
+	    	</LinearLayout> 
+	    </LinearLayout>
+    	
+    	<Button 
+    	    android:id="@+id/pkg_takepassword_bt"
+    	    android:layout_width="200dp"
+	    	android:layout_height="wrap_content"
+	    	android:layout_gravity="center_horizontal"
+	    	android:layout_marginTop="40dp"
+	    	android:gravity="center_horizontal"
+	    	android:padding="20dp"
+	    	android:background="@drawable/button_cor_str_op_selector"
+	    	android:textSize="16sp"
+	    	android:textColor="#2d2d2d"
+	    	android:text="密码取件"/>
+    	
+    	<Button 
+    	    android:id="@+id/pkg_writtenreceipt_bt"
+    	    android:layout_width="200dp"
+	    	android:layout_height="wrap_content"
+	    	android:layout_gravity="center_horizontal"
+	    	android:layout_marginTop="40dp"
+	    	android:gravity="center_horizontal"
+	    	android:padding="20dp"
+	    	android:background="@drawable/button_cor_str_op_selector"
+	    	android:textSize="16sp"
+	    	android:textColor="#2d2d2d"
+	    	android:text="书面签收"/>
+    </LinearLayout>
+</RelativeLayout>

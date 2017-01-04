@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+   >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="时间选择:" />
+    <Button android:id="@+id/button_select_date"
+			android:background="@drawable/date_time" 
+			android:layout_marginLeft="2dp" 
+			android:layout_weight="1.0" 
+			android:paddingTop="5dp" 
+			android:paddingBottom="5dp"
+			android:paddingLeft="5dp" 
+			android:paddingRight="5dp"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:gravity="center" 
+			android:layout_marginRight="@dimen/order_complete_Interval"
+			android:layout_gravity="right|center" />
+    
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:id="@+id/pkopfooter_main_ll"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_horizontal"
+	    android:orientation="vertical">
+        
+	    <TextView 
+	        android:id="@+id/pkopfooter_count_tv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="14sp"
+	        android:textColor="#333333"
+	        android:text="共2件包裹"/>
+	
+	    <TextView 
+	        android:id="@+id/pkopfooter_detail_tv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="14sp"
+	        android:textColor="#333333"
+	        android:text="请联系收件人确定收件时间"/>
+    </LinearLayout>
+</LinearLayout>

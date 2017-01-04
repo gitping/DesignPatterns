@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/maincolor_order" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/relid"
+            layout="@layout/stitlebar" />
+
+        <com.yto.suixingoustore.util.view.listview.XListView
+            android:id="@+id/flistview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="15dip"
+            android:visibility="visible" >
+        </com.yto.suixingoustore.util.view.listview.XListView>
+    </LinearLayout>
+
+    <include
+        layout="@layout/sloading_error"
+        android:visibility="visible" />
+
+</RelativeLayout>

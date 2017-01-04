@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/stitlebar"/>
+    
+    <!-- <EditText 
+        android:id="@+id/signin_password_et"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_margin="20dp"
+    	android:singleLine="true"/>
+    
+    <Button 
+        android:id="@+id/signin_password_bt"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginLeft="20dp"
+    	android:layout_marginRight="20dp"
+    	android:padding="5dp"
+    	android:gravity="center"
+    	android:text="确认"/> -->
+    
+    <EditText 
+        android:id="@+id/signin_password_et"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="5dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:maxLength="20"
+        android:hint="请输入取件密码"
+        android:textSize="18sp"
+        android:textColor="#8d8d8d"
+        android:background="@drawable/collect_edit_selector"/>
+    
+    <Button
+        android:id="@+id/signin_password_bt"
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/financial_button_selector"
+        android:gravity="center"
+        android:text="确认"
+        android:textColor="@color/back"
+        android:textSize="20sp" />	
+</LinearLayout>

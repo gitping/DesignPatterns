@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffeeeeee"
+    android:orientation="vertical" >
+
+    <include layout="@layout/stitlebar" />
+
+    <RelativeLayout
+        android:id="@+id/fill_in_pw_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/white" >
+
+        <EditText
+            android:id="@+id/fill_in_pw"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_toLeftOf="@+id/third_icon"
+            android:background="@null"
+            android:digits="_0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLIMNOPQRSTUVWXYZ"
+            android:gravity="center_vertical"
+            android:hint="请设置登录密码，不少于6位"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:paddingLeft="10dp"
+            android:textColorHint="#cccccc" />
+
+        <CheckBox
+            android:id="@+id/third_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="9dp"
+            android:button="@drawable/is_show_pw_selector" />
+    </RelativeLayout>
+ <TextView
+            android:id="@+id/show_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="#e81929"
+            android:drawableLeft="@drawable/icon_warn"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="用户已存在"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:visibility="invisible" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/show_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="登录密码请牢记，以便下次登录"
+            android:textColor="@color/mainbutton_redf26221"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>

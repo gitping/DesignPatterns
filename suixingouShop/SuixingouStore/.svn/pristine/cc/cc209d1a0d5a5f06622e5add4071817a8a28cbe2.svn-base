@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 百度相关的key -->
+    <!-- 正式 -->
+    
+    <string name="baidumap_key">Yieuwl6mvsQoD2fi7033nLCT</string>
+    <!-- 
+    <string name="baidutongji_key">17c9f032b7</string> 
+    <string name="jpush_key">dac54b906e46da586a02e4cd</string> 
+    -->
+    
+    <!-- 测试 -->
+    <!--
+    <string name="baidumap_key">Yieuwl6mvsQoD2fi7033nLCT</string>
+    -->
+    <string name="baidutongji_key">bd73b7b31c</string> 
+    <string name="jpush_key">4a0635f5bece6a203d8a908f</string>
+    
+</resources>

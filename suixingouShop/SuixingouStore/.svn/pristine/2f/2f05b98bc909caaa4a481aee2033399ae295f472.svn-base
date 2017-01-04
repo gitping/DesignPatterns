@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainbg_grayd7d7d7"
+    android:orientation="vertical" >
+    
+	<include layout="@layout/stitlebar"/>
+	
+	<EditText
+        android:id="@+id/addressmanual_add_et"
+        android:hint="示例：曹杨路278弄238号101室"
+        android:textSize="16sp"
+        android:layout_margin="@dimen/smainMargin"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:background="@color/white" />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="5dp"
+	    android:layout_marginBottom="10dp"
+	    android:layout_marginLeft="15dp"
+	    android:layout_marginRight="15dp"
+	    android:textSize="16sp"
+	    android:text="附近地址快捷选择"/>
+	
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_marginLeft="15dp"
+	    android:layout_marginRight="15dp">
+	    
+	    <Button 
+	        android:id="@+id/addressmanua_confirm_bt"
+	        android:layout_marginBottom="10dp"
+	        android:layout_width="match_parent"
+	        android:layout_height="50dp"
+	        android:layout_alignParentBottom="true"
+	        android:gravity="center"
+	        android:textColor="#ffffff"
+	        android:background="@drawable/selector_maintakepk_button"
+	        android:textSize="16sp"
+	        android:text="确定" />
+	    
+		<ListView
+		    android:id="@+id/addressmanua_add_lv"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_marginBottom="5dp"
+		    android:layout_above="@+id/addressmanua_confirm_bt"
+		    android:divider="@color/mainbg_grayd7d7d7"
+	    	android:dividerHeight="1.5px"
+	   		android:scrollbars="none"
+	    	android:listSelector="#00000000" >
+		</ListView>
+		
+	</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#f0f0ed">
+    
+    <include  android:id="@+id/mtop" layout="@layout/stitlebar"/>
+     <LinearLayout
+             android:id="@+id/linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="2dip"
+                android:layout_below="@id/mtop"
+        android:layout_marginTop="3dp"
+        android:background="@color/gray2"
+        >
+       <EditText 
+           android:id="@+id/im_search_edit"
+           android:layout_width="wrap_content"
+           android:layout_height="fill_parent"
+           android:singleLine="true"
+           android:layout_weight="1"
+           android:layout_marginLeft="15dp"
+           android:layout_marginRight="15dp"
+           android:layout_marginBottom="5dp"
+           android:layout_marginTop="5dp"
+           android:hint="请输入手机号搜索"
+           android:gravity="center"
+           android:paddingTop="10dp"
+           android:paddingBottom="10dp"
+           android:paddingLeft="15dp"
+           android:paddingRight="15dp"
+           android:textSize="15dp"
+           android:imeOptions="actionDone"
+           android:drawableLeft="@drawable/search_icon"
+           android:background="@drawable/sms_choice_nomal"
+           /> 
+
+    </LinearLayout>
+    <ListView 
+        android:id="@+id/cuijian_listview"
+        android:layout_below="@id/linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_margin="10dp"
+        />
+    
+ <include
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        layout="@layout/sloading_error"
+        android:visibility="visible" />
+</RelativeLayout>

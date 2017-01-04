@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yto.suixingoustore"
+    android:versionCode="12"
+    android:versionName="1.0.12" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="14" />
+
+    <!-- umeng -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    
+    <!-- zl -->
+     <!-- SDK离线地图和cache功能需要读写外部存储器 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" >
+    </uses-permission>
+    <!-- 获取设置信息和详情页直接拨打电话需要以下权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE" >
+    </uses-permission>
+    <!-- 使用定位功能所需权限,demo已集成百度定位SDK,不使用定位功能可去掉以下6项 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+
+    <permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+    </permission>
+
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.autofocus" />
+     <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    
+
+    <application
+        android:name="com.yto.suixingoustore.FrameApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/android:Theme.NoTitleBar" >
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="vH5px1vnCjGc7pvqW3PiDdrg" />
+
+        <!-- frame -->
+        <activity
+            android:name="com.yto.suixingoustore.FWelcomeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.yto.suixingoustore.FMainActivity" 
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask">
+        </activity>
+        <activity android:name="com.yto.suixingoustore.FGuideActivity" 
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask">
+        </activity>
+        <activity android:name="com.yto.suixingoustore.activity.FLoginActivity" 
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask">
+        </activity>
+        <activity
+            android:name="com.yto.suixingouuser.util.view.FLeftMenuActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        
+        
+        <!-- Store Activity-->
+        <activity android:name="com.yto.suixingoustore.activity.StoreGuideActivity"
+           android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+           android:screenOrientation="portrait"
+           android:launchMode="singleTask"
+            />
+        <activity android:name="com.yto.suixingoustore.activity.StoreBackSetGuideActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.yto.suixingoustore.activity.StoreMyExpressActivity"
+             android:theme="@android:style/Theme.Light.NoTitleBar"
+             android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+                <activity android:name="com.yto.suixingoustore.activity.ProductsTypeInActivity"
+             android:theme="@android:style/Theme.Light.NoTitleBar"
+             android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+                <activity android:name="com.yto.suixingoustore.activity.QrcodeActivity"/>
+        <activity android:name="com.yto.suixingoustore.activity.StoreCloseOrderActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait"/>
+                <activity android:name="com.yto.suixingoustore.activity.HbDetailActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.yto.suixingoustore.activity.StoreMyShopActivity"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.yto.suixingoustore.activity.StoreMyBackAccountActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.yto.suixingoustore.activity.StoreAboutActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.yto.suixingoustore.activity.StoreShopEditActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name="com.yto.suixingoustore.activity.StoreUserProActivity"
+            android:launchMode="singleTask"
+             android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait"/>
+       <activity android:name="com.yto.suixingoustore.activity.PriceOfContryActivity"
+           android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.yto.suixingoustore.activity.ContrabandActivity"
+            android:launchMode="singleTask"
+             android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.yto.suixingoustore.activity.AdressListActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Dialog"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.yto.suixingoustore.activity.ProductImportActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.yto.suixingoustore.activity.RedEnvelopeDealMessageActivity"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.yto.suixingoustore.activity.ProductsShelveActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.yto.suixingoustore.activity.ProductEditActivity"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.yto.suixingoustore.activity.RewardDetalActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.yto.suixingoustore.activity.MakeMoneyActivity"
+             android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait"/>
+        
+        <!-- baidu service -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:permission="android.permission.BAIDU_LOCATION_SERVICE"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.4" >
+                </action>
+            </intent-filter>
+        </service>
+
+        <!-- service -->
+
+        <service android:name="com.yto.suixingoustore.message.MessageService" android:exported="false">
+            <intent-filter android:priority="999">
+                <action android:name="com.yto.suixingouStore.message.MessageService" />
+            </intent-filter>
+        </service>
+
+        <!-- receiver -->
+        <receiver android:name="com.yto.suixingouuser.util.download.DownloadReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.yto.suixingouStore.util.download.DownloadReceiver" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.yto.suixingoustore.message.MessageReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.yto.suixingouStore.message.MessageReceiver" />
+            </intent-filter>
+        </receiver>
+
+        <!-- umeng -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="536a0cf256240b788d00bcd4" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="sxgoushop" />
+    </application>
+
+</manifest>

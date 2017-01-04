@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#bf000000" >
+    
+    <View
+        android:id="@+id/popau_main_v"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"/>
+    
+    <LinearLayout 
+        android:layout_width="250dp"
+    	android:layout_height="200dp"
+    	android:padding="20dp"
+    	android:background="#ffffff"
+    	android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:clickable="true"
+        android:orientation="vertical">
+        
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="16sp"
+	        android:text="自提点认证"/>
+	    
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="20dp"
+	        android:textSize="16sp"
+	        android:text="请联系当地圆通速递网点成为圆通认证自提点"/>
+	    
+	    <Button 
+	        android:id="@+id/popau_confirm_bt"
+	        android:layout_width="match_parent"
+	        android:layout_height="40dp"
+	        android:layout_marginTop="30dp"
+	        android:gravity="center"
+	        android:textColor="#ffffff"
+	        android:textSize="16sp"
+	        android:text="确定"
+	        android:background="@drawable/selector_maintakepk_button"/>
+	</LinearLayout>
+</RelativeLayout>

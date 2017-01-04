@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/flogin_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/FLeftMenuHeidth"
+        android:background="@color/mainColor"
+        android:gravity="center"
+        android:text="@string/fltitleName"
+        android:textColor="@color/back"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dip"
+        android:src="@drawable/flogin_icon" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:gravity="center"
+        android:text="@string/flreminder"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="30dip"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fshape_bgno_listview"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/flPhoneNum"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="4dip"
+                android:layout_marginTop="10dip"
+                android:background="@null"
+                android:hint="请输入手机号码"
+                android:inputType="phone"
+                android:singleLine="true"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/fshape_bgno_listview"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/flVerificationCodeET"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="4dip"
+                android:layout_marginTop="10dip"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入验证码"
+                android:inputType="numberSigned"
+                android:singleLine="true"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/flVerificationCode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@color/mainColor"
+                android:gravity="center"
+                android:onClick="fonclick"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:text="@string/flVerificationCode"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/flagree"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/FLeftMenuHeidth"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="30dip"
+        android:background="@drawable/green_button_selector"
+        android:gravity="center"
+        android:onClick="fonclick"
+        android:text="@string/flagree"
+        android:textColor="@color/back"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/chooseneigh_heght"
+        android:layout_margin="@dimen/smainMargin"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/flreaded"
+            android:textColor="@color/black"
+            android:textSize="15dip" />
+
+        <TextView
+            android:clickable="true"
+            android:id="@+id/flprotocol"
+            android:onClick="fonclick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dip"
+            android:text="@string/flprotocol"
+            android:textColor="@color/mainColor"
+            android:textSize="15dip" />
+    </LinearLayout>
+
+</LinearLayout>

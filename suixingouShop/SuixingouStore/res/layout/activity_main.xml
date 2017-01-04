@@ -1,0 +1,395 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/zhanggui_linear"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/maintitle_gray616161"
+        android:clickable="false" >
+     
+        <ImageView
+            android:id="@+id/main_myshop"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+        	android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:background="@null"
+            android:scaleType="center"
+            android:src="@drawable/selector_mainmyshop_button" />
+        
+        <ImageView
+            android:id="@+id/zhanggui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:contentDescription="@null"
+            android:src="@drawable/main_logo" />
+        
+        <ImageView
+            android:id="@+id/main_search"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:background="@null"
+            android:scaleType="center"
+            android:src="@drawable/selector_mainsearch_button" />
+ 
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/main_content_sv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/zhanggui_linear"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:background="#ffffff" >
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	android:orientation="horizontal">
+                
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/maintext_gray3b3b3e"
+                    android:text="自提包裹收发情况"/>
+                
+                <TextView 
+                    android:id="@+id/main_date_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="bottom"
+                    android:textSize="12sp"
+                    android:textColor="@color/maintext_gray3b3b3e"
+                    android:text="xx/20xx"/>
+            </LinearLayout>
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_marginTop="10dp"
+            	android:gravity="bottom"
+            	android:orientation="horizontal">
+                
+                <LinearLayout 
+                    android:id="@+id/main_monthpk_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/selector_mainwhite_button"
+                    android:orientation="vertical">
+                    
+                    <TextView 
+                        android:id="@+id/main_monthpk_tv"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:textSize="75sp"
+	                    android:textColor="@color/mainbutton_redf26221"
+	                    android:text="--"/>
+                    
+                    <LinearLayout 
+                        android:layout_width="wrap_content"
+                    	android:layout_height="wrap_content"
+                    	android:gravity="bottom"
+                    	android:orientation="horizontal">
+                        
+                        <ImageView 
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:src="@drawable/icon_main_monthsign"/>
+                        
+	                    <TextView 
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_marginLeft="5dp"
+		                    android:gravity="center_vertical"
+		                    android:textSize="12sp"
+		                    android:textColor="@color/maintext_lightgray8c8c8d"
+		                    android:text="当月签收包裹数"/>
+                    	
+                    </LinearLayout>
+                </LinearLayout>
+                
+                <View 
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#eeeeee"/>
+                
+                <LinearLayout 
+                    android:id="@+id/main_stationpk_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/selector_mainwhite_button"
+                    android:orientation="vertical">
+                    
+                    <ImageView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_main_station"/>
+                    
+                    <TextView 
+                        android:id="@+id/main_stationpk_tv"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:textSize="40sp"
+	                    android:textColor="@color/mainbutton_redf26221"
+	                    android:text="--"/>
+                    
+                    <TextView 
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:textSize="12sp"
+	                    android:textColor="@color/maintext_lightgray8c8c8d"
+	                    android:text="当前在站"/>
+                </LinearLayout>           
+            </LinearLayout>
+            
+            <View 
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="10dp"
+                android:background="#eeeeee"/>
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_marginTop="10dp"
+            	android:gravity="bottom"
+            	android:orientation="horizontal">
+                
+                <LinearLayout 
+                    android:id="@+id/main_todaysignpk_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/selector_mainwhite_button"
+                    android:orientation="vertical">
+                    
+                    <ImageView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_main_scan"/>
+                    
+                    <TextView 
+                        android:id="@+id/main_todaysignpk_tv"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:textSize="40sp"
+	                    android:textColor="@color/mainbutton_redf26221"
+	                    android:text="--"/>
+                    
+                    <TextView 
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:textSize="12sp"
+	                    android:textColor="@color/maintext_lightgray8c8c8d"
+	                    android:text="今日收进"/>
+                </LinearLayout>
+                
+                <View 
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#eeeeee"/>
+                
+                <LinearLayout 
+                    android:id="@+id/main_todaytakepk_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/selector_mainwhite_button"
+                    android:orientation="vertical">
+                    
+                    <ImageView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_main_take"/>
+                    
+                    <TextView 
+                        android:id="@+id/main_todaytakepk_tv"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:textSize="40sp"
+	                    android:textColor="@color/mainbutton_redf26221"
+	                    android:text="--"/>
+                    
+                    <TextView 
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:textSize="12sp"
+	                    android:textColor="@color/maintext_lightgray8c8c8d"
+	                    android:text="今日取走"/>
+                </LinearLayout>     
+                
+                <View 
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#eeeeee"/>
+                
+                <LinearLayout 
+                    android:id="@+id/main_problempk_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/selector_mainwhite_button"
+                    android:orientation="vertical">
+                    
+                    <ImageView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_main_problem"/>
+                    
+                    <TextView 
+                        android:id="@+id/main_problempk_tv"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:textSize="40sp"
+	                    android:textColor="@color/mainbutton_redf26221"
+	                    android:text="--"/>
+                    
+                    <TextView 
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:textSize="12sp"
+	                    android:textColor="@color/maintext_lightgray8c8c8d"
+	                    android:text="问题包裹"/>
+                </LinearLayout> 
+            </LinearLayout>
+            
+            <RelativeLayout 
+                android:id="@+id/Main_saosao_rl"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/selector_mainsaosao_button">
+                
+                <LinearLayout 
+                    android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_centerInParent="true"
+	                android:gravity="center"
+	                android:orientation="horizontal">
+                    
+	                <ImageView 
+	                    android:id="@+id/main_saosao_iv"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:src="@drawable/icon_main_saosao"/>
+	                
+	                <TextView 
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginLeft="10dp"
+	                    android:gravity="center_horizontal"
+	                    android:textSize="20sp"
+	                    android:textColor="#ffffff"
+	                    android:text="扫一扫收件"/>
+                </LinearLayout>
+            </RelativeLayout>
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+                
+                <RelativeLayout 
+                    android:id="@+id/Main_sendpk_rl"
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:layout_weight="1"
+	                android:background="@drawable/selector_mainsendpk_button">
+	                
+	                <LinearLayout 
+	                    android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_centerInParent="true"
+		                android:gravity="center"
+		                android:orientation="vertical">
+	                    
+		                <ImageView 
+		                    android:id="@+id/main_sendpk_iv"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:src="@drawable/icon_main_sendpk"/>
+		                
+		                <TextView 
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_marginTop="10dp"
+		                    android:gravity="center_horizontal"
+		                    android:textSize="20sp"
+		                    android:textColor="#ffffff"
+		                    android:text="寄快递"/>
+	                </LinearLayout>
+	            </RelativeLayout>
+                              
+                <RelativeLayout 
+                    android:id="@+id/Main_takepk_rl"
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:layout_weight="1"
+	                android:layout_marginLeft="5dp"
+	                android:background="@drawable/selector_maintakepk_button">
+	                
+	                <LinearLayout 
+	                    android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_centerInParent="true"
+		                android:gravity="center"
+		                android:orientation="vertical">
+	                    
+		                <ImageView 
+		                    android:id="@+id/main_takepk_iv"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:src="@drawable/icon_main_takepk"/>
+		                
+		                <TextView 
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:layout_marginTop="10dp"
+		                    android:gravity="center_horizontal"
+		                    android:textSize="20sp"
+		                    android:textColor="#ffffff"
+		                    android:text="提货码取件"/>
+	                </LinearLayout>
+	            </RelativeLayout>
+            </LinearLayout>
+            
+        </LinearLayout>
+    </ScrollView>   
+
+    <include
+        layout="@layout/nodata_tips_layout"
+        android:visibility="visible" />
+    
+    <RelativeLayout
+        android:id="@+id/main_tip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_tip"
+        android:visibility="gone" >
+    </RelativeLayout>
+</RelativeLayout>

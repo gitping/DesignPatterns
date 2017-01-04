@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView 
+        android:id="@+id/p_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="农夫山泉有点甜"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        />
+    
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+     <TextView 
+        android:id="@+id/p_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1.0"
+        android:text="500ml"
+        android:textSize="14sp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        />
+     <LinearLayout 
+         android:id="@+id/edit_MyProduct"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_weight="2.5"
+         android:gravity="center"
+         android:orientation="horizontal"
+         android:background="@color/editbotom"
+         android:paddingTop="3dip"
+         android:paddingBottom="3dip"
+         android:layout_marginRight="5dip"
+         android:paddingLeft="3dip"
+         android:paddingRight="3dip"
+         >
+         <ImageView 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/proediticon"
+             />
+         <TextView 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_vertical"
+             android:layout_marginLeft="2dip"
+             android:textColor="@color/fcolor"
+             android:textSize="14sp"
+             android:text="编辑"/>
+         
+     </LinearLayout>
+     
+     </LinearLayout>
+     
+      <TextView 
+        android:id="@+id/p_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="￥ 36.00"
+        android:textSize="16sp"
+        android:textColor="@color/moneycolor"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        />
+    
+    
+
+</LinearLayout>

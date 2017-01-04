@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg" >
+
+  <!--  <RelativeLayout
+        android:id="@+id/topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/stitlebar" />
+    </RelativeLayout> --> 
+    <include layout="@layout/stitlebar"  android:id="@+id/topbar"/>
+
+    <TextView
+        android:id="@+id/adress_kuaidi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topbar"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/testtext"
+        android:textColor="@color/mainColor_text1"
+        android:textSize="@dimen/price_size" />
+
+    <LinearLayout
+        android:id="@+id/rel2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adress_kuaidi"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linear0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                
+
+                <EditText
+                    android:id="@+id/edit_weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="left|center_vertical"
+                    android:numeric="decimal"
+                    android:hint="总重量  默认1KG"
+                    android:maxLength="6"
+                                       android:textSize="@dimen/price_size"/>
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:layout_below="@+id/linear0"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toLeftOf="@+id/kuaidi_price"
+                android:background="@color/btn_neg_gray_n"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:id="@+id/select_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+                
+                <TextView 
+                                        android:id="@+id/select_city_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/mainColor_text1"
+                    android:textSize="@dimen/price_size"
+                    android:hint="寄往城市"
+                    />
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/mainColor_text1"
+                    android:textSize="@dimen/price_size" />
+
+                
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:background="@drawable/kuaidi_circle_line"
+            android:gravity="center"
+            android:minWidth="100dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/kuaidi_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:text="@string/testtext"
+                android:textColor="@color/mainColor"
+                android:textSize="@dimen/price_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="fill_parent"
+        android:layout_height="1.7dp"
+        android:layout_below="@+id/rel2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/mainColor"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/linear2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/sms_choice_nomal"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="目的地"
+                android:textColor="@color/mainColor"
+                />
+
+            <TextView
+                android:id="@+id/frist_weight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/sms_choice_nomal"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="首重（元/kg）"
+                android:textColor="@color/mainColor" />
+
+            <TextView
+                android:id="@+id/secode_weight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/sms_choice_nomal"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="续重（元/kg）"
+                android:textColor="@color/mainColor" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/myprice_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:cacheColorHint="#00000000"
+            android:divider="#00000000"
+            android:listSelector="#00000000"
+            android:visibility="visible"
+            android:scrollbars="none" >
+        </ListView>
+    </LinearLayout>
+
+</RelativeLayout>

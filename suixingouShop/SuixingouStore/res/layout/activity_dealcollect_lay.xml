@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0ed"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/tops"
+        layout="@layout/stitlebar" />
+
+ 
+
+    <LinearLayout
+        android:id="@+id/editlin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tops"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/ll_exname"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#59bd3c"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" >
+
+                <TextView
+                    android:id="@+id/exname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/home_topnav_icon_arrow" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/collect_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/collect_edit_selector"
+                android:digits="0123456789abcdefghigklmnopqrstuvwxyzPOIUYTREWQASDFGHJKLMNBVCXZ"
+                android:hint="请输入快递单号"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:maxLength="50"
+                android:textColor="#2d2d2d"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/collect_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/collect_edit_selector"
+            android:hint="请输入对应包裹上的收件人手机"
+            android:inputType="number"
+            android:maxLength="11"
+            android:padding="10dp"
+            android:textColor="#2d2d2d"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editlin"
+        android:layout_margin="20dp"
+        android:background="@drawable/financial_button_selector"
+        android:gravity="center"
+        android:text="完成收件"
+        android:textColor="@color/back"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_contiue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_finish"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/financial_button_selector"
+        android:gravity="center"
+        android:text="短信通知取件,并继续收件"
+        android:textColor="@color/back"
+        android:textSize="20sp" />
+
+</RelativeLayout>

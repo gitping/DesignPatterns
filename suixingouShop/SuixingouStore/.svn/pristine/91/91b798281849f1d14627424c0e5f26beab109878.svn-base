@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainbg_grayd7d7d7"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/stitlebar"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+	    
+	    <EditText 
+	        android:id="@+id/codetake_code_et"
+	        android:layout_width="match_parent"
+	        android:layout_height="50dp"
+	        android:background="@color/white"
+	        android:layout_marginTop="15dp"
+	        android:layout_marginRight="15dp"
+	        android:layout_marginLeft="15dp"
+	        android:gravity="center"
+	        android:padding="10dp"
+	        android:maxLength="11"
+	        android:inputType="phone"
+	        android:hint="请输入收件人手机号"
+	        android:textSize="22sp"
+	        android:textScaleX="1.0"
+	        android:textColorHint="#cccccc"/>
+	    
+	    <TextView 
+			android:id="@+id/codetake_showerror_tv"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:visibility="invisible"
+			android:layout_gravity="center_horizontal"
+			android:gravity="center"
+			android:textSize="12sp"
+			android:textColor="#ffffff"
+			android:drawableLeft="@drawable/icon_warn"
+			android:background="#e81929"
+			android:padding="5dp"/>
+	</LinearLayout>
+	
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+	    
+	    <Button
+	        android:id="@+id/codetake_resend_bt"
+	        android:layout_width="match_parent"
+	        android:layout_height="60dp"
+	        android:layout_alignParentBottom="true"
+	        android:background="@drawable/selector_keyboard_button"
+	        android:gravity="center"
+	        android:textColor="#ffffff"
+	        android:textSize="14sp"
+	        android:text="重发提货码"/>
+	    
+	    <View 
+	        android:id="@+id/codetake_resendline_bt"
+	        android:layout_width="match_parent"
+	        android:layout_height="1px"
+	        android:layout_above="@+id/codetake_resend_bt"
+	        android:background="#000000"/>
+	    
+	    <GridView
+            android:id="@+id/codetake_keyboard_gv"
+            android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_above="@+id/codetake_resendline_bt"
+    		android:horizontalSpacing="1.5px"
+    		android:verticalSpacing="1.5px"
+    		android:numColumns="3"
+       		android:cacheColorHint="#00000000"
+       		android:listSelector="@null"
+       		android:divider="@null"
+    		android:background="#000000"/>
+	    
+	    <View 
+	        android:layout_width="match_parent"
+	        android:layout_height="1px"
+	        android:layout_above="@+id/codetake_keyboard_gv"
+	        android:background="#000000"/>
+	</RelativeLayout>
+</LinearLayout>

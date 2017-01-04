@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/re_findetail"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/finacial_bg"
+    android:orientation="vertical"
+    android:paddingTop="20dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/re_djs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="待结算"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/zetotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="00.00元"
+                android:textColor="@color/shopset_orange"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/zetotal"
+                android:text="总额: "
+                android:textColor="@color/shopset_orange"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/zetotal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/shopset_line" />
+        </RelativeLayout>
+        <ListView
+            android:id="@+id/djslist"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="#fff"
+            android:divider="@null"
+            android:visibility="gone" />
+
+  
+
+        <RelativeLayout
+            android:id="@+id/re_yjs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#fff"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="已结算"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/yjtotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="00.00元"
+                android:textColor="@color/shopset_orange"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/yjtotal"
+                android:text="总额: "
+                android:textColor="@color/shopset_orange"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/yjtotal"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/shopset_line" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/yjslist"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="#fff"
+            android:divider="@null"
+            android:visibility="gone" />
+    </LinearLayout>
+
+   
+    <include layout="@layout/nodata_tips_layout"/>
+
+</RelativeLayout>

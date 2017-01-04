@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- frame -->
+    <dimen name="ftitle_height">50dip</dimen>
+    <dimen name="FLeftMenuHeidth">50dp</dimen>
+
+
+    <!-- Store -->
+    <!-- iphone -->
+<dimen name="order_complete_Interval">15dp</dimen>
+<dimen name="storesetting">50dip</dimen>
+
+
+<!-- zhangheng -->
+<!-- Suixingou -->
+    <dimen name="smainMargin">15dip</dimen>
+    <!-- ChooseNeighborhoodsActivity -->
+    <dimen name="chooseneigh_heght">30dip</dimen>
+        <!-- AddressManageEditActivity -->
+    <dimen name="addressEdit_textSize">13sp</dimen>
+    <dimen name="orderListShopName_textSize">20sp</dimen>
+    
+    <!-- CancelOrderActivity -->
+    <dimen name="cancelTipsSize">13sp</dimen>
+    
+    <!-- MyorderActivity -->
+     <dimen name="orderStatus">15sp</dimen>
+     
+     
+     <!-- 订单详情 -->
+     <dimen name="complain">16sp</dimen>
+ <dimen name="complain_res">10sp</dimen>
+ <dimen name="goods_msg">13sp</dimen>
+ 
+ <!-- 价格查询 -->
+      <dimen name="price_size">16sp</dimen>
+      
+      
+      <!-- 商品录入 -->
+      <dimen name="bigRemark">18sp</dimen>
+      <dimen name="smallremrk">11sp</dimen>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LikeIphoneDemo</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <!-- iphone -->
+    <string name="yes">确认</string>
+	<string name="no">取消</string>
+	<string name="cancel">取消</string>
+	<string name="dialog_title">请选择日期</string>
+
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+    android:background="#fff"
+    >
+    
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:paddingTop="2dip"
+        android:paddingBottom="2dip"
+        >
+       <TextView
+           android:id="@+id/rmonth" 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="03月"
+           android:textColor="@color/black"
+           android:textSize="16sp"
+           />
+       <TextView 
+           android:id="@+id/rmonthspn"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="03.16-03.31"
+           />
+        
+    </LinearLayout>
+     <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:paddingTop="2dip"
+        android:paddingBottom="2dip"
+        >
+       <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="新增用户"
+           />
+       <TextView 
+           android:id="@+id/rednumber"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="30"
+           />
+        
+    </LinearLayout>
+     <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:paddingTop="2dip"
+        android:paddingBottom="2dip"
+        >
+       <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="结款额"
+           />
+       <TextView 
+           android:id="@+id/rmoney"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="150"
+           />
+        
+    </LinearLayout>
+     <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.1"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:paddingTop="2dip"
+        android:paddingBottom="2dip"
+        >
+     <ImageView 
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/red_right"
+         />
+    </LinearLayout>
+    
+
+</LinearLayout>
