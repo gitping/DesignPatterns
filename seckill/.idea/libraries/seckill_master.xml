@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="seckill-master">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/seckill-master.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
