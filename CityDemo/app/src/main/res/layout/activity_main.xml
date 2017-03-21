@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="myapp.hbp.com.citydemo.MainActivity">
+
+    <include layout="@layout/cp_common_title_bar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/receive_city_name_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收件人省-市-区："
+                android:textColor="#2d2d2d"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/receive_city_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#2d2d2d"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_receive_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/receive_city_name_ll"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="#F26221"
+            android:padding="10dp"
+            android:text="选择省市区"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_below="@id/btn_receive_city"
+            android:id="@+id/sender_city_name_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="寄件人省-市-区："
+                android:textColor="#2d2d2d"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/sender_city_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#2d2d2d"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_sender_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sender_city_name_ll"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="#F26221"
+            android:padding="10dp"
+            android:text="选择省市区"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_below="@id/btn_sender_city"
+            android:id="@+id/yunfei_city_name_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="运费省-市-区："
+                android:textColor="#2d2d2d"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/yunfei_city_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#2d2d2d"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_yunfei_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/yunfei_city_name_ll"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="#F26221"
+            android:padding="10dp"
+            android:text="选择省市区"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</LinearLayout>

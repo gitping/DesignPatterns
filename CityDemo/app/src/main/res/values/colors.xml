@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cp_colorAccent">#F3F3F3</color>
+    <color name="cp_colorPrimary">@color/cp_colorAccent</color>
+    <color name="cp_colorPrimaryDark">@color/cp_colorAccent</color>
+
+    <color name="cp_divider">#E5E5E5</color>
+    <color name="cp_shadow">#AAEBEBEB</color>
+    <color name="cp_common_bg">#FAFAFA</color>
+    <color name="cp_content_bg">@color/cp_colorAccent</color>
+    <color name="cp_gray">#8c8c8c</color>
+    <color name="cp_gray_deep">#5c5c5c</color>
+    <color name="cp_alpha_gray">#CC646464</color>
+    <color name="cp_theme_gray">#646464</color>
+
+    <color name="setting_topbar_bg">#D8D3B3</color>
+    <color name="white">#FFFFFF</color>
+    <color name="dialogtv">#21b00f</color>
+    <color name="red">#FF3030</color>
+    <color name="redblack">#B81D1B</color>
+    <color name="skyblue">#6495ED</color>
+    <color name="guoblue">#299DDF</color>
+    <color name="green">#32CD32</color>
+    <color name="lightWhite">#F0F0F0</color>
+    <color name="gray">#999999</color>
+    <color name="graylight">#ededed</color>
+    <color name="grayblack">#616161</color>
+    <color name="graymiddle">#aeaeae</color>
+    <color name="graymiddlee2e2e2">#e2e2e2</color>
+
+    <color name="white_press">#E3E3E3</color>
+    <color name="orange">#F26221</color>
+    <color name="orangelight">#FFF5EF</color>
+    <color name="orange_press">#CA450C</color>
+    <color name="purple">#947bcc</color>
+    <color name="purple_normal">#8617B4</color>
+    <color name="purple_press">#6A12A6</color>
+
+    <color name="main_grayline">#f17238</color>
+    <color name="main_graytext">#f6aa85</color>
+    <color name="main_promptbg">#f77f48</color>
+
+    <color name="main_transparent">#00000000</color>
+
+    <color name="sms_transfer_press">#5d5d5d</color>
+    <color name="sms_transfer_normal">#9c9c9c</color>
+    <color name="sms_transfer_success_press">#890A89</color>
+    <color name="sms_transfer_success_normal">#B340B3</color>
+
+    <color name="poi_red">#ffff0000</color>
+    <color name="poi_white">#ffeeeeee</color>
+</resources>
